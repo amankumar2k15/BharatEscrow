@@ -34,13 +34,11 @@ const Footer = () => {
             text: "Privacy"
         },
     ]
-
-
-    const optionList = ["English", "Thai", "Myanmar", "Arabic"]
+    
 
     return (
         <section className='footer max-[380px]' >
-            <div className='flex justify-around border-b-2 border-[#e3e1dc] flex-col md:flex-row flex-wrap gap-4 p-4 md:p-10 mx-auto bg-gradient-to-r from-[#01426a] to-[#096aa6]'>
+            <div className='flex justify-around border-b-2 border-[#e3e1dc] flex-col md:flex-row flex-wrap gap-4 p-4 md:p-10 mx-auto bg-gradient-to-r from-[#fff] to-[#096aa6]'>
 
                 {/* left  */}
                 <div className="flex pt-6 sm:pt-0 w-[200px] h-[80px] ">
@@ -76,7 +74,7 @@ const Footer = () => {
                 </div>
 
             </div>
-            <div className='bg-gradient-to-r from-[#01426a] to-[#096aa6] text-[#e3e1dc] py-2 text-center '>
+            <div className='bg-gradient-to-r from-[#fff] to-[#096aa6] text-[#e3e1dc] py-2 text-center '>
                 Copyright &copy; 2023 BharatEscrow
             </div>
         </section>

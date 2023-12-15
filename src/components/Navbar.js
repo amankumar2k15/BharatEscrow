@@ -54,8 +54,8 @@ const Navbar = () => {
     }, []);
 
     return (
-        <section className='navbar '>
-            <nav className=" fixed top-0  left-0 right-0  border-gray-200 dark:bg-white-900 border-none py-3 z-50 bg-gradient-to-r from-[#01426a] to-[#096aa6]">
+        <section className='navbar'>
+            <nav className=" fixed top-0  left-0 right-0  border-gray-200 dark:bg-white-900 border-none py-0 z-50 bg-gradient-to-r from-[#fff] to-[#096aa6]">
                 <div className="container justify-between flex flex-wrap items-center sm:justify-between mx-auto p-4">
                     <div className="flex items-center w-[200px] h-[80px]">
                         <img
@@ -88,7 +88,7 @@ const Navbar = () => {
                             <li>
                                 <Link
                                     to="/"
-                                    className={`${currentPath === "/" ? "text-yellow-600" : currentPath === "/buy-sell" ? "text-white" : "text-white"} block py-2 pl-3 pr-4 hover:bg-black  md:hover:bg-transparent  text-[16px] rounded md:bg-transparent  md:p-0 `}
+                                    className={`${currentPath === "/" ? "text-blue-900" : currentPath === "/buy-sell" ? "text-white" : "text-white"} block py-2 pl-3 pr-4 hover:bg-black  md:hover:bg-transparent  text-[16px] rounded md:bg-transparent  md:p-0 `}
                                     aria-current="page"
                                     onClick={() => setHide(!hide)}
                                 >
@@ -100,7 +100,7 @@ const Navbar = () => {
                                 Object.values(menuItem).map((item, index) => (
                                     <li
                                         onClick={() => setHide(!hide)}
-                                        className={` ${currentPath === item.to ? "text-yellow-600" : "text-white"} block py-2 pl-3 pr-4 text-white text-[16px] rounded hover:text-yellow-600 md:hover:bg-transparent  md:p-0  md:dark:hover:text-yellow-600 hover:bg-black dark:hover:text-yellow-600 md:dark:hover:bg-transparent dark:border-gray-700" `}
+                                        className={` ${currentPath === item.to ? "text-blue-900" : "text-white"} block py-2 pl-3 pr-4 text-white text-[16px] rounded hover:text-blue-900 md:hover:bg-transparent  md:p-0  md:dark:hover:text-yellow-600 hover:bg-black dark:hover:text-yellow-600 md:dark:hover:bg-transparent dark:border-gray-700" `}
                                         key={index}>
                                         <Link to={item.to}>{item.text}</Link>
                                     </li>

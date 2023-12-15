@@ -23,28 +23,28 @@ const BuySell = () => {
     return (
         <>
             <section className='buySell border-y-2 border-white'>
-                <div className=' flex pt-28 pb-[83px] bg-gradient-to-r row from-[rgb(1,66,106)] to-[#096aa6]  font-roboto flex-col gap-5 px-2 ' >
-                    <div className='font-bold text-3xl sm:text-4xl md:text-5xl mt-8 sm:mt-0 w-full text-center text-yellow-600'>
+                <div className=' flex pt-28 pb-[83px] bg-gradient-to-r row from-[#fff] to-[#096aa6]  font-roboto flex-col gap-5 px-2 ' >
+                    <div className='font-bold text-3xl sm:text-4xl md:text-5xl mt-8 sm:mt-0 w-full text-center text-blue-900'>
                         BUY OR SELL ITEMS
                     </div>
-                    <ul className=' uppercase font-bold text-sm sm:text-md md:text-lg w-full text-center leading-tight text-yellow-600 flex justify-evenly flex-wrap'>
-                        <li className='inline-block text-white transition-all duration-150 ease-in-out  hover:text-yellow-600  cursor-pointer py-3 px-3 '
+                    <ul className=' uppercase font-bold text-sm sm:text-md md:text-lg w-full text-center leading-tight text-blue-900 flex justify-evenly flex-wrap'>
+                        <li className='inline-block text-white transition-all duration-150 ease-in-out  hover:text-blue-900  cursor-pointer py-3 px-3 '
                             onClick={() => setSelectCategory("domain")}>
                             Domain
                         </li>
-                        <li className=' inline-block text-white transition-all duration-150 ease-in-out  hover:text-yellow-600  cursor-pointer py-3 px-3 '
+                        <li className=' inline-block text-white transition-all duration-150 ease-in-out  hover:text-blue-900  cursor-pointer py-3 px-3 '
                             onClick={() => setSelectCategory("websites")}>
                             Websites
                         </li>
-                        <li className='inline-block text-white transition-all duration-150 ease-in-out  hover:text-yellow-600  cursor-pointer py-3 px-3 '
+                        <li className='inline-block text-white transition-all duration-150 ease-in-out  hover:text-blue-900  cursor-pointer py-3 px-3 '
                             onClick={() => setSelectCategory("carOrTrucks")}>
                             Car or Trucks
                         </li>
-                        <li className='inline-block text-white transition-all duration-150 ease-in-out  hover:text-yellow-600  cursor-pointer py-3 px-3'
+                        <li className='inline-block text-white transition-all duration-150 ease-in-out  hover:text-blue-900  cursor-pointer py-3 px-3'
                             onClick={() => setSelectCategory("gadgets")}>
                             Gadgets
                         </li>
-                        <li className='inline-block text-white transition-all duration-150 ease-in-out  hover:text-yellow-600  cursor-pointer py-3 px-3'
+                        <li className='inline-block text-white transition-all duration-150 ease-in-out  hover:text-blue-900  cursor-pointer py-3 px-3'
                             onClick={() => setSelectCategory("motorcycles")}>
                             Motorcycles
                         </li>
