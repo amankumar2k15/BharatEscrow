@@ -1,5 +1,5 @@
 import React from 'react'
-import BeImg from "../assets/Home/BE.png"
+import BeImg from "../assets/Home/logo.jpg"
 import { Link } from 'react-router-dom'
 
 const Footer = () => {
@@ -36,18 +36,15 @@ const Footer = () => {
 
     return (
         <section className='footer max-[380px]' >
-            <div className='flex border-b-2 border-[#e3e1dc] flex-col md:flex-row flex-wrap gap-4 p-4 md:p-10 mx-auto bg-gradient-to-r from-[#01426a] to-[#096aa6]'>
+            <div className='flex justify-around border-b-2 border-[#e3e1dc] flex-col md:flex-row flex-wrap gap-4 p-4 md:p-10 mx-auto bg-gradient-to-r from-[#01426a] to-[#096aa6]'>
 
                 {/* left  */}
-                <div className="flex pt-6 sm:pt-0  ">
+                <div className="flex pt-6 sm:pt-0 w-[200px] h-[80px] ">
                     <img
                         src={BeImg}
-                        className="h-8 mr-3 bg-yellow-600 rounded-lg"
+                        className="w-[300px] mr-3 rounded-lg"
                         alt="Flowbite Logo"
                     />
-                    <Link to="/home" className=" text-2xl sm:text-4xl font-semibold whitespace-nowrap text-yellow-600 font-roboto ">
-                        BHARAT<span className='text-white'>ESCROW</span>
-                    </Link>
                 </div>
 
                 {/* right */}
