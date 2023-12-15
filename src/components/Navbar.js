@@ -63,7 +63,7 @@ const Navbar = () => {
                             className="h-8 mr-3 bg-yellow-600 rounded-lg"
                             alt="Flowbite Logo"
                         />
-                        <Link to="/home" className="self-center text-2xl font-semibold flex-wrap text-yellow-600 font-roboto ">
+                        <Link to="/" className="self-center text-2xl font-semibold flex-wrap text-yellow-600 font-roboto ">
                             BHARAT<span className='text-white'>ESCROW</span>
                         </Link>
                     </div>
