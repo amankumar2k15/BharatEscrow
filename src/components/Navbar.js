@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
-import BeIMg from "../assets/Home/BE.png"
+import BeIMg from "../assets/Home/logo.jpg"
 import { Link, useLocation, useNavigate } from 'react-router-dom'
-import { BiUserCircle } from 'react-icons/bi'
 import { GiHamburgerMenu } from "react-icons/gi"
 import { RxCross2 } from "react-icons/rx"
 
@@ -34,12 +33,6 @@ const Navbar = () => {
             to: "/contact",
             text: "Contact"
         }
-    }
-
-    const handleSignOut = () => {
-        localStorage.removeItem("token")
-        localStorage.removeItem("user")
-        navigate("/login")
     }
 
     const dropdownRef = useRef(null);
