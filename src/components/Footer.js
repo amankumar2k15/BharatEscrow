@@ -35,9 +35,6 @@ const Footer = () => {
         },
     ]
 
-
-    const optionList = ["English", "Thai", "Myanmar", "Arabic"]
-
     return (
         <section className='footer max-[380px]' >
             <div className='flex justify-around border-b-2 border-[#e3e1dc] flex-col md:flex-row flex-wrap gap-4 p-4 md:p-10 mx-auto bg-gradient-to-r from-[#01426a] to-[#096aa6]'>
@@ -72,7 +69,7 @@ const Footer = () => {
                             <a className='hover:text-yellow-600' href='https://bharat-escrow.netlify.app/'>Info@bharatescrow.com</a>
                         </div>
                     </div>
-               
+
                 </div>
 
             </div>

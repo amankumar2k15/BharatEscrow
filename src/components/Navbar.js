@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import BeIMg from "../assets/Home/logo.jpg"
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { GiHamburgerMenu } from "react-icons/gi"
 import { RxCross2 } from "react-icons/rx"
 
@@ -9,8 +9,6 @@ const Navbar = () => {
     const [user, setUser] = useState(true)
     const location = useLocation();
     const currentPath = location.pathname;
-    const navigate = useNavigate()
-    const userDetails = JSON.parse(localStorage.getItem("user"))
 
     const menuItem = {
         buySell: {
