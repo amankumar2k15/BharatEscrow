@@ -70,7 +70,7 @@ const Footer = () => {
                             <a className='hover:text-yellow-600' href='https://bharat-escrow.netlify.app/'>Info@bharatescrow.com</a>
                         </div>
                     </div>
-               
+
                 </div>
 
             </div>
