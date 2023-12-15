@@ -21,10 +21,10 @@ const Home = () => {
                 <div className='flex justify-center content-start flex-col gap-1 '>
                     <div className='flex gap-0 flex-col leading-tight'>
 
-                        <div className='  text-[43px] sm:text-6xl md:text-7xl font-bold text-white '>
+                        <div className='text-[43px] sm:text-6xl md:text-7xl font-bold text-white '>
                             Welcome to
                         </div>
-                        <div className=' text-[43px] sm:text-6xl md:text-7xl text-yellow-600 font-bold'>
+                        <div className='text-[43px] sm:text-6xl md:text-7xl text-yellow-600 font-bold'>
                             Bharat<span className='text-white'>Escrow</span>
                         </div>
                     </div>

@@ -43,7 +43,7 @@ const Footer = () => {
                     <img
                         src={BeImg}
                         className="w-[300px] mr-3 rounded-lg"
-                        alt="Flowbite Logo"
+                        alt=" Logo"
                     />
                 </div>
 

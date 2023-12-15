@@ -57,15 +57,12 @@ const Navbar = () => {
         <section className='navbar '>
             <nav className=" fixed top-0  left-0 right-0  border-gray-200 dark:bg-white-900 border-none py-3 z-50 bg-gradient-to-r from-[#01426a] to-[#096aa6]">
                 <div className="container justify-between flex flex-wrap items-center sm:justify-between mx-auto p-4">
-                    <div className="flex items-center">
+                    <div className="flex items-center w-[200px] h-[80px]">
                         <img
                             src={BeIMg}
-                            className="h-8 mr-3 bg-yellow-600 rounded-lg"
-                            alt="Flowbite Logo"
+                            className="w-[300px] h-[70px] mr-3 bg-yellow-600 rounded-lg"
+                            alt="Logo"
                         />
-                        <Link to="/home" className="self-center text-2xl font-semibold flex-wrap text-yellow-600 font-roboto ">
-                            BHARAT<span className='text-white'>ESCROW</span>
-                        </Link>
                     </div>
 
                     {/* -----End Text ----- */}

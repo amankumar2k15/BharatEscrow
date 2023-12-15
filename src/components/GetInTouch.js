@@ -5,7 +5,7 @@ const GetInTouch = () => {
         <>
             <div className='bg-gray-100 container mb-10 mx-auto py-5 flex  flex-col justify-center items-center'>
 
-                <h1 className=' hoverEffect text-3xl sm:text-4xl md:text-5xl w-96 mb-10 text-center font-bold'>
+                <h1 className=' hoverEffect text-3xl sm:text-4xl md:text-5xl  mb-10 text-center font-bold'>
                     Get in Touch
                 </h1>
 
