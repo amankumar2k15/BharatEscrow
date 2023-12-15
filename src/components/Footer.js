@@ -22,6 +22,10 @@ const Footer = () => {
             text: "Faqs",
         },
         {
+            to: "/blog",
+            text: "Blog",
+        },
+        {
             to: "/contact",
             text: "Contact",
         },
@@ -60,19 +64,15 @@ const Footer = () => {
                             })}
                         </div>
                     </div>
-                    <div className='flex flex-col gap-2 text-xl sm:text-3xl px-2 sm:px-10'>
+                    <div className='flex flex-col gap-4 text-xl sm:text-3xl px-2 sm:px-10'>
                         Information
-                        <div className='flex flex-col gap-0 text-lg sm:text:2xl'>
-                            <p>Terms & Conditions</p>
-                            <a className='hover:text-yellow-600' href='tel:+8368436501'>836-843-6501</a>
+                        <div className='flex flex-col gap-0 text-sm sm:text:2xl'>
+                            {/* <p>Terms & Conditions</p> */}
+                            <a className='hover:text-yellow-600 my-2' href='tel:+8368436501'>836-843-6501</a>
                             <a className='hover:text-yellow-600' href='https://bharat-escrow.netlify.app/'>Info@bharatescrow.com</a>
                         </div>
                     </div>
-                    <div className='flex flex-col gap-2 px-0 sm:px-10'>
-                        <select className='py-4 px-2 rounded-lg bg-yellow-600 border-none  text-white'>
-                            {optionList.map((lang, index) => <option key={index}>{lang}</option>)}
-                        </select>
-                    </div>
+               
                 </div>
 
             </div>
