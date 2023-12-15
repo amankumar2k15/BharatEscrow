@@ -7,6 +7,7 @@ import BuySell from '../pages/BuySell'
 import Faq from '../pages/Faq'
 import Disclaimer from '../pages/Disclaimer'
 import Privacy from '../pages/Privacy'
+import Blog from '../pages/Blog'
 
 const PrivateRoutes = () => {
     const location = useLocation();
@@ -26,6 +27,7 @@ const PrivateRoutes = () => {
                 <Route path='/howitworks' element={<HowItWorks />}></Route>
                 <Route path='/disclaimer' element={<Disclaimer />}></Route>
                 <Route path='/privacy' element={<Privacy />}></Route>
+                <Route path='/blog' element={<Blog />}></Route>
             </Routes>
         </>
     )

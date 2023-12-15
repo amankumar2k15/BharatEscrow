@@ -26,6 +26,10 @@ const Navbar = () => {
             to: "/faqs",
             text: "Faqs"
         },
+        blog: {
+            to: "/blog",
+            text: "Blog"
+        },
         contact: {
             to: "/contact",
             text: "Contact"
