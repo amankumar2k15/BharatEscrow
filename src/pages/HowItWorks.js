@@ -55,7 +55,7 @@ const Section = ({ title, content, image, reversed }) => (
 
 const HowItWorks = () => (
     <section className='howItWork'>
-        <div className='max-w-4xl my-20 flex flex-col mx-auto text-black px-3 '>
+        <div className='max-w-4xl mt-32 flex flex-col mx-auto text-black px-3 '>
             <div className='mt-14 mb-4'>
                 <h1 className=' text-blue-900 font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center font-roboto'>How does BharatEscrow work?</h1>
             </div>
