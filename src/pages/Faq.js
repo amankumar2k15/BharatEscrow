@@ -60,9 +60,9 @@ const Faq = () => {
 
                 {/* Services Section  */}
                 {/* first  */}
-                <div className='flex flex-col py-10 w-full px-10    mx-auto rounded-none  sm:rounded-t-[200px]'>
+                <div className='flex flex-col py-10 w-full px-10 rounded-none  sm:rounded-t-[200px]'>
 
-                    <div className=' mx-auto flex flex-col sm:flex-wrap '>
+                    <div className='flex flex-col sm:flex-wrap '>
                         <h1 className='text-blue-900 font-bold text-xl sm:text-[30px] text-center font-roboto '>
                             FAQ - EscrowPay Services by <div>BharatEscrow.com</div>
                         </h1>
@@ -280,7 +280,7 @@ const Faq = () => {
                             <h2 className='text-xl  sm:text-2xl text-black'>
                                 6. What payment methods are supported by EscrowPay?
                             </h2>
-                            <p className= ' mt-4 text-lg sm:text-xl text-[#211d1d]'>
+                            <p className=' mt-4 text-lg sm:text-xl text-[#211d1d]'>
                                 EscrowPay supports various payment methods, including credit/debit cards, bank transfers, and other electronic payment options. Please check the platform for the available payment methods in your region.
                             </p>
                         </div>

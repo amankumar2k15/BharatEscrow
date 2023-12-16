@@ -34,7 +34,7 @@ const Footer = () => {
             text: "Privacy"
         },
     ]
-    
+
 
     return (
         <section className='footer max-[380px]' >
@@ -50,11 +50,11 @@ const Footer = () => {
                 </div>
 
                 {/* right */}
-                <div className='flex flex-col md:flex-row gap-4 text-white font-bold  '>
+                <div className='flex flex-col md:flex-row gap-4 text-slate-500 md:text-white font-bold  '>
                     {/* <div className='px-0 flex-wrap  flex  gap-10 text-white font-bold '> */}
                     <div className='flex flex-col gap-2 text-2xl sm:text-3xl px-2 sm:px-10'>
                         Resources
-                        <div className='flex flex-col gap-0 text-[16px]  sm:text:2xl text-white '>
+                        <div className='flex flex-col gap-0 text-[16px]  sm:text:2xl '>
                             {linkList.map((links, index) => {
                                 return (
                                     <Link to={links.to} key={index} className='hover:text-blue-600'>{links.text}</Link>
@@ -63,7 +63,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className='flex flex-col gap-4 text-xl sm:text-3xl px-2 sm:px-10'>
-                        Contact with us 
+                        Contact with us
                         <div className='flex flex-col gap-0 text-sm sm:text:2xl'>
                             {/* <p>Terms & Conditions</p> */}
                             <a className='hover:text-blue-600 my-2' href='tel:+8368436501'>Facebook</a>
