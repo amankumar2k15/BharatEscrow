@@ -18,7 +18,7 @@ import Cycle3 from "../assets/buyorsell/cycle3.jpg"
 import Footer from '../components/Footer'
 
 const BuySell = () => {
-    const [selectCategory, setSelectCategory] = useState("domain")
+    const [selectCategory, setSelectCategory] = useState("Domain")
 
     return (
         <>
@@ -28,30 +28,20 @@ const BuySell = () => {
                         BUY OR SELL ITEMS
                     </div>
                     <ul className=' uppercase font-bold text-sm sm:text-md md:text-lg w-full text-center leading-tight mt-5  flex justify-evenly flex-wrap'>
-                        <li className='inline-block text-white transition-all duration-150 ease-in-out  text-blue-900  hover:text-blue-700  cursor-pointer py-3 px-3 '
-                            onClick={() => setSelectCategory("domain")}>
-                            Domain
-                        </li>
-                        <li className=' inline-block text-white transition-all duration-150 ease-in-out  text-blue-900  hover:text-blue-700  cursor-pointer py-3 px-3 '
-                            onClick={() => setSelectCategory("websites")}>
-                            Websites
-                        </li>
-                        <li className='inline-block text-white transition-all duration-150 ease-in-out  text-blue-900  hover:text-blue-700  cursor-pointer py-3 px-3 '
-                            onClick={() => setSelectCategory("carOrTrucks")}>
-                            Car or Trucks
-                        </li>
-                        <li className='inline-block text-white transition-all duration-150 ease-in-out text-blue-900   hover:text-blue-700  cursor-pointer py-3 px-3'
-                            onClick={() => setSelectCategory("gadgets")}>
-                            Gadgets
-                        </li>
-                        <li className='inline-block text-white transition-all duration-150 ease-in-out text-blue-900  hover:text-blue-700  cursor-pointer py-3 px-3'
-                            onClick={() => setSelectCategory("motorcycles")}>
-                            Motorcycles
-                        </li>
+                        {["Domain", "Websites", "Car or Trucks", "Gadgets", "Motorcycles"].map((item) => {
+                            return (
+                                <li className='inline-block text-white transition-all duration-150 ease-in-out  text-blue-900  hover:text-blue-700  cursor-pointer py-3 px-3 '
+                                    onClick={() => setSelectCategory(item)}>
+                                    {item}
+                                </li>
+                            )
+
+                        })}
+
                     </ul>
 
                     <div className='flex flex-wrap flex-shrink justify-between space-y-2 gap-4 px-2  '>
-                        {selectCategory === "domain" && (
+                        {selectCategory === "Domain" && (
                             <>
                                 <Box text={"Web Design"} src={domain1} />
                                 <Box text={"Graphics"} src={domain2} />
@@ -60,7 +50,7 @@ const BuySell = () => {
                         )}
 
 
-                        {selectCategory === "websites" && (
+                        {selectCategory === "Websites" && (
                             <>
                                 <Box text={"Advertising"} src={Websites1} />
                                 <Box text={"Video Content"} src={Websites2} />
@@ -69,7 +59,7 @@ const BuySell = () => {
 
                         )}
 
-                        {selectCategory === "carOrTrucks" && (
+                        {selectCategory === "Car or Trucks" && (
                             <>
                                 <Box text={"Car"} src={Car1} />
                                 <Box text={"Ship"} src={Ship1} />
@@ -78,7 +68,7 @@ const BuySell = () => {
 
                         )}
 
-                        {selectCategory === "gadgets" && (
+                        {selectCategory === "Gadgets" && (
                             <>
                                 <Box text={"Mobile Phones"} src={Gadget1} />
                                 <Box text={"Ear Phones"} src={Gadget2} />
@@ -87,7 +77,7 @@ const BuySell = () => {
 
                         )}
 
-                        {selectCategory === "motorcycles" && (
+                        {selectCategory === "Motorcycles" && (
                             <>
                                 <Box text={"Sell"} src={Cycle1} />
                                 <Box text={"In Stock"} src={Cycle3} />
