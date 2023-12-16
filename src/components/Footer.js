@@ -57,17 +57,29 @@ const Footer = () => {
                         <div className='flex flex-col gap-0 text-[16px]  sm:text:2xl text-white '>
                             {linkList.map((links, index) => {
                                 return (
-                                    <Link to={links.to} key={index} className='hover:text-yellow-600'>{links.text}</Link>
+                                    <Link to={links.to} key={index} className='hover:text-blue-600'>{links.text}</Link>
                                 )
                             })}
+                        </div>
+                    </div>
+                    <div className='flex flex-col gap-4 text-xl sm:text-3xl px-2 sm:px-10'>
+                        Contact with us 
+                        <div className='flex flex-col gap-0 text-sm sm:text:2xl'>
+                            {/* <p>Terms & Conditions</p> */}
+                            <a className='hover:text-blue-600 my-2' href='tel:+8368436501'>Facebook</a>
+                            <a className='hover:text-blue-600 my-2' href='#'>Linkdin</a>
+                            <a className='hover:text-blue-600 my-2' href='#'>Twitter</a>
+                            <a className='hover:text-blue-600 my-2' href='#'>Instagram</a>
+
+
                         </div>
                     </div>
                     <div className='flex flex-col gap-4 text-xl sm:text-3xl px-2 sm:px-10'>
                         Information
                         <div className='flex flex-col gap-0 text-sm sm:text:2xl'>
                             {/* <p>Terms & Conditions</p> */}
-                            <a className='hover:text-yellow-600 my-2' href='tel:+8368436501'>836-843-6501</a>
-                            <a className='hover:text-yellow-600' href='https://bharat-escrow.netlify.app/'>Info@bharatescrow.com</a>
+                            <a className='hover:text-blue-600 my-2' href='tel:+8368436501'>836-843-6501</a>
+                            <a className='hover:text-blue-600' href='https://bharat-escrow.netlify.app/'>Info@bharatescrow.com</a>
                         </div>
                     </div>
 

@@ -32,7 +32,7 @@ const Faq = () => {
             <div className='flex flex-col gap-20'>
 
                 <div className=' mt-20 flex items-end flex-col  gap-4 mx-auto px-4 '>
-                    <h1 className='mt-14  font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center mx-auto font-roboto'>
+                    <h1 className='mt-14 text-blue-900  font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center mx-auto font-roboto'>
                         Frequently Asked Questions
                     </h1>
                     <div className='flex flex-col sm:flex-row gap-8 '>
@@ -60,38 +60,38 @@ const Faq = () => {
 
                 {/* Services Section  */}
                 {/* first  */}
-                <div className='flex flex-col py-10 w-full px-10  bg-gradient-to-r row from-[rgb(1,66,106)] to-[#096aa6]   mx-auto rounded-none  sm:rounded-t-[200px]'>
+                <div className='flex flex-col py-10 w-full px-10    mx-auto rounded-none  sm:rounded-t-[200px]'>
 
                     <div className=' mx-auto flex flex-col sm:flex-wrap '>
-                        <h1 className=' font-bold text-xl sm:text-[30px] text-center font-roboto text-yellow-600'>
+                        <h1 className='text-blue-900 font-bold text-xl sm:text-[30px] text-center font-roboto '>
                             FAQ - EscrowPay Services by <div>BharatEscrow.com</div>
                         </h1>
 
 
-                        <div className='mt-10 flex flex-col gap-10 justify-center items-center'>
+                        <div className='mt-40 flex flex-col gap-10 justify-center items-center'>
                             <div className=' sm:w-8/12 '>
-                                <h2 className='text-xl sm:text-2xl text-[#c4c3c2]'>
+                                <h2 className='text-xl sm:text-2xl text-black'>
                                     1. What is EscrowPay?
                                 </h2>
-                                <p className=' text-lg sm:text-xl text-[#9e9b9b]'>
+                                <p className='mt-5 text-md sm:text-lg text-[#9e9b9b]'>
                                     EscrowPay is a secure and reliable payment service provided by BharatEscrow.com, which acts as a trusted intermediary between freelancers and entities during transactions. It ensures that both parties fulfill their obligations before funds are released.
                                 </p>
                             </div>
 
 
-                            <div className='flex mx-auto w-full justify-center flex-col gap-10 items-center'>
-                                <h2 className='text-xl font-semibold sm:text-[26px] text-center text-white'>
+                            <div className='flex mx-auto w-full justify-center mt-20 flex-col gap-10 items-center'>
+                                <h2 className='text-xl text-blue-900 font-semibold sm:text-[26px] text-center text-white'>
                                     EscrowPay Advantage
                                 </h2>
 
                                 <div className=' flex max-w-4xl justify-center gap-12 flex-wrap '>
 
-                                    <div className='w-56 sm:w-64 h-56 shadow-[#26292e] hover:shadow-yellow-600 shadow-lg rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm mx-auto text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
+                                    <div className='w-56 sm:w-64 h-56 shadow-[#26292e] hover:shadow-blue-600 shadow-lg rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm mx-auto text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
                                         <div className='flex flex-col gap-10'>
                                             <div className=' h-full  flex flex-col justify-center items-center'>
-                                                <div className='relative border-4 hover: border-yellow-600 rounded-full w-28 h-28 realtive'>
+                                                <div className='relative border-4 hover: border-blue-600 rounded-full w-28 h-28 realtive'>
                                                     <p className='absolute top-7 left-7'>
-                                                        <RiAccountCircleLine className='text-yellow-600' size={50} />
+                                                        <RiAccountCircleLine className='text-blue-600' size={50} />
                                                     </p>
                                                 </div>
                                             </div>
@@ -101,12 +101,12 @@ const Faq = () => {
                                         </div>
                                     </div>
 
-                                    <div className='w-56 sm:w-64 h-56 shadow-[#26292e] hover:shadow-yellow-600 shadow-lg rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm mx-auto text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
+                                    <div className='w-56 sm:w-64 h-56 shadow-[#26292e] hover:shadow-blue-600 shadow-lg rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm mx-auto text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
                                         <div className='flex flex-col gap-10'>
                                             <div className=' h-full  flex flex-col justify-center items-center'>
-                                                <div className='relative border-4  border-yellow-600 rounded-full w-28 h-28 realtive'>
+                                                <div className='relative border-4  border-blue-600 rounded-full w-28 h-28 realtive'>
                                                     <p className='absolute top-7 left-7'>
-                                                        <MdOutlineApi className='text-yellow-600' size={50} />
+                                                        <MdOutlineApi className='text-blue-600' size={50} />
                                                     </p>
                                                 </div>
                                             </div>
@@ -116,12 +116,12 @@ const Faq = () => {
                                         </div>
                                     </div>
 
-                                    <div className='w-56 sm:w-64 h-56 shadow-[#26292e] hover:shadow-yellow-600 shadow-lg rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm mx-auto text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
+                                    <div className='w-56 sm:w-64 h-56 shadow-[#26292e] hover:shadow-blue-600 shadow-lg rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm mx-auto text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
                                         <div className='flex flex-col gap-10'>
                                             <div className=' h-full  flex flex-col justify-center items-center'>
-                                                <div className='relative border-4 hover: border-yellow-600 rounded-full w-28 h-28 realtive'>
+                                                <div className='relative border-4 hover: border-blue-600 rounded-full w-28 h-28 realtive'>
                                                     <p className='absolute top-7 left-7'>
-                                                        <BsFillFileEarmarkPostFill className='text-yellow-600' size={50} />
+                                                        <BsFillFileEarmarkPostFill className='text-blue-600' size={50} />
                                                     </p>
                                                 </div>
                                             </div>
@@ -131,12 +131,12 @@ const Faq = () => {
                                         </div>
                                     </div>
 
-                                    <div className='w-56 sm:w-64 h-56 shadow-[#26292e] hover:shadow-yellow-600 shadow-lg rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm mx-auto text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
+                                    <div className='w-56 sm:w-64 h-56 shadow-[#26292e] hover:shadow-blue-600 shadow-lg rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm mx-auto text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
                                         <div className='flex flex-col gap-10'>
                                             <div className=' h-full  flex flex-col justify-center items-center'>
-                                                <div className='relative border-4 hover: border-yellow-600 rounded-full w-28 h-28 realtive'>
+                                                <div className='relative border-4 hover: border-blue-600 rounded-full w-28 h-28 realtive'>
                                                     <p className='absolute top-7 left-7'>
-                                                        <AiFillEye className='text-yellow-600' size={50} />
+                                                        <AiFillEye className='text-blue-600' size={50} />
                                                     </p>
                                                 </div>
                                             </div>
@@ -146,12 +146,12 @@ const Faq = () => {
                                         </div>
                                     </div>
 
-                                    <div className='w-56 sm:w-64 h-56 shadow-[#26292e] hover:shadow-yellow-600 shadow-lg rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm mx-auto text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
+                                    <div className='w-56 sm:w-64 h-56 shadow-[#26292e] hover:shadow-blue-600 shadow-lg rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm mx-auto text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
                                         <div className='flex flex-col gap-10'>
                                             <div className=' h-full  flex flex-col justify-center items-center'>
-                                                <div className='relative border-4 hover: border-yellow-600 rounded-full w-28 h-28 realtive'>
+                                                <div className='relative border-4 hover: border-blue-600 rounded-full w-28 h-28 realtive'>
                                                     <p className='absolute top-7 left-7'>
-                                                        <MdOutlineSecurity className='text-yellow-600' size={50} />
+                                                        <MdOutlineSecurity className='text-blue-600' size={50} />
                                                     </p>
                                                 </div>
                                             </div>
@@ -161,12 +161,12 @@ const Faq = () => {
                                         </div>
                                     </div>
 
-                                    <div className='w-56 sm:w-64 h-56 shadow-[#26292e] hover:shadow-yellow-600 shadow-lg rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm mx-auto text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
+                                    <div className='w-56 sm:w-64 h-56 shadow-[#26292e] hover:shadow-blue-600 shadow-lg rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm mx-auto text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
                                         <div className='flex flex-col gap-10'>
                                             <div className=' h-full  flex flex-col justify-center items-center'>
-                                                <div className='relative border-4 hover: border-yellow-600 rounded-full w-28 h-28 realtive'>
+                                                <div className='relative border-4 hover: border-blue-600 rounded-full w-28 h-28 realtive'>
                                                     <p className='absolute top-7 left-7'>
-                                                        <AiOutlineTransaction className='text-yellow-600' size={50} />
+                                                        <AiOutlineTransaction className='text-blue-600' size={50} />
                                                     </p>
                                                 </div>
                                             </div>
@@ -191,7 +191,7 @@ const Faq = () => {
                             <h2 className='text-xl sm:text-2xl  text-black'>
                                 2. How does EscrowPay work?
                             </h2>
-                            <p className=' text-lg sm:text-xl  text-[#211d1d]'>
+                            <p className=' mt-4 text-lg sm:text-lg  text-[#211d1d]'>
                                 When using EscrowPay, both the freelancer and the entity agree to the terms of service.The entity deposits the agreed-upon funds into an escrow account.The freelancer completes the project or service as per the agreed terms.Once the entity approves the deliverables, the funds are released to the freelancer.If any disputes arise, our team mediates to find a fair resolution.
                             </p>
                         </div>
@@ -214,7 +214,7 @@ const Faq = () => {
                             <h2 className='text-xl sm:text-2xl text-black'>
                                 3. Why should I use EscrowPay for freelancer transactions?
                             </h2>
-                            <p className=' text-lg sm:text-xl text-[#211d1d]'>
+                            <p className=' mt-4 text-lg sm:text-xl text-[#211d1d]'>
                                 EscrowPay provides a secure payment environment, ensuring that freelancers receive payment for their work.It gives entities peace of mind, knowing that funds will only be released when the project is successfully accomplished.EscrowPay reduces the risk of fraudulent activities or non-payment for both parties involved.
                             </p>
                         </div>
@@ -236,14 +236,14 @@ const Faq = () => {
                             <h2 className='text-xl sm:text-2xl text-black'>
                                 4. How do I create an EscrowPay transaction?
                             </h2>
-                            <p className=' text-lg sm:text-xl text-[#211d1d]'>
+                            <p className='  mt-4 text-lg sm:text-xl text-[#211d1d]'>
                                 To create an EscrowPay transaction, you need to register an account on BharatEscrow.com.Once registered, you can initiate a new transaction by providing project details, agreed terms, and the escrow amount.The other party will receive a notification to review and accept the transaction details.
                             </p>
                         </div>
 
 
                         <div className='flex mx-auto w-full justify-center flex-col gap-10 items-center pt-10'>
-                            <Link to="/register" className='text-lg sm:text-2xl flex w-lg sm:max-w-4xl justify-center gap-12 flex-wrap bg-yellow-600  px-10 py-8 sm:px-28 sm:py-8 rounded-[500px] hover:text-yellow-600 hover:bg-[#211d1d] shadow-[#26292e] hover:shadow-yellow-600 shadow-lg  transition-all ease-in-out duration-300 hover:translate-y-5'>
+                            <Link to="/register" className='text-lg sm:text-2xl flex w-lg sm:max-w-4xl justify-center gap-12 flex-wrap bg-blue-600  px-10 py-8 sm:px-28 sm:py-8 rounded-[500px] hover:text-blue-600 hover:bg-[#211d1d] shadow-[#26292e] hover:shadow-blue-600 shadow-lg  transition-all ease-in-out duration-300 hover:translate-y-5'>
                                 REGISTER NOW
                             </Link>
                         </div>
@@ -259,7 +259,7 @@ const Faq = () => {
                             <h2 className='text-xl sm:text-2xl text-black'>
                                 5. Is there a fee for using EscrowPay?
                             </h2>
-                            <p className=' text-lg sm:text-xl text-[#211d1d]'>
+                            <p className=' mt-4 text-lg sm:text-xl text-[#211d1d]'>
                                 Yes, there is a small service fee for using EscrowPay services. The fee percentage may vary based on the transaction amount and other factors. You can find detailed information on our pricing page.
                             </p>
                         </div>
@@ -277,10 +277,10 @@ const Faq = () => {
                 <div className='flex flex-col w-full px-10 bg-white  mx-auto  '>
                     <div className=' flex flex-col gap-10 justify-center items-center '>
                         <div className=' sm:w-8/12   '>
-                            <h2 className='text-xl sm:text-2xl text-black'>
+                            <h2 className='text-xl  sm:text-2xl text-black'>
                                 6. What payment methods are supported by EscrowPay?
                             </h2>
-                            <p className=' text-lg sm:text-xl text-[#211d1d]'>
+                            <p className= ' mt-4 text-lg sm:text-xl text-[#211d1d]'>
                                 EscrowPay supports various payment methods, including credit/debit cards, bank transfers, and other electronic payment options. Please check the platform for the available payment methods in your region.
                             </p>
                         </div>
@@ -301,7 +301,7 @@ const Faq = () => {
                             <h2 className='text-xl sm:text-2xl text-black'>
                                 7. What if there's a dispute during the project?
                             </h2>
-                            <p className=' text-lg sm:text-xl text-[#211d1d]'>
+                            <p className=' mt-4 text-lg sm:text-xl text-[#211d1d]'>
                                 In case of a dispute, both the freelancer and the entity can unveil evidence to support their claims. Our dispute resolution team will review the evidence and work towards a fair resolution.If an agreement cannot be reached, the escrowed funds will remain held until further resolution.
                             </p>
                         </div>
@@ -321,7 +321,7 @@ const Faq = () => {
                             <h2 className='text-xl sm:text-2xl text-black'>
                                 8. Is BharatEscrow.com a reliable platform?
                             </h2>
-                            <p className=' text-lg sm:text-xl text-[#211d1d]'>
+                            <p className=' mt-4 text-lg sm:text-xl text-[#211d1d]'>
                                 BharatEscrow.com is a reputable and trusted platform for escrow services. We prioritize the security of our users' transactions and have implemented various measures to ensure a safe experience.
                             </p>
                         </div>
@@ -341,7 +341,7 @@ const Faq = () => {
                             <h2 className='text-xl sm:text-2xl text-black'>
                                 9. How do I withdraw funds from my EscrowPay account?
                             </h2>
-                            <p className=' text-lg sm:text-xl text-[#211d1d]'>
+                            <p className=' mt-4 text-lg sm:text-xl text-[#211d1d]'>
                                 Once funds are released from escrow, you can withdraw them to your linked bank account or payment method.
                             </p>
                         </div>
