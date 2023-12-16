@@ -1,5 +1,4 @@
 import React from 'react'
-import contactImg from "../assets/contact/contact.jpg"
 import ContactForm from '../components/Form'
 import Footer from '../components/Footer'
 

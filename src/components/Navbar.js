@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, {  useState } from 'react'
 import BeIMg from "../assets/Home/logo.jpg"
 import { Link, useLocation } from 'react-router-dom'
 import { GiHamburgerMenu } from "react-icons/gi"
@@ -6,7 +6,6 @@ import { RxCross2 } from "react-icons/rx"
 
 const Navbar = () => {
     const [hide, setHide] = useState(true)
-    const [user, setUser] = useState(true)
     const location = useLocation();
     const currentPath = location.pathname;
 
@@ -33,23 +32,6 @@ const Navbar = () => {
         }
     }
 
-    const dropdownRef = useRef(null);
-    const profileIconRef = useRef(null);
-
-    useEffect(() => {
-        function handleDocumentClick(event) {
-            if (dropdownRef.current &&
-                !dropdownRef.current.contains(event.target) && !profileIconRef.current.contains(event.target)) {
-                setUser(true);
-            }
-        }
-
-        document.addEventListener('mousedown', handleDocumentClick);
-
-        return () => {
-            document.removeEventListener('mousedown', handleDocumentClick);
-        };
-    }, []);
 
     return (
         <section className='navbar'>
