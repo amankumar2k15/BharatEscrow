@@ -5,34 +5,13 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
 
     const linkList = [
-        {
-            to: "/disclaimer",
-            text: "Disclaimer"
-        },
-        {
-            to: "/Home",
-            text: "Home",
-        },
-        {
-            to: "/howitworks",
-            text: "How it works"
-        },
-        {
-            to: "/faqs",
-            text: "Faqs",
-        },
-        {
-            to: "/blog",
-            text: "Blog",
-        },
-        {
-            to: "/contact",
-            text: "Contact",
-        },
-        {
-            to: "/privacy",
-            text: "Privacy"
-        },
+        { to: "/disclaimer", text: "Disclaimer" },
+        { to: "/Home", text: "Home", },
+        { to: "/howitworks", text: "How it works" },
+        { to: "/faqs", text: "Faqs", },
+        { to: "/blog", text: "Blog", },
+        { to: "/contact", text: "Contact", },
+        { to: "/privacy", text: "Privacy" },
     ]
 
 
@@ -50,7 +29,7 @@ const Footer = () => {
                 </div>
 
                 {/* right */}
-                <div className='flex flex-col md:flex-row gap-4 text-slate-500 md:text-white font-bold  '>
+                <div className='flex flex-col md:flex-row gap-4 text-slate-500 lg:text-white font-bold  '>
                     {/* <div className='px-0 flex-wrap  flex  gap-10 text-white font-bold '> */}
                     <div className='flex flex-col gap-2 text-2xl sm:text-3xl px-2 sm:px-10'>
                         Resources
@@ -86,7 +65,7 @@ const Footer = () => {
                 </div>
 
             </div>
-            <div className='bg-gradient-to-r from-[#fff] to-[#096aa6] text-[#e3e1dc] py-2 text-center '>
+            <div className='bg-gradient-to-r from-[#fff] to-[#096aa6] text-slate-800 md:text-[#e3e1dc] py-2 text-center '>
                 Copyright &copy; 2023 BharatEscrow
             </div>
         </section>

@@ -17,10 +17,9 @@ const Home = () => {
 
     return (
         <section className='home'>
-            <div className='background-image-opacity   h-[652px] m-auto flex justify-center px-8  gap-5 flex-wrap ' >
+            <div className='background-image-opacity h-[652px] m-auto flex justify-center px-8 gap-5 flex-wrap ' >
                 <div className='flex justify-center content-start flex-col gap-1 '>
-                    <div className='flex gap-0 flex-col leading-tight'>
-
+                    <div className='flex gap-0 flex-col leading-tight '>
                         <div className='text-[43px] sm:text-6xl md:text-7xl font-bold text-blue-900 '>
                             Welcome to
                         </div>
@@ -35,7 +34,7 @@ const Home = () => {
             </div>
 
 
-            <div className='flex justify-center  py-6 px-10 gap-2 md:gap-6 flex-wrap md:flex-nowrap ' >
+            <div className='flex justify-center md:py-6 px-4 sm:px-10 gap-2 md:gap-6 flex-wrap md:flex-nowrap ' >
 
                 <div className=' w-full md:w-[320px] h-full md:h-[500px] row from-[hsl(203,98%,21%)] to-[#096aa6] border border-1 border-solid border-black shadow-[#26292e] hover:shadow-black text-white px-8 py-4 rounded-2xl flex gap-2 flex-col transition-all ease-in-out duration-200 sm:hover:-translate-y-2 shadow-lg' >
                     <div className='text-xl sm:text-2xl font-semibold text-blue-900'>

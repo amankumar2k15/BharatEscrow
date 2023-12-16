@@ -6,7 +6,7 @@ const Blog = () => {
   return (
     <>
       <section className='buySell border-y-2 border-white w-full'>
-        <div className=' flex mt-32 md:pb-[30px] font-roboto flex-col gap-5 px-2 ' >
+        <div className=' flex mt-40 md:pb-[30px] font-roboto flex-col gap-5 px-2 ' >
           <div className='font-bold text-3xl sm:text-4xl md:text-5xl mt-8 w-full text-center text-blue-900'>
             Blog
           </div>
