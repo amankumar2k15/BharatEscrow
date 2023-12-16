@@ -8,17 +8,12 @@ const Contact = () => {
     return (
         <>
             <section >
-                <div className='flex flex-col sm:flex-row'>
-                    <div className='relative  md:block'>
-                        <img src={contactImg} alt='contactImg1' />
-                        <p className='uppercase absolute left-20 bottom-16 text-xl sm:text-2xl md:text-5xl'>Contact us</p>
-                    </div>
-                </div>
+           
 
-                <div className='bg-gray-100 container mb-10 mx-auto py-5 flex  flex-col justify-center items-center'>
+                <div className=' mb-10 mx-auto py-5 flex  flex-col justify-center items-center mt-40'>
 
-                    <h1 className='mt-10 sm:mt-0 hoverEffect text-3xl sm:text-4xl md:text-5xl w-96 mb-10 text-center font-bold'>
-                        Get in Touch
+                    <h1 className='mt-10  text-blue-900 sm:mt-0 hoverEffect text-3xl sm:text-4xl md:text-5xl w-96 mb-10 text-center font-bold'>
+                       Contact Us
                     </h1>
 
                     <div className='py-5 flex flex-col sm:flex-row justify-center gap-24 w-full sm:flex-wrap items-center'>
@@ -30,7 +25,7 @@ const Contact = () => {
                             allowFullScreen=""
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
-                            className=' h-[300px] w-full px-4 md:w-[400px]'
+                            className=' h-[300px] w-full px-4 md:w-[600px]'
                         />
 
 

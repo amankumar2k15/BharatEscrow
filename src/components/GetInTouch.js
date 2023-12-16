@@ -3,9 +3,9 @@ import React from 'react'
 const GetInTouch = () => {
     return (
         <>
-            <div className='bg-gray-100 container mb-10 mx-auto py-5 flex  flex-col justify-center items-center'>
+            <div className='bg-white  mb-10 mx-auto py-5 flex  flex-col justify-center items-center'>
 
-                <h1 className=' hoverEffect text-3xl sm:text-4xl md:text-5xl  mb-10 text-center font-bold'>
+                <h1 className='text-blue-900 hoverEffect text-3xl sm:text-4xl md:text-5xl  mb-10 text-center font-bold'>
                     Get in Touch
                 </h1>
 
@@ -18,7 +18,7 @@ const GetInTouch = () => {
                         allowFullScreen=""
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
-                        className=' h-[300px] w-full px-4 md:w-[400px]'
+                        className=' h-[300px] w-full px-4 md:w-[600px]'
                     />
 
 
@@ -26,8 +26,8 @@ const GetInTouch = () => {
                     {/* right  */}
                     <div className='w-full  sm:w-[400px] px-4 sm:px-0 h-[200px] gap-5'>
                         <div className='flex flex-col gap-5'>
-                            <div className='text-3xl  font-bold text-black'>Head office</div>
-                            <p className='text-xl text-[#000]'>E596, 4 floor, Daani plaza, Ramphal chowk, sector 7, Dwarka, New Delhi 110077</p>
+                            <div className='text-2xl text-bold text-blue-900'>Head office</div>
+                            <p className='text-l text-[#000]'>E596, 4 floor, Daani plaza, Ramphal chowk, sector 7, Dwarka, New Delhi 110077</p>
                         </div>
                         <div>
                             <span>Phone :</span> <a href='tel:+8368436501'>8368436501 </a> <br />
