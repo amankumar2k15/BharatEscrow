@@ -20,6 +20,100 @@ import Footer from '../components/Footer'
 const BuySell = () => {
     const [selectCategory, setSelectCategory] = useState("Domain")
 
+    const categoryData  = [
+        {
+            id : 0,
+            title : "Web Design",
+            img :  domain1,
+            category  : "Domain"
+        },
+        {
+            id : 2,
+            title : "Graphics",
+            img :  domain2,
+            category  : "Domain"
+        },
+        {
+            id : 3,
+            title : "Logo Design",
+            img :  domain2,
+            category  : "Domain"
+        },
+        {
+            id : 4,
+            title : "Advertising",
+            img :  Websites1,
+            category  : "Websites"
+        },
+        {
+            id : 5,
+            title : "Video Content",
+            img :  Websites2,
+            category  : "Websites"
+        },
+        {
+            id : 6,
+            title : "Viral Tweet",
+            img :  Websites3,
+            category  : "Websites"
+        },
+        {
+            id : 7,
+            title : "Car",
+            img :  Car1,
+            category  : "Car or Trucks"
+        },
+        {
+            id : 8,
+            title : "Ship",
+            img :  Ship1,
+            category  : "Car or Trucks"
+        },
+        {
+            id : 9,
+            title : "Truck",
+            img :  Truck1,
+            category  : "Car or Trucks"
+        },
+        {
+            id : 10,
+            title : "Mobile Phones",
+            img :  Gadget1,
+            category  : "Gadgets"
+        },
+        {
+            id : 11,
+            title : "Ear Phones",
+            img :  Gadget2,
+            category  : "Gadgets"
+        },
+        {
+            id : 12,
+            title : "Head Phones",
+            img :  Gadget3,
+            category  : "Gadgets"
+        },
+        {
+            id : 10,
+            title : "Sell",
+            img :  Cycle1,
+            category  : "Motorcycles"
+        },
+        {
+            id : 11,
+            title : "In Stock",
+            img :  Cycle2,
+            category  : "Motorcycles"
+        },
+        {
+            id : 12,
+            title : "Buy",
+            img :  Cycle3,
+            category  : "Motorcycles"
+        },
+        
+    ]
+
     return (
         <>
             <section className='buySell my-4 border-y-2 border-white'>
@@ -30,62 +124,21 @@ const BuySell = () => {
                     <ul className=' uppercase font-bold text-sm sm:text-md md:text-lg w-full text-center leading-tight mt-5  flex justify-evenly flex-wrap'>
                         {["Domain", "Websites", "Car or Trucks", "Gadgets", "Motorcycles"].map((item) => {
                             return (
-                                <li className='inline-block text-white transition-all duration-150 ease-in-out  text-blue-900  hover:text-blue-700  cursor-pointer py-3 px-3 '
+                                <li className='inline-block  transition-all duration-150 ease-in-out  text-blue-900  hover:text-blue-700  cursor-pointer py-3 px-3 '
                                     onClick={() => setSelectCategory(item)}>
                                     {item}
                                 </li>
                             )
-
                         })}
-
                     </ul>
-
                     <div className='flex flex-wrap flex-shrink justify-between space-y-2 gap-4 px-2  '>
-                        {selectCategory === "Domain" && (
-                            <>
-                                <Box text={"Web Design"} src={domain1} />
-                                <Box text={"Graphics"} src={domain2} />
-                                <Box text={"Logo Design"} src={domain3} />
-                            </>
-                        )}
-
-
-                        {selectCategory === "Websites" && (
-                            <>
-                                <Box text={"Advertising"} src={Websites1} />
-                                <Box text={"Video Content"} src={Websites2} />
-                                <Box text={"Viral Tweet"} src={Websites3} />
-                            </>
-
-                        )}
-
-                        {selectCategory === "Car or Trucks" && (
-                            <>
-                                <Box text={"Car"} src={Car1} />
-                                <Box text={"Ship"} src={Ship1} />
-                                <Box text={"Truck"} src={Truck1} />
-                            </>
-
-                        )}
-
-                        {selectCategory === "Gadgets" && (
-                            <>
-                                <Box text={"Mobile Phones"} src={Gadget1} />
-                                <Box text={"Ear Phones"} src={Gadget2} />
-                                <Box text={"Head Phones"} src={Gadget3} />
-                            </>
-
-                        )}
-
-                        {selectCategory === "Motorcycles" && (
-                            <>
-                                <Box text={"Sell"} src={Cycle1} />
-                                <Box text={"In Stock"} src={Cycle3} />
-                                <Box text={"Buy"} src={Cycle2} />
-                            </>
-
-                        )}
-
+                        {
+                            categoryData.filter((item)=>item.category === selectCategory ).map((item)=>{
+                                return (
+                                    <Box text={item.title} src={item.img} />
+                                )
+                            })
+                        }
                     </div>
                 </div>
             </section>
