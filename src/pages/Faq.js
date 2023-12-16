@@ -32,7 +32,7 @@ const Faq = () => {
             <div className='flex flex-col gap-20'>
 
                 <div className=' mt-20 flex items-end flex-col  gap-4 mx-auto px-4 '>
-                    <h1 className='mt-14 text-blue-900  font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center mx-auto font-roboto'>
+                    <h1 className='mt-14  text-blue-900  font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center mx-auto font-roboto'>
                         Frequently Asked Questions
                     </h1>
                     <div className='flex flex-col sm:flex-row gap-8 '>

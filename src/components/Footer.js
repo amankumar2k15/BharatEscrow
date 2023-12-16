@@ -67,9 +67,9 @@ const Footer = () => {
                         <div className='flex flex-col gap-0 text-sm sm:text:2xl'>
                             {/* <p>Terms & Conditions</p> */}
                             <a className='hover:text-blue-600 my-2' href='tel:+8368436501'>Facebook</a>
-                            <a className='hover:text-blue-600 my-2' href='#'>Linkdin</a>
-                            <a className='hover:text-blue-600 my-2' href='#'>Twitter</a>
-                            <a className='hover:text-blue-600 my-2' href='#'>Instagram</a>
+                            <a className='hover:text-blue-600 my-2' href='https://bharat-escrow.netlify.app/'>Linkdin</a>
+                            <a className='hover:text-blue-600 my-2' href='https://bharat-escrow.netlify.app/'>Twitter</a>
+                            <a className='hover:text-blue-600 my-2' href='https://bharat-escrow.netlify.app/'>Instagram</a>
 
 
                         </div>
