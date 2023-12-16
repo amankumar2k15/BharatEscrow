@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactForm = () => {
 
-    
+
     return (
         <>
             <form action='https://formspree.io/f/myyqnjdz' method='POST'>
@@ -12,8 +12,8 @@ const ContactForm = () => {
                         name="Email :-"
                         id="floating_email"
                         className="block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                        placeholder=" "
-                        required=""
+                        placeholder=""
+                        required
                     />
                     <label
                         htmlFor="floating_email"
@@ -32,7 +32,7 @@ const ContactForm = () => {
                             id="floating_first_name"
                             className="block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                             placeholder=" "
-                            required=""
+                            required
                         />
                         <label
                             htmlFor="floating_first_name"
@@ -48,7 +48,7 @@ const ContactForm = () => {
                             id="floating_phone"
                             className="block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                             placeholder=" "
-                            required=""
+                            required
                         />
                         <label
                             htmlFor="floating_phone"
@@ -67,7 +67,7 @@ const ContactForm = () => {
                             id="Textarea"
                             className="block py-2.5 px-0 w-full text-sm text-black bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                             placeholder=" "
-                            required=""
+                            required
                         />
                         <label
                             htmlFor="Textarea"

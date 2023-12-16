@@ -7,12 +7,11 @@ const Contact = () => {
     return (
         <>
             <section >
-           
 
                 <div className=' mb-10 mx-auto py-5 flex  flex-col justify-center items-center mt-40'>
 
-                    <h1 className='mt-10  text-blue-900 sm:mt-0 hoverEffect text-3xl sm:text-4xl md:text-5xl w-96 mb-10 text-center font-bold'>
-                       Contact Us
+                    <h1 className='mt-10  text-blue-900 sm:mt-0 hoverEffect text-3xl sm:text-4xl md:text-5xl mb-10 text-center font-bold'>
+                        Contact Us
                     </h1>
 
                     <div className='py-5 flex flex-col sm:flex-row justify-center gap-24 w-full sm:flex-wrap items-center'>
