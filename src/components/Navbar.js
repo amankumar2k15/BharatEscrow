@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import BeIMg from "../assets/Home/logo.jpg"
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { GiHamburgerMenu } from "react-icons/gi"
 import { RxCross2 } from "react-icons/rx"
 
 const Navbar = () => {
+    const navigate  =  useNavigate()
     const [hide, setHide] = useState(true)
     const location = useLocation();
     const currentPath = location.pathname;
@@ -37,10 +38,11 @@ const Navbar = () => {
         <section className='navbar'>
             <nav className=" fixed top-0 left-0 right-0 border-gray-200 dark:bg-white-900 border-none py-0 z-50 bg-gradient-to-r from-[#fff] to-[#096aa6]">
                 <div className="container justify-between flex flex-wrap items-center sm:justify-between p-4">
-                    <div className="flex items-center w-[200px] h-[80px]">
+                    <div className="flex items-center w-[200px] h-[40px]">
                         <img
+                        onClick={()=>navigate('/')}
                             src={BeIMg}
-                            className="w-[300px] h-[70px] mr-3 rounded-lg"
+                            className="w-[200px] h-[50px] mr-3 rounded-lg cursor-pointer" 
                             alt="Logo"
                         />
                     </div>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import Contact from '../pages/Contact'
 import HowItWorks from '../pages/HowItWorks'
@@ -8,9 +8,11 @@ import Faq from '../pages/Faq'
 import Disclaimer from '../pages/Disclaimer'
 import Privacy from '../pages/Privacy'
 import Blog from '../pages/Blog'
+import DetailBlog from '../pages/DetailBlog'
 
 const PrivateRoutes = () => {
     const location = useLocation();
+    const [detailRoutes , setDetailRoutes] = useState( { route : null , data : null})
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -27,7 +29,9 @@ const PrivateRoutes = () => {
                 <Route path='/howitworks' element={<HowItWorks />}></Route>
                 <Route path='/disclaimer' element={<Disclaimer />}></Route>
                 <Route path='/privacy' element={<Privacy />}></Route>
-                <Route path='/blog' element={<Blog />}></Route>
+                <Route path='/blog' element={<Blog setDetailRoutes={setDetailRoutes} />}></Route>
+                <Route path={`/${detailRoutes.route}`} element={<DetailBlog data={detailRoutes}  />}></Route>
+
             </Routes>
         </>
     )
