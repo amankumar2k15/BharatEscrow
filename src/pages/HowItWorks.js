@@ -43,11 +43,11 @@ const sections = [
 
 const Section = ({ title, content, image, reversed }) => (
     <div className={`flex flex-col justify-center items-center ${reversed ? "sm:flex-row-reverse" : "sm:flex-row"} sm:flex-wrap sm:justify-evenly`}>
-        <div className='flex flex-col justify-center gap-4 mb-8 w-11/12 sm:w-[300px] md:w-[400px] mx-1 px-4 sm:px-0'>
+        <div className='flex flex-col justify-center gap-4 mb-8 w-11/12 sm:w-[300px] md:w-[400px] mx-2 px-6 sm:px-0'>
             <h2 className='text-lg font-semibold sm:text-xl md:text-2xl underline text-blue-900'>{title}</h2>
             <h3 className='text-justify'>{content}</h3>
         </div>
-        <div className=' w-11/12 sm:w-[300px] md:w-[450px] h-[300px] md:h-[400px] px-5 sm:px-0'>
+        <div className=' w-11/12 sm:w-[300px] md:w-[450px] h-[250px] md:h-[400px] px-5 sm:px-0'>
             <img className='object-cover w-full h-full' src={image} alt={title} />
         </div>
     </div>
