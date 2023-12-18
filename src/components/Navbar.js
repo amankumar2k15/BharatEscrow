@@ -5,7 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi"
 import { RxCross2 } from "react-icons/rx"
 
 const Navbar = () => {
-    const navigate  =  useNavigate()
+    const navigate = useNavigate()
     const [hide, setHide] = useState(true)
     const location = useLocation();
     const currentPath = location.pathname;
@@ -36,13 +36,14 @@ const Navbar = () => {
 
     return (
         <section className='navbar'>
+
             <nav className=" fixed top-0 left-0 right-0 border-gray-200 dark:bg-white-900 border-none py-0 z-50 bg-gradient-to-r from-[#fff] to-[#096aa6]">
-                <div className="container justify-between flex flex-wrap items-center sm:justify-between p-4">
+                <div className="flex justify-between  flex-wrap items-center sm:justify-between p-4">
                     <div className="flex items-center w-[200px] h-[40px]">
                         <img
-                        onClick={()=>navigate('/')}
+                            onClick={() => navigate('/')}
                             src={BeIMg}
-                            className="w-[200px] h-[50px] mr-3 rounded-lg cursor-pointer" 
+                            className="w-[200px] h-[50px] mr-3 rounded-lg cursor-pointer"
                             alt="Logo"
                         />
                     </div>

@@ -113,7 +113,7 @@ const Home = () => {
                 </div>
 
                 <div className='flex flex-wrap flex-shrink justify-between space-y-2 gap-4 px-2  '>
-                    {INDUSTRIESData.map((item) => <Box text={item.title} src={item.image} />)}
+                    {INDUSTRIESData.map((item) => <Box text={item.title} key={item.id} src={item.image} />)}
 
 
                 </div>

@@ -12,7 +12,6 @@ import paymentImg from "../assets/Faqs/payment.jpg"
 import disputeImg from "../assets/Faqs/dispute.jpg"
 import reliablePlatformImg from "../assets/Faqs/reliablePlatform.jpg"
 import Footer from '../components/Footer'
-import { Link } from 'react-router-dom'
 
 
 const FAQItem = ({ question, answer }) => (
@@ -241,12 +240,19 @@ const Faq = () => {
                             </p>
                         </div>
 
+                   
 
-                        <div className='flex mx-auto w-full justify-center flex-col gap-10 items-center pt-10'>
-                            <Link to="/register" className='text-lg sm:text-2xl flex w-lg sm:max-w-4xl justify-center gap-12 flex-wrap bg-blue-600  px-10 py-8 sm:px-28 sm:py-8 rounded-[500px] hover:text-blue-600 hover:bg-[#211d1d] shadow-[#26292e] hover:shadow-blue-600 shadow-lg  transition-all ease-in-out duration-300 hover:translate-y-5'>
-                                REGISTER NOW
-                            </Link>
-                        </div>
+                    </div>
+                </div>
+
+                <div className='flex flex-col w-full px-10   bg-white  mx-auto  '>
+                    <div className='py-4 flex flex-col gap-10 justify-center items-center '>
+                     
+
+                        <button class="bg-blue-500 width-[200px] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full   hover:bg-[#211d1d] shadow-[#26292e] hover:shadow-blue-600 shadow-lg  transition-all ease-in-out duration-300 hover:translate-y-3">
+                        REGISTER NOW
+                        </button>
+                       
 
                     </div>
                 </div>
