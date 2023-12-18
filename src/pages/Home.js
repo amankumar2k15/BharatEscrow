@@ -27,17 +27,17 @@ const Home = () => {
         },
         {
             id: 2,
-            title: "DIGITAL SERVICES",
+            title: "DIGITAL",
             image: domain3
         },
         {
             id: 3,
-            title: "FREELANCER SERVICE",
+            title: "FREELANCER ",
             image: Websites1
         },
         {
             id: 4,
-            title: "PROPERTY DEALING SERVICE",
+            title: "PROPERTY DEALING ",
             image: Websites2
         },
         {
@@ -111,17 +111,12 @@ const Home = () => {
                 <div className='font-bold uppercase mb-10 text-3xl sm:text-4xl md:text-5xl mt-8 sm:mt-0 w-full text-center text-blue-900'>
                     Industries we serve
                 </div>
-
                 <div className='flex flex-wrap flex-shrink justify-between space-y-2 gap-4 px-2  '>
                     {INDUSTRIESData.map((item) => <Box text={item.title} key={item.id} src={item.image} />)}
-
-
                 </div>
             </div>
             {/* --Third section end-- */}
-
             <Footer />
-
         </section>
     )
 }

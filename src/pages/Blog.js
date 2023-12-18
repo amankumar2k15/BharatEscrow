@@ -69,10 +69,11 @@ const Blog = ({ setDetailRoutes }) => {
 
 
   const handleSetRoutes = (item) => {
+    const routeCal = item?.title?.split(' ').map((item)=>`${item.charAt(0).toUpperCase()}${item.slice(1,item.length)}`).join(" ").replaceAll(' ' , "-")
     localStorage.setItem("detailItem", JSON.stringify(item))
-    localStorage.setItem("detailRoute", item?.title?.split(' ').map((item)=>`${item.charAt(0).toUpperCase()}${item.slice(1,item.length)}`).join(" ").replaceAll(' ' , "-"))
-    setDetailRoutes({ route: item?.title?.split(' ').map((item)=>`${item.charAt(0).toUpperCase()}${item.slice(1,item.length)}`).join(" ").replaceAll(' ' , "-"), data: item })
-    navigate(`/${item?.title?.split(' ').map((item)=>`${item.charAt(0).toUpperCase()}${item.slice(1,item.length)}`).join(" ").replaceAll(' ' , "-")}`)
+    localStorage.setItem("detailRoute", routeCal )
+    setDetailRoutes({ route: routeCal})
+    navigate(`/${routeCal}`)
   }
 
   return (

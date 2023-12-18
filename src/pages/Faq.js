@@ -62,6 +62,92 @@ const worksItems = [
     }
 ]
 
+const FAQQuestions = [
+    {
+        id: 0,
+        question: "3. Why should I use Escrow for freelancer transactions?",
+        answer: "Escrow provides a secure payment environment, ensuring that freelancers receive payment for their work.It gives entities peace of mind, knowing that funds will only be released when the project is successfully accomplished.Escrow reduces the risk of fraudulent activities or non-payment for both parties involved.",
+        img: buySell
+    },
+    {
+        id: 1,
+        question: "4. How do I create an Escrow transaction?",
+        answer: "To create an Escrow transaction, you need to register an account on BharatEscrow.com.Once registered, you can initiate a new transaction by providing project details, agreed terms, and the escrow amount.The other party will receive a notification to review and accept the transaction details.",
+        img: null
+    },
+    {
+        id: 2,
+        question: "5. Is there a fee for using Escrow?",
+        answer: " Yes, there is a small service fee for using Escrow services. The fee percentage may vary based on the transaction amount and other factors. You can find detailed information on our pricing page.",
+        img: fees
+    },
+    {
+        id: 3,
+        question: "6. What payment methods are supported by Escrow?",
+        answer: " Yes, there is a small service fee for using Escrow services. The fee percentage may vary based on the transaction amount and other factors. You can find detailed information on our pricing page.",
+        img: paymentImg
+    },
+    {
+        id: 4,
+        question: "7. What if there's a dispute during the project?",
+        answer: " In case of a dispute, both the freelancer and the entity can unveil evidence to support their claims. Our dispute resolution team will review the evidence and work towards a fair resolution.If an agreement cannot be reached, the escrowed funds will remain held until further resolution.",
+        img: disputeImg
+    }
+    ,
+    {
+        id: 5,
+        question: "8. Is BharatEscrow.com a reliable platform?",
+        answer: "BharatEscrow.com is a reputable and trusted platform for escrow services. We prioritize the security of our users' transactions and have implemented various measures to ensure a safe experience.",
+        img: reliablePlatformImg
+    },
+    {
+        id: 6,
+        question: "9. How do I withdraw funds from my Escrow account?",
+        answer: " Once funds are released from escrow, you can withdraw them to your linked bank account or payment method.",
+        img: disputeImg
+    }
+]
+
+const EscrowAdvantage = [
+    {
+        id: 0,
+        icon :  <RiAccountCircleLine className='text-blue-600' size={50} />,
+        advantage : " Open digital escrow account within minutes"
+
+    },
+    {
+        id: 1,
+        icon :  <MdOutlineApi className='text-blue-600' size={50} />,
+        advantage : "Freedom of choice-APIs or white labelled dashboards"
+
+    },
+    {
+        id: 2,
+        icon :  <BsFillFileEarmarkPostFill className='text-blue-600' size={50} />,
+        advantage : "Easily accessible digital contracts"
+
+    },
+    {
+        id: 3,
+        icon :     <AiFillEye className='text-blue-600' size={50} />,
+        advantage : " Cut the unpredictability and unwanted surprises"
+
+    },
+    {
+        id: 4,
+        icon :     <MdOutlineSecurity className='text-blue-600' size={50} />,
+        advantage : "Add the extra layer of trust and transparency"
+
+    },
+    {
+        id: 5,
+        icon :        <AiOutlineTransaction className='text-blue-600' size={50} />,
+        advantage : "  Customised to your transaction flows"
+
+    }
+]
+
+
 const Faq = () => {
 
     return (
@@ -119,96 +205,29 @@ const Faq = () => {
                                 </h2>
 
                                 <div className=' flex max-w-4xl justify-center gap-12 flex-wrap '>
-
-                                    <div className=' w-56 sm:w-64 h-56 shadow-[#26292e] hover:shadow-blue-600 shadow-xl black rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm  text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
-                                        <div className='flex flex-col gap-4'>
-                                            <div className=' h-full flex flex-col justify-center items-center'>
-                                                <div className='relative border-4 border-blue-600 pt-4 rounded-full w-28 h-28 realtive'>
-                                                    <p className='absolute top-7 left-7'>
-                                                        <RiAccountCircleLine className='text-blue-600' size={50} />
-                                                    </p>
+                                    {
+                                        EscrowAdvantage.map((item)=>{
+                                            return (
+                                                <div key={item.id} className='w-56 sm:w-64 h-56 shadow-[#9aa2af] hover:shadow-blue-600 shadow-xl black rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm  text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
+                                                <div className='flex flex-col gap-4'>
+                                                    <div className=' h-full flex flex-col justify-center items-center'>
+                                                        <div className='relative border-4 border-blue-600 pt-4 rounded-full w-28 h-28 realtive'>
+                                                            <p className='absolute top-7 left-7'>
+                                                               {item.icon}
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <h2 className='text-center text-lg px-2 text-black '>
+                                                       {item.advantage}
+                                                    </h2>
                                                 </div>
                                             </div>
-                                            <h2 className='text-center text-lg px-2 text-black '>
-                                                Open digital escrow account within minutes
-                                            </h2>
-                                        </div>
-                                    </div>
+                                            )
+                                        })
+                                    }
+                                
 
-                                    <div className='w-56 sm:w-64 h-56 shadow-[#26292e] hover:shadow-blue-600 shadow-lg rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm  text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
-                                        <div className='flex flex-col gap-10'>
-                                            <div className=' h-full  flex flex-col justify-center items-center'>
-                                                <div className='relative border-4  border-blue-600 rounded-full w-28 h-28 realtive'>
-                                                    <p className='absolute top-7 left-7'>
-                                                        <MdOutlineApi className='text-blue-600' size={50} />
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <h2 className='text-center text-lg px-2 text-black'>
-                                                Freedom of choice-APIs or white labelled dashboards
-                                            </h2>
-                                        </div>
-                                    </div>
-
-                                    <div className='w-56 sm:w-64 h-56 shadow-[#26292e] hover:shadow-blue-600 shadow-lg rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm  text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
-                                        <div className='flex flex-col gap-10'>
-                                            <div className=' h-full  flex flex-col justify-center items-center'>
-                                                <div className='relative border-4 hover: border-blue-600 rounded-full w-28 h-28 realtive'>
-                                                    <p className='absolute top-7 left-7'>
-                                                        <BsFillFileEarmarkPostFill className='text-blue-600' size={50} />
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <h2 className='text-center text-lg px-2 text-black'>
-                                                Easily accessible digital contracts
-                                            </h2>
-                                        </div>
-                                    </div>
-
-                                    <div className='w-56 sm:w-64 h-56 shadow-[#26292e] hover:shadow-blue-600 shadow-lg rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm  text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
-                                        <div className='flex flex-col gap-10'>
-                                            <div className=' h-full  flex flex-col justify-center items-center'>
-                                                <div className='relative border-4 hover: border-blue-600 rounded-full w-28 h-28 realtive'>
-                                                    <p className='absolute top-7 left-7'>
-                                                        <AiFillEye className='text-blue-600' size={50} />
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <h2 className='text-center text-lg px-2 text-black'>
-                                                Cut the unpredictability and unwanted surprises
-                                            </h2>
-                                        </div>
-                                    </div>
-
-                                    <div className='w-56 sm:w-64 h-56 shadow-[#26292e] hover:shadow-blue-600 shadow-lg rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm  text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
-                                        <div className='flex flex-col gap-10'>
-                                            <div className=' h-full  flex flex-col justify-center items-center'>
-                                                <div className='relative border-4 hover: border-blue-600 rounded-full w-28 h-28 realtive'>
-                                                    <p className='absolute top-7 left-7'>
-                                                        <MdOutlineSecurity className='text-blue-600' size={50} />
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <h2 className='text-center text-lg px-2 text-black'>
-                                                Add the extra layer of trust and transparency
-                                            </h2>
-                                        </div>
-                                    </div>
-
-                                    <div className='w-56 sm:w-64 h-56 shadow-[#26292e] hover:shadow-blue-600 shadow-lg rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm  text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
-                                        <div className='flex flex-col gap-10'>
-                                            <div className=' h-full  flex flex-col justify-center items-center'>
-                                                <div className='relative border-4 hover: border-blue-600 rounded-full w-28 h-28 realtive'>
-                                                    <p className='absolute top-7 left-7'>
-                                                        <AiOutlineTransaction className='text-blue-600' size={50} />
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <h2 className='text-center text-lg px-2 text-black'>
-                                                Customised to your transaction flows
-                                            </h2>
-                                        </div>
-                                    </div>
+                                 
 
                                 </div>
                             </div>
@@ -233,7 +252,6 @@ const Faq = () => {
 
                         <div className='flex  w-full justify-center flex-col gap-10 items-center'>
                             <div className=' flex max-w-4xl justify-center gap-12 flex-wrap '>
-                                <img src={workImg} alt='workImg' />
                                 <div className='w-[300px] text-center'>
                                     <h3 className='text-xl uppercase font-medium'>How it works</h3>
                                     <h2 className='text-3xl font-bold '>4 Easy Steps</h2>
@@ -269,44 +287,7 @@ const Faq = () => {
                     </div>
                 </div>
 
-                {/* third  */}
-                <div className='flex flex-col w-full px-10  bg-white    '>
-                    <div className='pt-14 flex flex-col gap-10 justify-center items-center '>
-                        <div className=' sm:w-8/12   '>
-                            <h2 className='text-xl sm:text-2xl text-black'>
-                                3. Why should I use Escrow for freelancer transactions?
-                            </h2>
-                            <p className=' mt-4 text-lg sm:text-xl text-[#211d1d]'>
-                                Escrow provides a secure payment environment, ensuring that freelancers receive payment for their work.It gives entities peace of mind, knowing that funds will only be released when the project is successfully accomplished.Escrow reduces the risk of fraudulent activities or non-payment for both parties involved.
-                            </p>
-                        </div>
 
-
-                        <div className='flex  w-full justify-center flex-col gap-10 items-center'>
-                            <div className=' flex max-w-4xl justify-center gap-12 flex-wrap '>
-                                <img className='sm:max-w-xl' src={buySell} alt='workImg' />
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                {/* fourth  */}
-                <div className='flex flex-col w-full px-10  pt-10 bg-white  '>
-                    <div className='py-4 flex flex-col gap-10 justify-center items-center '>
-                        <div className=' sm:w-8/12   '>
-                            <h2 className='text-xl sm:text-2xl text-black'>
-                                4. How do I create an Escrow transaction?
-                            </h2>
-                            <p className='  mt-4 text-lg sm:text-xl text-[#211d1d]'>
-                                To create an Escrow transaction, you need to register an account on BharatEscrow.com.Once registered, you can initiate a new transaction by providing project details, agreed terms, and the escrow amount.The other party will receive a notification to review and accept the transaction details.
-                            </p>
-                        </div>
-
-
-
-                    </div>
-                </div>
 
                 <div className='flex flex-col w-full px-10   bg-white  '>
                     <div className='py-4 flex flex-col gap-10 justify-center items-center '>
@@ -320,108 +301,35 @@ const Faq = () => {
                     </div>
                 </div>
 
-
-                {/* fifth  */}
-                <div className='flex flex-col w-full px-10 bg-white    '>
-                    <div className=' flex flex-col gap-10 justify-center items-center '>
-                        <div className=' sm:w-8/12   '>
-                            <h2 className='text-xl sm:text-2xl text-black'>
-                                5. Is there a fee for using Escrow?
-                            </h2>
-                            <p className=' mt-4 text-lg sm:text-xl text-[#211d1d]'>
-                                Yes, there is a small service fee for using Escrow services. The fee percentage may vary based on the transaction amount and other factors. You can find detailed information on our pricing page.
-                            </p>
-                        </div>
-
-                        <div className='flex  w-full justify-center flex-col gap-10 items-center'>
-                            <div className=' flex w-lg max-w-4xl justify-center gap-12 flex-wrap '>
-                                <img className='sm:max-w-lg object-cover' src={fees} alt='workImg' />
+                {
+                    FAQQuestions.map((item) => {
+                        return (
+                            <div className='flex flex-col w-full px-10  bg-white ' key={item.id}>
+                                <div className='pt-14 flex flex-col gap-10 justify-center items-center '>
+                                    <div className=' sm:w-8/12   '>
+                                        <h2 className='text-xl sm:text-2xl text-black'>
+                                            {item.question}
+                                        </h2>
+                                        <p className=' mt-4 text-lg sm:text-xl text-[#211d1d]'>
+                                            {item.answer}
+                                        </p>
+                                    </div>
+                                    <div className='flex  w-full justify-center flex-col gap-10 items-center'>
+                                        {
+                                           item?.img != null &&  <div className=' flex max-w-4xl justify-center gap-12 flex-wrap '>
+                                           <img className='sm:max-w-xl h-60' src={item?.img} alt={item.question} />
+                                       </div>
+                                        }
+                                       
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        )
+                    })
+                }
 
-                    </div>
-                </div>
 
-                {/* sixth  */}
-                <div className='flex flex-col w-full px-10 bg-white    '>
-                    <div className=' flex flex-col gap-10 justify-center items-center '>
-                        <div className=' sm:w-8/12   '>
-                            <h2 className='text-xl  sm:text-2xl text-black'>
-                                6. What payment methods are supported by Escrow?
-                            </h2>
-                            <p className=' mt-4 text-lg sm:text-xl text-[#211d1d]'>
-                                Escrow supports various payment methods, including credit/debit cards, bank transfers, and other electronic payment options. Please check the platform for the available payment methods in your region.
-                            </p>
-                        </div>
 
-                        <div className='flex  w-full justify-center flex-col gap-10 items-center'>
-                            <div className=' flex w-lg max-w-4xl justify-center gap-12 flex-wrap '>
-                                <img className='sm:max-w-lg object-cover' src={paymentImg} alt='workImg' />
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                {/* seventh  */}
-                <div className='flex flex-col w-full px-10 bg-white    '>
-                    <div className=' flex flex-col gap-10 justify-center items-center '>
-                        <div className=' sm:w-8/12   '>
-                            <h2 className='text-xl sm:text-2xl text-black'>
-                                7. What if there's a dispute during the project?
-                            </h2>
-                            <p className=' mt-4 text-lg sm:text-xl text-[#211d1d]'>
-                                In case of a dispute, both the freelancer and the entity can unveil evidence to support their claims. Our dispute resolution team will review the evidence and work towards a fair resolution.If an agreement cannot be reached, the escrowed funds will remain held until further resolution.
-                            </p>
-                        </div>
-
-                        <div className='flex  w-full justify-center flex-col gap-10 items-center'>
-                            <div className=' flex w-lg max-w-4xl justify-center gap-12 flex-wrap pb-8 '>
-                                <img className='sm:max-w-lg object-cover' src={disputeImg} alt='workImg' />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* eight  */}
-                <div className='flex flex-col w-full px-10 bg-white    '>
-                    <div className=' flex flex-col gap-10 justify-center items-center '>
-                        <div className=' sm:w-8/12   '>
-                            <h2 className='text-xl sm:text-2xl text-black'>
-                                8. Is BharatEscrow.com a reliable platform?
-                            </h2>
-                            <p className=' mt-4 text-lg sm:text-xl text-[#211d1d]'>
-                                BharatEscrow.com is a reputable and trusted platform for escrow services. We prioritize the security of our users' transactions and have implemented various measures to ensure a safe experience.
-                            </p>
-                        </div>
-
-                        <div className='flex  w-full justify-center flex-col gap-10 items-center'>
-                            <div className=' flex w-lg max-w-4xl justify-center gap-12 flex-wrap pb-8 '>
-                                <img className='sm:max-w-lg object-cover' src={reliablePlatformImg} alt='workImg' />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                {/* ninth  */}
-                <div className='flex flex-col w-full px-10 bg-white    '>
-                    <div className=' flex flex-col gap-10 justify-center items-center '>
-                        <div className=' sm:w-8/12   '>
-                            <h2 className='text-xl sm:text-2xl text-black'>
-                                9. How do I withdraw funds from my Escrow account?
-                            </h2>
-                            <p className=' mt-4 text-lg sm:text-xl text-[#211d1d]'>
-                                Once funds are released from escrow, you can withdraw them to your linked bank account or payment method.
-                            </p>
-                        </div>
-
-                        <div className='flex  w-full justify-center flex-col gap-10 items-center'>
-                            <div className=' flex w-lg max-w-4xl justify-center gap-12 flex-wrap pb-8 '>
-                                <img className='sm:max-w-lg object-cover' src={disputeImg} alt='workImg' />
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
             </div>
             <Footer />

@@ -5,7 +5,6 @@ const DetailBlog = ({ data }) => {
   const localStorageData = JSON.parse(localStorage.getItem("detailItem"))
   const detailItem = data.data == null ? { data: localStorageData } : data
 
-  console.log("detailITem", detailItem);
   return (
     <section>
       <div className='mb-10 mx-auto pb-12 flex flex-col justify-center items-center mt-32'>
