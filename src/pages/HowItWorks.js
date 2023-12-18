@@ -47,15 +47,15 @@ const Section = ({ title, content, image, reversed }) => (
             <h2 className='text-lg font-semibold sm:text-xl md:text-2xl underline text-blue-900'>{title}</h2>
             <h3 className='text-justify'>{content}</h3>
         </div>
-        <div className=' w-11/12 sm:w-[300px] md:w-[450px] h-[250px] md:h-[400px] px-5 sm:px-0'>
-            <img className='object-cover w-full h-full' src={image} alt={title} />
+        <div className='sm:w-[300px] md:w-[450px] h-[250px] md:h-[400px] px-5 sm:px-0'>
+            <img className='object-cover sm:w-[300px] md:w-[450px] h-[250px] md:h-[400px]' src={image} alt={title} />
         </div>
     </div>
 );
 
 const HowItWorks = () => (
     <section className='howItWork'>
-        <div className='max-w-4xl mt-32 flex flex-col mx-auto text-black px-3 '>
+        <div className='max-w-4xl mt-[104px] flex flex-col mx-auto text-black px-3 '>
             <div className='mt-14 mb-4'>
                 <h1 className=' text-blue-900 font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center font-roboto'>How does BharatEscrow work?</h1>
             </div>

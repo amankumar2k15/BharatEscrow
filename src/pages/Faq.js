@@ -12,6 +12,8 @@ import paymentImg from "../assets/Faqs/payment.jpg"
 import disputeImg from "../assets/Faqs/dispute.jpg"
 import reliablePlatformImg from "../assets/Faqs/reliablePlatform.jpg"
 import Footer from '../components/Footer'
+import { AiOutlineProfile } from "react-icons/ai";
+import { ImProfile } from "react-icons/im";
 
 
 const FAQItem = ({ question, answer }) => (
@@ -25,13 +27,49 @@ const FAQItem = ({ question, answer }) => (
     </div>
 );
 
+const worksItems = [
+    {
+        iconHeading: "Agree",
+        icon: <AiOutlineProfile size={40} />,
+        mainHeading: "Offline and Online", subHeading: "Parties AGREE to the terms",
+        para: "Buyer, seller and agent, if present, agree to the terms of the transaction.",
+        iconImg: <ImProfile size={40} />,
+        iconImgHeading: "SETUP ESCROW ONLINE"
+    },
+    {
+        iconHeading: "Agree",
+        icon: <AiOutlineProfile size={40} />,
+        mainHeading: "MULTI PARTY ESCROW", subHeading: "Money SECURED in Trust account ",
+        para: "Verified buyers commits to a transaction by paying money into a secure escrow account",
+        iconImg: <ImProfile size={40} />,
+        iconImgHeading: "SIGN AGREEMENT DIGITALLY"
+    },
+    {
+        iconHeading: "Agree",
+        icon: <AiOutlineProfile size={40} />,
+        mainHeading: "CONFIRMATION", subHeading: "Parties confirm on delivery",
+        para: "Verified seller arranges delivery of the products or services, as agreed with all the parties.",
+        iconImg: <ImProfile size={40} />,
+        iconImgHeading: "CHECK YOUR GOODS"
+    },
+    {
+        iconHeading: "Agree",
+        icon: <AiOutlineProfile size={40} />,
+        mainHeading: "Offline and Online", subHeading: "WHEN APPROVED",
+        para: "Escrow releases money to the seller and/or agent once approved by the buyer",
+        iconImg: <ImProfile size={40} />,
+        iconImgHeading: "OR THE INSPECTION TIME PASSES"
+    }
+]
+
 const Faq = () => {
+
     return (
         <section className='faq'>
             <div className='flex flex-col gap-20'>
 
-                <div className=' mt-32 flex items-end flex-col  gap-4 mx-auto px-4 '>
-                    <h1 className='mt-14  text-blue-900  font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center mx-auto font-roboto'>
+                <div className=' mt-24 flex items-end flex-col gap-4 px-4 '>
+                    <h1 className='mt-14 w-full  text-blue-900 font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center  font-roboto'>
                         Frequently Asked Questions
                     </h1>
                     <div className='flex flex-col sm:flex-row gap-8 '>
@@ -63,32 +101,29 @@ const Faq = () => {
 
                     <div className='flex flex-col sm:flex-wrap '>
                         <h1 className='text-blue-900 font-bold text-xl sm:text-[30px] text-center font-roboto '>
-                            FAQ - EscrowPay Services by <div>BharatEscrow.com</div>
+                            FAQ - Escrow Services by <div>BharatEscrow.com</div>
                         </h1>
-
-
                         <div className='mt-40 flex flex-col gap-10 justify-center items-center'>
                             <div className=' sm:w-8/12 '>
                                 <h2 className='text-xl sm:text-2xl text-black'>
-                                    1. What is EscrowPay?
+                                    1. What is Escrow?
                                 </h2>
                                 <p className='mt-5 text-md sm:text-lg text-[#9e9b9b]'>
-                                    EscrowPay is a secure and reliable payment service provided by BharatEscrow.com, which acts as a trusted intermediary between freelancers and entities during transactions. It ensures that both parties fulfill their obligations before funds are released.
+                                    Escrow is a secure and reliable payment service provided by BharatEscrow.com, which acts as a trusted intermediary between freelancers and entities during transactions. It ensures that both parties fulfill their obligations before funds are released.
                                 </p>
                             </div>
 
-
-                            <div className='flex mx-auto w-full justify-center mt-20 flex-col gap-10 items-center'>
+                            <div className='flex  w-full justify-center mt-20 flex-col gap-10 items-center'>
                                 <h2 className='text-xl text-blue-900 font-semibold sm:text-[26px] text-center'>
-                                    EscrowPay Advantage
+                                    Escrow Advantage
                                 </h2>
 
                                 <div className=' flex max-w-4xl justify-center gap-12 flex-wrap '>
 
-                                    <div className='w-56 sm:w-64 h-56 shadow-[#26292e] hover:shadow-blue-600 shadow-lg rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm mx-auto text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
-                                        <div className='flex flex-col gap-10'>
-                                            <div className=' h-full  flex flex-col justify-center items-center'>
-                                                <div className='relative border-4 hover: border-blue-600 rounded-full w-28 h-28 realtive'>
+                                    <div className=' w-56 sm:w-64 h-56 shadow-[#26292e] hover:shadow-blue-600 shadow-xl black rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm  text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
+                                        <div className='flex flex-col gap-4'>
+                                            <div className=' h-full flex flex-col justify-center items-center'>
+                                                <div className='relative border-4 border-blue-600 pt-4 rounded-full w-28 h-28 realtive'>
                                                     <p className='absolute top-7 left-7'>
                                                         <RiAccountCircleLine className='text-blue-600' size={50} />
                                                     </p>
@@ -100,7 +135,7 @@ const Faq = () => {
                                         </div>
                                     </div>
 
-                                    <div className='w-56 sm:w-64 h-56 shadow-[#26292e] hover:shadow-blue-600 shadow-lg rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm mx-auto text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
+                                    <div className='w-56 sm:w-64 h-56 shadow-[#26292e] hover:shadow-blue-600 shadow-lg rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm  text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
                                         <div className='flex flex-col gap-10'>
                                             <div className=' h-full  flex flex-col justify-center items-center'>
                                                 <div className='relative border-4  border-blue-600 rounded-full w-28 h-28 realtive'>
@@ -115,7 +150,7 @@ const Faq = () => {
                                         </div>
                                     </div>
 
-                                    <div className='w-56 sm:w-64 h-56 shadow-[#26292e] hover:shadow-blue-600 shadow-lg rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm mx-auto text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
+                                    <div className='w-56 sm:w-64 h-56 shadow-[#26292e] hover:shadow-blue-600 shadow-lg rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm  text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
                                         <div className='flex flex-col gap-10'>
                                             <div className=' h-full  flex flex-col justify-center items-center'>
                                                 <div className='relative border-4 hover: border-blue-600 rounded-full w-28 h-28 realtive'>
@@ -130,7 +165,7 @@ const Faq = () => {
                                         </div>
                                     </div>
 
-                                    <div className='w-56 sm:w-64 h-56 shadow-[#26292e] hover:shadow-blue-600 shadow-lg rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm mx-auto text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
+                                    <div className='w-56 sm:w-64 h-56 shadow-[#26292e] hover:shadow-blue-600 shadow-lg rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm  text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
                                         <div className='flex flex-col gap-10'>
                                             <div className=' h-full  flex flex-col justify-center items-center'>
                                                 <div className='relative border-4 hover: border-blue-600 rounded-full w-28 h-28 realtive'>
@@ -145,7 +180,7 @@ const Faq = () => {
                                         </div>
                                     </div>
 
-                                    <div className='w-56 sm:w-64 h-56 shadow-[#26292e] hover:shadow-blue-600 shadow-lg rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm mx-auto text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
+                                    <div className='w-56 sm:w-64 h-56 shadow-[#26292e] hover:shadow-blue-600 shadow-lg rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm  text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
                                         <div className='flex flex-col gap-10'>
                                             <div className=' h-full  flex flex-col justify-center items-center'>
                                                 <div className='relative border-4 hover: border-blue-600 rounded-full w-28 h-28 realtive'>
@@ -160,7 +195,7 @@ const Faq = () => {
                                         </div>
                                     </div>
 
-                                    <div className='w-56 sm:w-64 h-56 shadow-[#26292e] hover:shadow-blue-600 shadow-lg rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm mx-auto text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
+                                    <div className='w-56 sm:w-64 h-56 shadow-[#26292e] hover:shadow-blue-600 shadow-lg rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm  text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
                                         <div className='flex flex-col gap-10'>
                                             <div className=' h-full  flex flex-col justify-center items-center'>
                                                 <div className='relative border-4 hover: border-blue-600 rounded-full w-28 h-28 realtive'>
@@ -184,42 +219,70 @@ const Faq = () => {
                 </div>
 
                 {/* second  */}
-                <div className='flex flex-col  w-full px-10  bg-white  mx-auto '>
+                <div className='flex flex-col  w-full px-10  bg-white  '>
                     <div className='mt-5 flex flex-col gap-10 justify-center items-center '>
                         <div className=' sm:w-8/12   '>
                             <h2 className='text-xl sm:text-2xl  text-black'>
-                                2. How does EscrowPay work?
+                                2. How does Escrow work?
                             </h2>
                             <p className=' mt-4 text-lg sm:text-lg  text-[#211d1d]'>
-                                When using EscrowPay, both the freelancer and the entity agree to the terms of service.The entity deposits the agreed-upon funds into an escrow account.The freelancer completes the project or service as per the agreed terms.Once the entity approves the deliverables, the funds are released to the freelancer.If any disputes arise, our team mediates to find a fair resolution.
+                                When using Escrow, both the freelancer and the entity agree to the terms of service.The entity deposits the agreed-upon funds into an escrow account.The freelancer completes the project or service as per the agreed terms.Once the entity approves the deliverables, the funds are released to the freelancer.If any disputes arise, our team mediates to find a fair resolution.
                             </p>
                         </div>
 
 
-                        <div className='flex mx-auto w-full justify-center flex-col gap-10 items-center'>
+                        <div className='flex  w-full justify-center flex-col gap-10 items-center'>
                             <div className=' flex max-w-4xl justify-center gap-12 flex-wrap '>
                                 <img src={workImg} alt='workImg' />
+                                <div className='w-[300px] text-center'>
+                                    <h3 className='text-xl uppercase font-medium'>How it works</h3>
+                                    <h2 className='text-3xl font-bold '>4 Easy Steps</h2>
+                                </div>
+                            </div>
+
+                            <div className='flex justify-around flex-wrap gap-4'>
+
+                                {worksItems.map((item, index) => {
+                                    return (
+                                        <div key={index} className=' w-[230px] flex-shrink-0 border-2 h-[400px] border-black hover:border-blue-600 rounded-lg  px-1'>
+                                            <div className='flex flex-col justify-center gap-y-3 items-center'>
+                                                <h3 className='text-blue-900 font-bold text-[12px] mt-2'>{item.iconHeading}</h3>
+                                                <div>
+                                                    {item.icon}
+                                                </div>
+                                                <p className='uppercase font-semibold text-[12px]'>{item.mainHeading}</p>
+                                            </div>
+                                            <p className='text-sm w-full text-center my-6 font-medium'>{item.subHeading}</p>
+                                            <p className='text-sm w-full text-center my-6 px-2 font-medium'>{item.para}</p>
+                                            <div className='mt-6 mb-2 w-full flex justify-center items-center '>
+                                                {item.iconImg}
+                                            </div>
+                                            <p className='text-md w-full text-center mt-6 mb-0 uppercase font-semibold'>{item.iconImgHeading}</p>
+                                        </div>
+                                    )
+                                })}
 
                             </div>
+
                         </div>
 
                     </div>
                 </div>
 
                 {/* third  */}
-                <div className='flex flex-col w-full px-10  bg-white  mx-auto  '>
+                <div className='flex flex-col w-full px-10  bg-white    '>
                     <div className='pt-14 flex flex-col gap-10 justify-center items-center '>
                         <div className=' sm:w-8/12   '>
                             <h2 className='text-xl sm:text-2xl text-black'>
-                                3. Why should I use EscrowPay for freelancer transactions?
+                                3. Why should I use Escrow for freelancer transactions?
                             </h2>
                             <p className=' mt-4 text-lg sm:text-xl text-[#211d1d]'>
-                                EscrowPay provides a secure payment environment, ensuring that freelancers receive payment for their work.It gives entities peace of mind, knowing that funds will only be released when the project is successfully accomplished.EscrowPay reduces the risk of fraudulent activities or non-payment for both parties involved.
+                                Escrow provides a secure payment environment, ensuring that freelancers receive payment for their work.It gives entities peace of mind, knowing that funds will only be released when the project is successfully accomplished.Escrow reduces the risk of fraudulent activities or non-payment for both parties involved.
                             </p>
                         </div>
 
 
-                        <div className='flex mx-auto w-full justify-center flex-col gap-10 items-center'>
+                        <div className='flex  w-full justify-center flex-col gap-10 items-center'>
                             <div className=' flex max-w-4xl justify-center gap-12 flex-wrap '>
                                 <img className='sm:max-w-xl' src={buySell} alt='workImg' />
                             </div>
@@ -229,48 +292,48 @@ const Faq = () => {
                 </div>
 
                 {/* fourth  */}
-                <div className='flex flex-col w-full px-10  pt-10 bg-white  mx-auto  '>
+                <div className='flex flex-col w-full px-10  pt-10 bg-white  '>
                     <div className='py-4 flex flex-col gap-10 justify-center items-center '>
                         <div className=' sm:w-8/12   '>
                             <h2 className='text-xl sm:text-2xl text-black'>
-                                4. How do I create an EscrowPay transaction?
+                                4. How do I create an Escrow transaction?
                             </h2>
                             <p className='  mt-4 text-lg sm:text-xl text-[#211d1d]'>
-                                To create an EscrowPay transaction, you need to register an account on BharatEscrow.com.Once registered, you can initiate a new transaction by providing project details, agreed terms, and the escrow amount.The other party will receive a notification to review and accept the transaction details.
+                                To create an Escrow transaction, you need to register an account on BharatEscrow.com.Once registered, you can initiate a new transaction by providing project details, agreed terms, and the escrow amount.The other party will receive a notification to review and accept the transaction details.
                             </p>
                         </div>
 
-                   
+
 
                     </div>
                 </div>
 
-                <div className='flex flex-col w-full px-10   bg-white  mx-auto  '>
+                <div className='flex flex-col w-full px-10   bg-white  '>
                     <div className='py-4 flex flex-col gap-10 justify-center items-center '>
-                     
 
-                        <button class="bg-blue-500 width-[200px] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full   hover:bg-[#211d1d] shadow-[#26292e] hover:shadow-blue-600 shadow-lg  transition-all ease-in-out duration-300 hover:translate-y-3">
-                        REGISTER NOW
+
+                        <button className="bg-blue-500 width-[200px] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full shadow-[#26292e] hover:shadow-blue-600 shadow-lg  transition-all ease-in-out duration-300 hover:translate-y-3">
+                            REGISTER NOW
                         </button>
-                       
+
 
                     </div>
                 </div>
 
 
                 {/* fifth  */}
-                <div className='flex flex-col w-full px-10 bg-white  mx-auto  '>
+                <div className='flex flex-col w-full px-10 bg-white    '>
                     <div className=' flex flex-col gap-10 justify-center items-center '>
                         <div className=' sm:w-8/12   '>
                             <h2 className='text-xl sm:text-2xl text-black'>
-                                5. Is there a fee for using EscrowPay?
+                                5. Is there a fee for using Escrow?
                             </h2>
                             <p className=' mt-4 text-lg sm:text-xl text-[#211d1d]'>
-                                Yes, there is a small service fee for using EscrowPay services. The fee percentage may vary based on the transaction amount and other factors. You can find detailed information on our pricing page.
+                                Yes, there is a small service fee for using Escrow services. The fee percentage may vary based on the transaction amount and other factors. You can find detailed information on our pricing page.
                             </p>
                         </div>
 
-                        <div className='flex mx-auto w-full justify-center flex-col gap-10 items-center'>
+                        <div className='flex  w-full justify-center flex-col gap-10 items-center'>
                             <div className=' flex w-lg max-w-4xl justify-center gap-12 flex-wrap '>
                                 <img className='sm:max-w-lg object-cover' src={fees} alt='workImg' />
                             </div>
@@ -280,18 +343,18 @@ const Faq = () => {
                 </div>
 
                 {/* sixth  */}
-                <div className='flex flex-col w-full px-10 bg-white  mx-auto  '>
+                <div className='flex flex-col w-full px-10 bg-white    '>
                     <div className=' flex flex-col gap-10 justify-center items-center '>
                         <div className=' sm:w-8/12   '>
                             <h2 className='text-xl  sm:text-2xl text-black'>
-                                6. What payment methods are supported by EscrowPay?
+                                6. What payment methods are supported by Escrow?
                             </h2>
                             <p className=' mt-4 text-lg sm:text-xl text-[#211d1d]'>
-                                EscrowPay supports various payment methods, including credit/debit cards, bank transfers, and other electronic payment options. Please check the platform for the available payment methods in your region.
+                                Escrow supports various payment methods, including credit/debit cards, bank transfers, and other electronic payment options. Please check the platform for the available payment methods in your region.
                             </p>
                         </div>
 
-                        <div className='flex mx-auto w-full justify-center flex-col gap-10 items-center'>
+                        <div className='flex  w-full justify-center flex-col gap-10 items-center'>
                             <div className=' flex w-lg max-w-4xl justify-center gap-12 flex-wrap '>
                                 <img className='sm:max-w-lg object-cover' src={paymentImg} alt='workImg' />
                             </div>
@@ -301,7 +364,7 @@ const Faq = () => {
                 </div>
 
                 {/* seventh  */}
-                <div className='flex flex-col w-full px-10 bg-white  mx-auto  '>
+                <div className='flex flex-col w-full px-10 bg-white    '>
                     <div className=' flex flex-col gap-10 justify-center items-center '>
                         <div className=' sm:w-8/12   '>
                             <h2 className='text-xl sm:text-2xl text-black'>
@@ -312,7 +375,7 @@ const Faq = () => {
                             </p>
                         </div>
 
-                        <div className='flex mx-auto w-full justify-center flex-col gap-10 items-center'>
+                        <div className='flex  w-full justify-center flex-col gap-10 items-center'>
                             <div className=' flex w-lg max-w-4xl justify-center gap-12 flex-wrap pb-8 '>
                                 <img className='sm:max-w-lg object-cover' src={disputeImg} alt='workImg' />
                             </div>
@@ -321,7 +384,7 @@ const Faq = () => {
                 </div>
 
                 {/* eight  */}
-                <div className='flex flex-col w-full px-10 bg-white  mx-auto  '>
+                <div className='flex flex-col w-full px-10 bg-white    '>
                     <div className=' flex flex-col gap-10 justify-center items-center '>
                         <div className=' sm:w-8/12   '>
                             <h2 className='text-xl sm:text-2xl text-black'>
@@ -332,7 +395,7 @@ const Faq = () => {
                             </p>
                         </div>
 
-                        <div className='flex mx-auto w-full justify-center flex-col gap-10 items-center'>
+                        <div className='flex  w-full justify-center flex-col gap-10 items-center'>
                             <div className=' flex w-lg max-w-4xl justify-center gap-12 flex-wrap pb-8 '>
                                 <img className='sm:max-w-lg object-cover' src={reliablePlatformImg} alt='workImg' />
                             </div>
@@ -341,18 +404,18 @@ const Faq = () => {
                 </div>
 
                 {/* ninth  */}
-                <div className='flex flex-col w-full px-10 bg-white  mx-auto  '>
+                <div className='flex flex-col w-full px-10 bg-white    '>
                     <div className=' flex flex-col gap-10 justify-center items-center '>
                         <div className=' sm:w-8/12   '>
                             <h2 className='text-xl sm:text-2xl text-black'>
-                                9. How do I withdraw funds from my EscrowPay account?
+                                9. How do I withdraw funds from my Escrow account?
                             </h2>
                             <p className=' mt-4 text-lg sm:text-xl text-[#211d1d]'>
                                 Once funds are released from escrow, you can withdraw them to your linked bank account or payment method.
                             </p>
                         </div>
 
-                        <div className='flex mx-auto w-full justify-center flex-col gap-10 items-center'>
+                        <div className='flex  w-full justify-center flex-col gap-10 items-center'>
                             <div className=' flex w-lg max-w-4xl justify-center gap-12 flex-wrap pb-8 '>
                                 <img className='sm:max-w-lg object-cover' src={disputeImg} alt='workImg' />
                             </div>
@@ -362,7 +425,7 @@ const Faq = () => {
 
             </div>
             <Footer />
-        </section>
+        </section >
     )
 }
 

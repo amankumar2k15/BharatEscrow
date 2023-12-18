@@ -16,7 +16,7 @@ const Navbar = () => {
             text: "Buy or Sell"
         },
         howitworks: {
-            to: "/howitworks",
+            to: "/how-it-works",
             text: "How it works"
         },
         faq: {
@@ -37,8 +37,8 @@ const Navbar = () => {
     return (
         <section className='navbar'>
 
-            <nav className=" fixed top-0 left-0 right-0 border-gray-200 dark:bg-white-900 border-none py-0 z-50 bg-gradient-to-r from-[#fff] to-[#096aa6]">
-                <div className="flex justify-between  flex-wrap items-center sm:justify-between p-4">
+            <nav className="fixed px-4 top-0 left-0 right-0 border-gray-200 dark:bg-white-900 border-none py-0 z-50 bg-gradient-to-r from-[#fff] to-[#096aa6]">
+                <div className="flex justify-between flex-wrap md:flex-nowrap md:whitespace-nowrap items-center p-4">
                     <div className="flex items-center w-[200px] h-[40px]">
                         <img
                             onClick={() => navigate('/')}
@@ -49,13 +49,12 @@ const Navbar = () => {
                     </div>
 
                     {/* -----End Text ----- */}
-                    <div className="flex items-center md:order-2 gap-1">
+                    <div className="flex md:hidden items-center md:order-2 gap-1">
 
                         <button data-collapse-toggle="navbar-user" type="button"
-                            className=" inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden focus:outline-none  dark:text-black-400  " aria-controls="navbar-user" aria-expanded="false"
+                            className="inline-flex items-center p-2 w-10 h-10 absolute right-0 top-4 justify-center text-sm  text-white rounded-lg md:hidden focus:outline-none  dark:text-black-400  " aria-controls="navbar-user" aria-expanded="false"
                             onClick={() => setHide(!hide)}
                         >
-
                             {
                                 hide ?
                                     <GiHamburgerMenu size={20} />

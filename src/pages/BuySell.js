@@ -115,7 +115,7 @@ const BuySell = () => {
 
     return (
         <>
-            <section className='buySell my-4 mt-20 border-y-2 border-white'>
+            <section className='buySell my-4 mt-10 border-y-2 border-white'>
                 <div className=' flex pt-28 pb-[83px] font-roboto flex-col gap-5 px-2 ' >
                     <div className='font-bold text-3xl sm:text-4xl md:text-5xl mt-8 sm:mt-0 w-full text-center text-blue-900'>
                         Buy or sell items
