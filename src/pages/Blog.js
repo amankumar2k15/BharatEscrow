@@ -69,11 +69,10 @@ const Blog = ({ setDetailRoutes }) => {
 
 
   const handleSetRoutes = (item) => {
-    console.log(item)
     localStorage.setItem("detailItem", JSON.stringify(item))
-    localStorage.setItem("detailRoute", item?.title?.split(" ").join("").toUpperCase())
-    setDetailRoutes({ route: item?.title?.split(" ").join("").toUpperCase(), data: item })
-    navigate(`/${item?.title?.split(" ").join("").toUpperCase()}`)
+    localStorage.setItem("detailRoute", item?.title?.split(' ').map((item)=>`${item.charAt(0).toUpperCase()}${item.slice(1,item.length)}`).join(" ").replaceAll(' ' , "-"))
+    setDetailRoutes({ route: item?.title?.split(' ').map((item)=>`${item.charAt(0).toUpperCase()}${item.slice(1,item.length)}`).join(" ").replaceAll(' ' , "-"), data: item })
+    navigate(`/${item?.title?.split(' ').map((item)=>`${item.charAt(0).toUpperCase()}${item.slice(1,item.length)}`).join(" ").replaceAll(' ' , "-")}`)
   }
 
   return (

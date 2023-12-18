@@ -1,6 +1,7 @@
 import React from 'react'
 
 const DetailBlog = ({ data }) => {
+  
   const localStorageData = JSON.parse(localStorage.getItem("detailItem"))
   const detailItem = data.data == null ? { data: localStorageData } : data
 
