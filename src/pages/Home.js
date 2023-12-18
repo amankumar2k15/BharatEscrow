@@ -6,9 +6,7 @@ import domain2 from "../assets/buyorsell/Domain2.png"
 import domain3 from "../assets/buyorsell/Domain3.png"
 import Websites1 from "../assets/buyorsell/Websites1.png"
 import Websites2 from "../assets/buyorsell/Websites2.png"
-import appDevelpment from "../assets/Home/appDevelopment.jpg"
 import websiteDevelopment from "../assets/Home/websiteDevelopment.jpg"
-import Payment from "../assets/Home/Payment.jpg"
 import Car1 from '../assets/buyorsell/Car1.jpg'
 import "../input.css"
 

@@ -3,20 +3,9 @@ import React from 'react'
 const DetailBlog = ({data}) => {
     console.log(data);
   return (
-    <div>DetailBlog<br/>
-    DetailBlog<br/>
-    DetailBlog<br/>
-    DetailBlog<br/>
-    DetailBlog<br/>
-    DetailBlog<br/>
-    DetailBlog<br/>
-    DetailBlog<br/>
-    DetailBlog<br/>
-    DetailBlog<br/>
-    DetailBlog<br/>
-    DetailBlog<br/>
-    DetailBlog<br/>
-    <div className="grid grid-cols-1  gap-4 w-full bg-blue">
+    <section>
+   <div className=' mb-10 mx-auto py-5 flex  flex-col justify-center items-center mt-40'>
+    <div className="grid grid-cols-1  gap-4 w-full h-full">
      
         <div key={data.data.id} className="bg-white p-4 shadow-md rounded-md">
           <img
@@ -35,6 +24,8 @@ const DetailBlog = ({data}) => {
      
     </div>
     </div>
+    </section>
+ 
   
   )
 }

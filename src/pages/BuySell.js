@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Box from '../components/Box'
 import domain1 from "../assets/buyorsell/Domain1.png"
 import domain2 from "../assets/buyorsell/Domain2.png"
-import domain3 from "../assets/buyorsell/Domain3.png"
 import Websites1 from "../assets/buyorsell/Websites1.png"
 import Websites2 from "../assets/buyorsell/Websites2.png"
 import Websites3 from "../assets/buyorsell/Website3.png"

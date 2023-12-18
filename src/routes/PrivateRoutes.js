@@ -1,18 +1,26 @@
-import React, { useEffect, useState } from 'react'
+import React, { Suspense, lazy, useEffect, useState } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
-import Contact from '../pages/Contact'
-import HowItWorks from '../pages/HowItWorks'
-import Home from '../pages/Home'
-import BuySell from '../pages/BuySell'
-import Faq from '../pages/Faq'
-import Disclaimer from '../pages/Disclaimer'
-import Privacy from '../pages/Privacy'
-import Blog from '../pages/Blog'
-import DetailBlog from '../pages/DetailBlog'
+const BuySell = lazy(() => import('../pages/BuySell'));
+const DetailBlog = lazy(() => import('../pages/DetailBlog'));
+const Blog = lazy(() => import('../pages/Blog'));
+const Privacy = lazy(() => import('../pages/Privacy'));
+const Disclaimer = lazy(() => import('../pages/Disclaimer'));
+const Faq = lazy(() => import('../pages/Faq'));
+const Home = lazy(() => import('../pages/Home'));
+const HowItWorks = lazy(() => import('../pages/HowItWorks'));
+const Contact = lazy(() => import('../pages/Contact'));
+
+
+
+
+
+
+
+
 
 const PrivateRoutes = () => {
     const location = useLocation();
-    const [detailRoutes , setDetailRoutes] = useState( { route : null , data : null})
+    const [detailRoutes, setDetailRoutes] = useState({ route: null, data: null })
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -21,18 +29,28 @@ const PrivateRoutes = () => {
 
     return (
         <>
-            <Routes>
-                <Route path='/' element={<Home />}></Route>
-                <Route path='/buy-sell' element={<BuySell />}></Route>
-                <Route path='/faqs' element={<Faq />}></Route>
-                <Route path='/contact' element={<Contact />}></Route>
-                <Route path='/howitworks' element={<HowItWorks />}></Route>
-                <Route path='/disclaimer' element={<Disclaimer />}></Route>
-                <Route path='/privacy' element={<Privacy />}></Route>
-                <Route path='/blog' element={<Blog setDetailRoutes={setDetailRoutes} />}></Route>
-                <Route path={`/${detailRoutes.route}`} element={<DetailBlog data={detailRoutes}  />}></Route>
 
-            </Routes>
+            <Suspense fallback={
+                <div className=' flex items-center justify-center h-screen'>
+                    <div className=" animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-blue-600 rounded-full dark:text-blue-500" role="status" aria-label="loading">
+                        <span className="sr-only">Loading...</span>
+                    </div>
+                </div>
+
+            }>
+
+                <Routes>
+                    <Route path='/' element={<Home />}></Route>
+                    <Route path='/buy-sell' element={<BuySell />}></Route>
+                    <Route path='/faqs' element={<Faq />}></Route>
+                    <Route path='/contact' element={<Contact />}></Route>
+                    <Route path='/howitworks' element={<HowItWorks />}></Route>
+                    <Route path='/disclaimer' element={<Disclaimer />}></Route>
+                    <Route path='/privacy' element={<Privacy />}></Route>
+                    <Route path='/blog' element={<Blog setDetailRoutes={setDetailRoutes} />}></Route>
+                    <Route path={`/${detailRoutes.route}`} element={<DetailBlog data={detailRoutes} />}></Route>
+                </Routes>
+            </Suspense >
         </>
     )
 }
