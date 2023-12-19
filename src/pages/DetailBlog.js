@@ -131,7 +131,7 @@ const DetailBlog = ({ data }) => {
       <div className='mb-10 pb-12 flex flex-col justify-center items-center mt-32 border '>
 
         <div className='font-bold text-3xl mb-12 sm:text-4xl md:text-5xl mt-4 w-full text-center text-blue-900'>
-          {detailItem?.data.title}
+          {displayData?.title}
         </div>
 
         {/* <div className="grid grid-cols-1 gap-4 w-full h-full">
@@ -158,14 +158,14 @@ const DetailBlog = ({ data }) => {
         </div> */}
 
         {/* pulished */}
-        <div className='container mx-auto max-w-4xl ' >
+        <div className='container mx-auto items-center flex justify-center flex-col px-4' >
           <div className='flex gap-2 items-center mb-4'>
             <div>
               <CgProfile size={30} className='text-gray-600' />
             </div>
             <div className='flex flex-col'>
               <div className='inline-flex text-[12px]'>
-                <div className='text-gray-500 '>Pulished On -</div> <div className='text-gray-500'>December 7, 2023</div>
+                <div className='text-gray-500 '>Pulished On -</div> <div className='text-gray-500'>{displayData?.timeStamp}</div>
               </div>
               <div className='inline-flex text-[12px]'>
                 <div className='text-gray-500 '>Bharat Escrow -</div> <div className='text-gray-500'>Bharat Escrow Gateway</div>
@@ -174,14 +174,14 @@ const DetailBlog = ({ data }) => {
           </div>
 
           {/* img  */}
-          <div className='w-[700px] h-[400px] relative flex items-center justify-center'>
+          <div className='max-w-5xl w-[700px] h-[400px] relative flex items-center justify-center'>
             <img src={detailblogImg} alt='imggDetailBlog' className='w-[700px] h-[400px]' />
-            <p className='text-center text-4xl absolute text-white'>
+            {/* <p className='text-center text-4xl absolute text-white'>
               Tailwind Nextjs Starter Blog
-            </p>
+            </p> */}
           </div>
 
-          <div className=' mt-4 '>
+          <div className='max-w-5xl mt-4 '>
             <div className='font-bold'>
               Share and Enjoy!
             </div>
