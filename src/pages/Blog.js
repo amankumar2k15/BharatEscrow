@@ -1,8 +1,8 @@
 import React from 'react'
 import Footer from '../components/Footer'
-import blogImg from "../assets/blog/blog.jpg"
-import tailwindImg from "../assets/blog/Tailwind css.jpg"
-import moneyBack from "../assets/blog/moneyBack.jpg"
+import blogImg from "../assets/blog/blog1.jpg"
+// import tailwindImg from "../assets/blog/Tailwind css.jpg"
+// import moneyBack from "../assets/blog/moneyBack.jpg"
 import { useNavigate } from 'react-router-dom'
 
 const Blog = ({ setDetailRoutes }) => {
@@ -20,10 +20,10 @@ const Blog = ({ setDetailRoutes }) => {
 
 
   const handleSetRoutes = (item) => {
-    const routeCal = item?.title?.split(' ').map((item)=>`${item.charAt(0).toUpperCase()}${item.slice(1,item.length)}`).join(" ").replaceAll(' ' , "-")
+    const routeCal = item?.title?.split(' ').map((item) => `${item.charAt(0).toUpperCase()}${item.slice(1, item.length)}`).join(" ").replaceAll(' ', "-")
     // localStorage.setItem("detailItemID", item.id)
-    localStorage.setItem("detailRoute", routeCal )
-    setDetailRoutes({ route: routeCal})
+    localStorage.setItem("detailRoute", routeCal)
+    setDetailRoutes({ route: routeCal })
     navigate(`/${routeCal}`)
   }
 
