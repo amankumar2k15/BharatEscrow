@@ -1,14 +1,14 @@
 import React from 'react'
+import Footer from '../components/Footer'
 
 const DetailBlog = ({ data }) => {
-  
+
   const localStorageData = JSON.parse(localStorage.getItem("detailItem"))
   const detailItem = data.data == null ? { data: localStorageData } : data
 
-  console.log("detailITem", detailItem);
   return (
     <section>
-      <div className='mb-10 mx-auto pb-12 flex flex-col justify-center items-center mt-32'>
+      <div className='mb-10 mx-auto pb-12 flex flex-col justify-center items-center mt-32 border '>
 
         <div className='font-bold text-3xl mb-12 sm:text-4xl md:text-5xl mt-4 w-full text-center text-blue-900'>
           {detailItem?.data.title}
@@ -34,11 +34,10 @@ const DetailBlog = ({ data }) => {
 
             <h2 className="text-xl mt-7 mb-4 font-bold ">{detailItem?.data.title}</h2>
             <p className="text-slate-700 mb-4 text-lg">{detailItem?.data.description}</p>
-
           </div>
-
         </div>
       </div>
+      <Footer />
     </section>
 
 

@@ -83,10 +83,9 @@ const Home = () => {
                 </div>
             </div>
 
-
             <div className='flex justify-center md:py-6 px-4 sm:px-10 gap-2 mx-auto md:gap-6 flex-wrap md:flex-nowrap ' >
 
-                <div className=' w-full  h-full md:h-[350px]   md:w-[390px] row from-[hsl(203,98%,21%)] to-[#096aa6] border border-1 border-solid border-black shadow-[#26292e] hover:shadow-black text-white px-8 py-4 rounded-2xl flex gap-2 flex-col transition-all ease-in-out duration-200 sm:hover:-translate-y-2 shadow-lg' >
+                <div className=' w-full h-full md:h-[350px] md:w-[390px] row from-[hsl(203,98%,21%)] to-[#096aa6] border border-1 border-solid border-black shadow-[#26292e] hover:shadow-black text-white px-8 py-4 rounded-2xl flex gap-2 flex-col transition-all ease-in-out duration-200 sm:hover:-translate-y-2 shadow-lg' >
                     <div className='text-xl sm:text-2xl font-semibold text-blue-900 py-4'>
                         Secure Transactions
                     </div>

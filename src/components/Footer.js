@@ -16,7 +16,7 @@ const Footer = () => {
 
 
     return (
-        <section className='footer max-[380px]' >
+        <section className='footer ' >
             <div className='flex justify-around border-b-2 border-[#e3e1dc] flex-col md:flex-row flex-wrap gap-4 p-4 md:p-10 mx-auto bg-gradient-to-r from-[#fff] to-[#096aa6]'>
 
                 {/* left  */}
@@ -45,12 +45,14 @@ const Footer = () => {
                         Contact with us
                         <div className='flex flex-col gap-0 text-sm sm:text:2xl'>
                             {/* <p>Terms & Conditions</p> */}
-                            <a className='hover:text-blue-600 my-2' href='#'>Facebook</a>
+                            <button className='hover:text-blue-600 my-2' href='#'>Facebook</button>
+                            <button className='hover:text-blue-600 my-2' href='#'>Linkdin</button>
+                            <button className='hover:text-blue-600 my-2' href='#'>Twitter</button>
+                            <button className='hover:text-blue-600 my-2' href='#'>Instagram</button>
+                            {/* <a className='hover:text-blue-600 my-2' href='#'>Facebook</a>
                             <a className='hover:text-blue-600 my-2' href='#'>Linkdin</a>
                             <a className='hover:text-blue-600 my-2' href='#'>Twitter</a>
-                            <a className='hover:text-blue-600 my-2' href='#'>Instagram</a>
-
-
+                            <a className='hover:text-blue-600 my-2' href='#'>Instagram</a> */}
                         </div>
                     </div>
                     <div className='flex flex-col gap-4 text-xl sm:text-3xl px-2 sm:px-10'>

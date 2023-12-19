@@ -72,7 +72,7 @@ const Faq = () => {
                     <h1 className='mt-14 w-full  text-blue-900 font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center  font-roboto'>
                         Frequently Asked Questions
                     </h1>
-                    <div className='flex flex-col sm:flex-row gap-8 '>
+                    <div className='flex flex-col sm:flex-row gap-8 mx-auto'>
                         <div className='flex-1 flex justify-center flex-col space-y-8 px-4 md:px-20 lg:px-32 xl:px-40 '>
                             <FAQItem
                                 question="What does “escrow” mean?"
@@ -233,7 +233,6 @@ const Faq = () => {
 
                         <div className='flex  w-full justify-center flex-col gap-10 items-center'>
                             <div className=' flex max-w-4xl justify-center gap-12 flex-wrap '>
-                                <img src={workImg} alt='workImg' />
                                 <div className='w-[300px] text-center'>
                                     <h3 className='text-xl uppercase font-medium'>How it works</h3>
                                     <h2 className='text-3xl font-bold '>4 Easy Steps</h2>

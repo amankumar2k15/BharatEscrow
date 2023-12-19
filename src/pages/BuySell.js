@@ -20,96 +20,21 @@ const BuySell = () => {
     const [selectCategory, setSelectCategory] = useState("Domain")
 
     const categoryData = [
-        {
-            id: 0,
-            title: "Web Design",
-            img: domain1,
-            category: "Domain"
-        },
-        {
-            id: 2,
-            title: "Graphics",
-            img: domain2,
-            category: "Domain"
-        },
-        {
-            id: 3,
-            title: "Logo Design",
-            img: domain2,
-            category: "Domain"
-        },
-        {
-            id: 4,
-            title: "Advertising",
-            img: Websites1,
-            category: "Websites"
-        },
-        {
-            id: 5,
-            title: "Video Content",
-            img: Websites2,
-            category: "Websites"
-        },
-        {
-            id: 6,
-            title: "Viral Tweet",
-            img: Websites3,
-            category: "Websites"
-        },
-        {
-            id: 7,
-            title: "Car",
-            img: Car1,
-            category: "Car or Trucks"
-        },
-        {
-            id: 8,
-            title: "Ship",
-            img: Ship1,
-            category: "Car or Trucks"
-        },
-        {
-            id: 9,
-            title: "Truck",
-            img: Truck1,
-            category: "Car or Trucks"
-        },
-        {
-            id: 10,
-            title: "Mobile Phones",
-            img: Gadget1,
-            category: "Gadgets"
-        },
-        {
-            id: 11,
-            title: "Ear Phones",
-            img: Gadget2,
-            category: "Gadgets"
-        },
-        {
-            id: 12,
-            title: "Head Phones",
-            img: Gadget3,
-            category: "Gadgets"
-        },
-        {
-            id: 10,
-            title: "Sell",
-            img: Cycle1,
-            category: "Motorcycles"
-        },
-        {
-            id: 11,
-            title: "In Stock",
-            img: Cycle2,
-            category: "Motorcycles"
-        },
-        {
-            id: 12,
-            title: "Buy",
-            img: Cycle3,
-            category: "Motorcycles"
-        },
+        { id: 0, title: "Web Design", img: domain1, category: "Domain" },
+        { id: 2, title: "Graphics", img: domain2, category: "Domain" },
+        { id: 3, title: "Logo Design", img: domain2, category: "Domain" },
+        { id: 4, title: "Advertising", img: Websites1, category: "Websites" },
+        { id: 5, title: "Video Content", img: Websites2, category: "Websites" },
+        { id: 6, title: "Viral Tweet", img: Websites3, category: "Websites" },
+        { id: 7, title: "Car", img: Car1, category: "Car or Trucks" },
+        { id: 8, title: "Ship", img: Ship1, category: "Car or Trucks" },
+        { id: 9, title: "Truck", img: Truck1, category: "Car or Trucks" },
+        { id: 10, title: "Mobile Phones", img: Gadget1, category: "Gadgets" },
+        { id: 11, title: "Ear Phones", img: Gadget2, category: "Gadgets" },
+        { id: 12, title: "Head Phones", img: Gadget3, category: "Gadgets" },
+        { id: 10, title: "Sell", img: Cycle1, category: "Motorcycles" },
+        { id: 11, title: "In Stock", img: Cycle2, category: "Motorcycles" },
+        { id: 12, title: "Buy", img: Cycle3, category: "Motorcycles" },
 
     ]
 

@@ -15,18 +15,9 @@ const Blog = ({ setDetailRoutes }) => {
       description: "Bunzo is a VUE JS Blog Template that is perfect for any type of blog. It’s based on the VueJS and Nuxt JS platforms and utilizes the Tailwind CSS Framework. It also has no jQuery dependency, making it fast and lightweight.",
       img: blogImg,
       bulletPoints: [
-        {
-          id: 0,
-          data: "Uses Eleventy"
-        },
-        {
-          id: 1,
-          data: "Includes all demo images"
-        },
-        {
-          id: 2,
-          data: "Includes 5 pages: Homepage, Blog, Blog Post, About, Contact"
-        }
+        { id: 0, data: "Uses Eleventy" },
+        { id: 1, data: "Includes all demo images" },
+        { id: 2, data: "Includes 5 pages: Homepage, Blog, Blog Post, About, Contact" }
       ]
     },
     {
@@ -35,14 +26,8 @@ const Blog = ({ setDetailRoutes }) => {
       description: "An agreement between a business and customer in which the customer's money will be returned if they are not satisfied with the product or service.",
       img: moneyBack,
       bulletPoints: [
-        {
-          id: 0,
-          data: "1st point"
-        },
-        {
-          id: 1,
-          data: "1st point"
-        }
+        { id: 0, data: "1st point" },
+        { id: 1, data: "1st point" }
       ]
     },
     {
@@ -51,28 +36,21 @@ const Blog = ({ setDetailRoutes }) => {
       description: "This is a Next.js, Tailwind CSS blogging starter template. Probably the most feature-rich Next.js markdown blogging template out there. Comes out of the box configured with the latest technologies to make technical writing a breeze. Easily configurable and customizable. Perfect as a replacement to existing Jekyll and Hugo individual blogs.",
       img: tailwindImg,
       bulletPoints: [
-        {
-          id: 0,
-          data: "Uses Next.js"
-        },
-        {
-          id: 1,
-          data: "It has a light and dark theme"
-        },
-        {
-          id: 2,
-          data: "It has a near-perfect lighthouse score"
-        },
+        { id: 0, data: "Uses Next.js" },
+        { id: 1, data: "It has a light and dark theme" },
+        { id: 2, data: "It has a near-perfect lighthouse score" },
       ]
     }
   ]
 
 
   const handleSetRoutes = (item) => {
+    const routeName = item?.title?.split(' ').map((item) => `${item.charAt(0).toUpperCase()}${item.slice(1, item.length)}`).join(" ").replaceAll(' ', "-")
+
     localStorage.setItem("detailItem", JSON.stringify(item))
-    localStorage.setItem("detailRoute", item?.title?.split(' ').map((item)=>`${item.charAt(0).toUpperCase()}${item.slice(1,item.length)}`).join(" ").replaceAll(' ' , "-"))
-    setDetailRoutes({ route: item?.title?.split(' ').map((item)=>`${item.charAt(0).toUpperCase()}${item.slice(1,item.length)}`).join(" ").replaceAll(' ' , "-"), data: item })
-    navigate(`/${item?.title?.split(' ').map((item)=>`${item.charAt(0).toUpperCase()}${item.slice(1,item.length)}`).join(" ").replaceAll(' ' , "-")}`)
+    localStorage.setItem("detailRoute", routeName)
+    setDetailRoutes({ route: routeName, data: item })
+    navigate(`/${routeName}`)
   }
 
   return (

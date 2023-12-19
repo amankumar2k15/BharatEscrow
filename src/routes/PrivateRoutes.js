@@ -23,8 +23,6 @@ const PrivateRoutes = () => {
     const [detailRoutes, setDetailRoutes] = useState({ route: null, data: null })
     const routeDetail = localStorage.getItem("detailRoute")
 
-    console.log(routeDetail)
-
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [location.pathname]);

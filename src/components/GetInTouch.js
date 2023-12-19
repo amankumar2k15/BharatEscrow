@@ -21,8 +21,6 @@ const GetInTouch = () => {
                         className=' h-[300px] w-full px-4 md:w-[600px]'
                     />
 
-
-
                     {/* right  */}
                     <div className='w-full  sm:w-[400px] px-4 sm:px-0 h-[200px] gap-5'>
                         <div className='flex flex-col gap-5'>
