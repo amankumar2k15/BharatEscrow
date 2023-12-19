@@ -1,5 +1,6 @@
 import React, { Suspense, lazy, useEffect, useState } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
+
 const BuySell = lazy(() => import('../pages/BuySell'));
 const DetailBlog = lazy(() => import('../pages/DetailBlog'));
 const Blog = lazy(() => import('../pages/Blog'));
@@ -9,6 +10,7 @@ const Faq = lazy(() => import('../pages/Faq'));
 const Home = lazy(() => import('../pages/Home'));
 const HowItWorks = lazy(() => import('../pages/HowItWorks'));
 const Contact = lazy(() => import('../pages/Contact'));
+const DetailHome = lazy(() => import('../pages/DetailHome'));
 
 
 
@@ -21,7 +23,11 @@ const Contact = lazy(() => import('../pages/Contact'));
 const PrivateRoutes = () => {
     const location = useLocation();
     const [detailRoutes, setDetailRoutes] = useState({ route: null, data: null })
+    const [homeRoutes, sethomeRoutes] = useState({ route: null })
+
     const routeDetail = localStorage.getItem("detailRoute")
+    const homeDetail = localStorage.getItem("homeRoute");
+
     
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -39,7 +45,7 @@ const PrivateRoutes = () => {
             >
 
                 <Routes>
-                    <Route path='/' element={<Home />}></Route>
+                    <Route path='/' element={<Home sethomeRoutes={sethomeRoutes} />}></Route>
                     <Route path='/buy-sell' element={<BuySell />}></Route>
                     <Route path='/faqs' element={<Faq />}></Route>
                     <Route path='/contact' element={<Contact />}></Route>
@@ -48,6 +54,8 @@ const PrivateRoutes = () => {
                     <Route path='/privacy' element={<Privacy />}></Route>
                     <Route path='/blog' element={<Blog setDetailRoutes={setDetailRoutes} />}></Route>
                     <Route path={`/${!routeDetail ? detailRoutes.route : routeDetail}`} element={<DetailBlog data={detailRoutes} />}></Route>
+                    <Route path={`/${!homeDetail ? homeRoutes.route : homeDetail}`} element={<DetailHome data={homeRoutes} />}></Route>
+
                 </Routes>
             </Suspense>
         </>
