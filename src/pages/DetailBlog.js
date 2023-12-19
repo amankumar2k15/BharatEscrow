@@ -207,28 +207,33 @@ const DetailBlog = ({ data }) => {
           <div className='max-w-5xl mt-[104px] flex flex-col text-black md:px-3 '>
             <div className='-mt-4'>
               <p className=' text-blue-900 font-bold text-2xl font-roboto'>{displayData?.question1}</p>
-              <p>{displayData?.answer1}</p>
+              <p className='text-gray-600 text-sm font-roboto'>{displayData?.answer1}</p>
             </div>
 
             <div className='mt-8'>
               <p className='text-blue-900 font-bold text-2xl font-roboto'>{displayData?.detail?.key}</p>
-              <p>{displayData?.detail?.value}</p>
+              <p className='text-gray-600 text-sm font-roboto'>{displayData?.detail?.value}</p>
             </div>
 
             <div className='mt-8 flex flex-col gap-0'>
-              <p className='text-blue-900 font-bold text-2xl font-roboto'>Steps :-</p>
-              <div className='mt-2 flex flex-col gap-8'>
+              {console.log(displayData)}
+              <p className='text-blue-900 font-bold text-2xl font-roboto underline'>How to operate :-</p>
+              <div className='mt-4 flex flex-col gap-8'>
                 {displayData?.steps.map((item, index) => {
                   return (
                     <div key={index}>
                       <p className='text-blue-900 font-bold text-lg font-roboto'>{item.key}</p>
-                      <p className='text-gray-900 font-bold text-sm font-roboto'>{item.value}</p>
+                      <p className='text-gray-600 text-sm font-roboto'>{item.value}</p>
                     </div>
                   )
                 })
                 }
               </div>
 
+              <div className='mt-8'>
+                <p className='text-blue-900 font-bold text-2xl font-roboto'>Conclusion</p>
+                <p className='text-gray-600 text-sm font-roboto'>{displayData?.conclusion}</p>
+              </div>
             </div>
 
 
