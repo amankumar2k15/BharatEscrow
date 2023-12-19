@@ -12,13 +12,13 @@ import "../input.css"
 import { useNavigate } from 'react-router-dom'
 
 
-const Home = ({ sethomeRoute }) => {
+const Home = ({ sethomeRoutes }) => {
     const navigate = useNavigate()
 
     const handleSetHomeRoute = (item) => {
         const routeCal = item?.split(' ').map((item) => `${item.charAt(0).toUpperCase()}${item.slice(1, item.length)}`).join(" ").replaceAll(' ', "-")
         localStorage.setItem("homeRoute", routeCal)
-        sethomeRoute({ route: routeCal })
+        sethomeRoutes({ route: routeCal })
         navigate(`/${routeCal}`)
     }
 
@@ -116,7 +116,7 @@ const Home = ({ sethomeRoute }) => {
                         In the dynamic landscape of online transactions, where trust is the currency and security is paramount, BharatEscrow.com stands tall as a beacon of reliability. As a content writer, let's delve into the realm of escrow accounts and explore how BharatEscrow.com, a distinguished player in the fintech market, acts as a reliable intermediary, ensuring that every transaction processed through its platform is not just secure but built on the pillars of trust.
                     </div>
                     <button
-                        onClick={() => handleSetHomeRoute(" Reliable Intermediary")}
+                        onClick={() => handleSetHomeRoute("Reliable Intermediary")}
                         className='text-slate-700 hover:text-slate-500 absolute  bottom-4 right-4'>
                         Read more...
                     </button>
