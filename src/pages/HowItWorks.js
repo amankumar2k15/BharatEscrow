@@ -61,7 +61,7 @@ const Section = ({ title, id, content, image, reversed }) => {
                     <div className='no-underline '>{`Step ${id + 1}: `}</div>
                     &nbsp;{title}
                 </h2>
-                <h3 className='text-md text-justify  text-slate-800'>{content}</h3>
+                <h3 className='text-md text-justify text-slate-800'>{content}</h3>
             </div>
             <div className='sm:w-[400px] md:w-[450px] h-[250px] md:h-[400px] px-5 sm:px-0'>
                 <img className='object-cover sm:w-[400px] md:w-[450px] h-[250px] md:h-[400px]' src={image} alt={title} />

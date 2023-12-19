@@ -104,7 +104,7 @@ const DetailHome = ({ data }) => {
 
                 <div className='flex flex-col sm:flex-wrap '>
                     <div className='mt-16 flex flex-col gap-10 justify-center items-center'>
-                        <div className=' sm:w-8/12 '>
+                        <div className='sm:w-8/12'>
                             <h2 className='text-xl sm:text-2xl text-black'>
                                 {displayData?.title}
                             </h2>
