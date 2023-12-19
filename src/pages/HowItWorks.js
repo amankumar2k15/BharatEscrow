@@ -55,7 +55,7 @@ const sections = [
 
 const Section = ({ title, id, content, image, reversed }) => {
     return (
-        <div className={`flex flex-col justify-center items-center ${reversed ? "sm:flex-row-reverse" : "sm:flex-row"} px-4 sm:flex-wrap md:flex-nowrap gap-y-4 sm:justify-evenly`}>
+        <div className={`flex flex-col justify-center items-center ${reversed ? "sm:flex-row-reverse" : "sm:flex-row"} px-6 sm:flex-wrap md:flex-nowrap gap-y-4 sm:justify-evenly`}>
             <div className='flex flex-col justify-center gap-4 mb-8 w-11/12  md:w-[500px] mx-2 md:px-6'>
                 <h2 className='text-lg inline-flex font-semibold sm:text-xl md:text-2xl whitespace-nowrap text-blue-900'>
                     <div className='no-underline '>{`Step ${id + 1}: `}</div>
