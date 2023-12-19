@@ -9,10 +9,11 @@ import Websites2 from "../assets/buyorsell/Websites2.png"
 import websiteDevelopment from "../assets/Home/websiteDevelopment.jpg"
 import Car1 from '../assets/buyorsell/Car1.jpg'
 import "../input.css"
+import { useNavigate } from 'react-router-dom'
 
 
 const Home = ({ sethomeRoute }) => {
-
+    const navigate = useNavigate()
 
     const handleSetHomeRoute = (item) => {
         const routeCal = item?.split(' ').map((item) => `${item.charAt(0).toUpperCase()}${item.slice(1, item.length)}`).join(" ").replaceAll(' ', "-")
@@ -20,7 +21,6 @@ const Home = ({ sethomeRoute }) => {
         sethomeRoute({ route: routeCal })
         navigate(`/${routeCal}`)
     }
-
 
     const INDUSTRIESData = [
         {
