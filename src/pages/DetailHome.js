@@ -104,7 +104,7 @@ const DetailHome = ({ data }) => {
                             <h2 className='text-xl sm:text-2xl text-black'>
                                 {displayData?.title}
                             </h2>
-                            <p className='mt-5 text-md sm:text-lg text-[#211d1d]'>
+                            <p className='mt-5 text-md text-slate-800'>
                                 {displayData?.shortDesc}
                             </p>
                         </div>
@@ -117,7 +117,7 @@ const DetailHome = ({ data }) => {
                             <h2 className='text-xl sm:text-2xl text-black'>
                                 {displayData?.key1}
                             </h2>
-                            <p className='mt-5 text-md sm:text-lg text-[#211d1d]'>
+                            <p className='mt-5 text-md  text-slate-800'>
                                 {displayData?.key1desc}
                             </p>
                         </div>
@@ -133,7 +133,7 @@ const DetailHome = ({ data }) => {
                                     <h2 className='text-xl sm:text-2xl text-black'>
                                         {`${item.id + 1}. ${item?.ques}`}
                                     </h2>
-                                    <p className='mt-5 text-md sm:text-lg text-[#211d1d]'>
+                                    <p className='mt-5 text-md  text-slate-800'>
                                         {item?.ans}
                                     </p>
                                 </div>
@@ -148,7 +148,7 @@ const DetailHome = ({ data }) => {
                             <h2 className='text-xl sm:text-2xl text-black'>
                                 {displayData?.key2}
                             </h2>
-                            <p className='mt-5 text-md sm:text-lg text-[#211d1d]'>
+                            <p className='mt-5 text-md  text-slate-800'>
                                 {displayData?.key2desc}
                             </p>
                         </div>
@@ -161,7 +161,7 @@ const DetailHome = ({ data }) => {
                             <h2 className='text-xl sm:text-2xl text-black'>
                                 Conclusion
                             </h2>
-                            <p className='mt-5 text-md sm:text-lg text-[#211d1d]'>
+                            <p className='mt-5 text-md  text-slate-800'>
                                 {displayData?.conclusion}
                             </p>
                         </div>

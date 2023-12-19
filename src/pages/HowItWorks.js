@@ -61,7 +61,7 @@ const Section = ({ title, id, content, image, reversed }) => {
                     <div className='no-underline '>{`Step ${id + 1}: `}</div>
                     &nbsp;{title}
                 </h2>
-                <h3 className='text-sm sm:text-md md:text-lg text-justify'>{content}</h3>
+                <h3 className='text-md text-justify  text-slate-800'>{content}</h3>
             </div>
             <div className='sm:w-[400px] md:w-[450px] h-[250px] md:h-[400px] px-5 sm:px-0'>
                 <img className='object-cover sm:w-[400px] md:w-[450px] h-[250px] md:h-[400px]' src={image} alt={title} />
@@ -79,12 +79,12 @@ const HowItWorks = () => (
 
             <div className='px-10 py-8'>
                 <h2 className='text-lg font-semibold sm:text-xl md:text-2xl underline text-blue-900'>What is an Escrow Account?</h2>
-                <p className='text-sm sm:text-md md:text-lg text-justify'>It is an intermittent account that is only active till the transaction is completed. The account is closed once all of the criteria between the buyer and seller have been met. Escrows often involve the deposit of a monetary-valued document. These documents could be deeds, written instruments, payment pledges, licenses, patents, cheques, bonds, or mortgages.</p>
+                <p className=' mt-2 text-md  text-justify text-slate-800'>It is an intermittent account that is only active till the transaction is completed. The account is closed once all of the criteria between the buyer and seller have been met. Escrows often involve the deposit of a monetary-valued document. These documents could be deeds, written instruments, payment pledges, licenses, patents, cheques, bonds, or mortgages.</p>
             </div>
 
             <div className='px-10 py-4'>
                 <h2 className='text-lg font-semibold sm:text-xl md:text-2xl underline text-blue-900'>Details about Escrow Account?</h2>
-                <p className='text-sm sm:text-md md:text-lg text-justify'>In an era where financial transparency is paramount, the use of escrow accounts has become a cornerstone for secure transactions. BharatEscrow, in collaboration with multiple RBI-regulated banking partners, is at the forefront of delivering unparalleled financial transparency between buyers and sellers. This comprehensive guide outlines the step-by-step process of utilizing an escrow account with BharatEscrow, aligning with the vision of providing financial transparency to everyone.</p>
+                <p className=' mt-2 text-md  text-justify text-slate-800'>In an era where financial transparency is paramount, the use of escrow accounts has become a cornerstone for secure transactions. BharatEscrow, in collaboration with multiple RBI-regulated banking partners, is at the forefront of delivering unparalleled financial transparency between buyers and sellers. This comprehensive guide outlines the step-by-step process of utilizing an escrow account with BharatEscrow, aligning with the vision of providing financial transparency to everyone.</p>
             </div>
 
 
