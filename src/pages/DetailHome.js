@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router'
+import Footer from '../components/Footer'
 
 const detailHomeData = [
     {
@@ -27,12 +28,12 @@ const detailHomeData = [
                 ans: "Trust is the cornerstone of secure transactions, and BharatEscrow.com understands its significance. By offering escrow services, the platform cultivates an environment where both parties can engage in transactions with a heightened sense of trust. The buyer is assured that the funds are safeguarded, and the seller gains confidence in delivering the agreed-upon goods or services."
             },
             {
-                id: 2,
+                id: 3,
                 ques: " Transparent Process:",
                 ans: "Security thrives in transparency. BharatEscrow.com prioritizes a transparent transaction process, allowing both parties to track the progress of the transaction. From initiation to completion, stakeholders are informed, ensuring that there are no hidden surprises and promoting a secure and open financial ecosystem."
             },
             {
-                id: 3,
+                id: 4,
                 ques: "Fraud Prevention Measures:",
                 ans: "In the age of digital transactions, the threat of fraud looms large. BharatEscrow.com employs robust fraud prevention measures within its escrow accounts, utilizing cutting-edge technology to identify and mitigate potential risks. This proactive stance is instrumental in fortifying the security of every transaction."
             }
@@ -66,12 +67,12 @@ const detailHomeData = [
                 ans: "Reliability thrives in transparency. BharatEscrow.com champions a transparent and predictable transaction process, providing a roadmap that all stakeholders can rely on. From the initiation of the transaction to its completion, the platform ensures that every party is well-informed, fostering an environment of trust and reliability."
             },
             {
-                id: 2,
+                id: 3,
                 ques: "Unbiased Neutrality:",
                 ans: "The reliability of an intermediary is often measured by its neutrality. BharatEscrow.com embraces unbiased neutrality, steering clear of favoritism towards either party involved in a transaction. This commitment to impartiality reinforces the reliability of the platform, creating an atmosphere where every user can place their trust."
             },
             {
-                id: 3,
+                id: 4,
                 ques: " Track Record of Success:",
                 ans: "Reliability is earned through a track record of success. BharatEscrow.com proudly showcases a history of successful transactions, becoming a testament to its unwavering commitment to reliability. Businesses and individuals alike can rely on this platform based on its proven ability to facilitate secure and smooth transactions."
             }
@@ -87,18 +88,93 @@ const DetailHome = ({ data }) => {
     const [displayData, setData] = useState();
 
 
-
-
-
-
     useEffect(() => {
-        setData(detailHomeData.filter((item) => `/${item.route}`.replaceAll(' ' , '-') === location.pathname)[0]);
+        setData(detailHomeData.filter((item) => `/${item.route}`.replaceAll(' ', '-') === location.pathname)[0]);
     }, [data])
 
 
-    // data to map is =====>                displayData   
+
     return (
-        <div>Hey I am connected </div>
+        <>
+            <div className='flex flex-col py-10 w-full px-10 rounded-none  sm:rounded-t-[200px]'>
+
+                <div className='flex flex-col sm:flex-wrap '>
+                    <div className='mt-32 flex flex-col gap-10 justify-center items-center'>
+                        <div className=' sm:w-8/12 '>
+                            <h2 className='text-xl sm:text-2xl text-black'>
+                                {displayData?.title}
+                            </h2>
+                            <p className='mt-5 text-md sm:text-lg text-[#211d1d]'>
+                                {displayData?.shortDesc}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='flex flex-col sm:flex-wrap '>
+                    <div className='mt-16 flex flex-col gap-10 justify-center items-center'>
+                        <div className=' sm:w-8/12 '>
+                            <h2 className='text-xl sm:text-2xl text-black'>
+                                {displayData?.key1}
+                            </h2>
+                            <p className='mt-5 text-md sm:text-lg text-[#211d1d]'>
+                                {displayData?.key1desc}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                {/* //Mapping Data  */}
+                {displayData?.questions?.map((item) => {
+                    return (
+                        <div key={item.id} className='flex flex-col sm:flex-wrap '>
+                            <div className='mt-12 flex flex-col gap-10 justify-center items-center'>
+                                <div className=' sm:w-8/12 '>
+                                    <h2 className='text-xl sm:text-2xl text-black'>
+                                        {`${item.id + 1}. ${item?.ques}`}
+                                    </h2>
+                                    <p className='mt-5 text-md sm:text-lg text-[#211d1d]'>
+                                        {item?.ans}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    )
+                })}
+
+                <div className='flex flex-col sm:flex-wrap '>
+                    <div className='mt-16 flex flex-col gap-10 justify-center items-center'>
+                        <div className=' sm:w-8/12 '>
+                            <h2 className='text-xl sm:text-2xl text-black'>
+                                {displayData?.key2}
+                            </h2>
+                            <p className='mt-5 text-md sm:text-lg text-[#211d1d]'>
+                                {displayData?.key2desc}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className='flex flex-col sm:flex-wrap '>
+                    <div className='mt-16 flex flex-col gap-10 justify-center items-center'>
+                        <div className=' sm:w-8/12 '>
+                            <h2 className='text-xl sm:text-2xl text-black'>
+                                Conclusion
+                            </h2>
+                            <p className='mt-5 text-md sm:text-lg text-[#211d1d]'>
+                                {displayData?.conclusion}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+
+            </div>
+
+            <Footer />
+        </>
     )
 }
 

@@ -97,13 +97,13 @@ const Home = ({ sethomeRoutes }) => {
                     <div className='text-xl sm:text-2xl font-semibold text-blue-900 py-4'>
                         Secure Transactions
                     </div>
-                    <div className='text-sm sm:text-lg text-slate-700 -mt-4  pb-8'>
+                    <div className='text-sm sm:text-md text-justify text-slate-700 -mt-1 pb-8'>
                         In the dynamic realm of online transactions, where trust and security are paramount, BharatEscrow.com emerges as a pioneer, redefining the landscape of secure financial transactions. As a content writer delving into the world of secure transaction means, let's explore how BharatEscrow.com, as a leading player in the fintech market, acts as the intermediary ensuring that every transaction processed through its escrow accounts is fortified with security.
                     </div>
                     <button
                         onClick={() => handleSetHomeRoute("Secure Transactions")}
-                        className='text-slate-700 hover:text-slate-500 absolute  bottom-4 right-4'>
-                        Read more...
+                        className='hover:underline text-slate-700 hover:text-slate-500 absolute  bottom-4 right-8'>
+                        Read more
                     </button>
 
                 </div>
@@ -112,13 +112,13 @@ const Home = ({ sethomeRoutes }) => {
                     <div className='text-xl sm:text-2xl font-semibold text-blue-900 py-4'>
                         Reliable Intermediary
                     </div>
-                    <div className='text-sm sm:text-lg text-slate-700 -mt-4 pb-8' >
+                    <div className='text-sm sm:text-md text-justify text-slate-700 -mt-1 pb-8' >
                         In the dynamic landscape of online transactions, where trust is the currency and security is paramount, BharatEscrow.com stands tall as a beacon of reliability. As a content writer, let's delve into the realm of escrow accounts and explore how BharatEscrow.com, a distinguished player in the fintech market, acts as a reliable intermediary, ensuring that every transaction processed through its platform is not just secure but built on the pillars of trust.
                     </div>
                     <button
                         onClick={() => handleSetHomeRoute("Reliable Intermediary")}
-                        className='text-slate-700 hover:text-slate-500 absolute  bottom-4 right-4'>
-                        Read more...
+                        className='hover:underline text-slate-700 hover:text-slate-500 absolute  bottom-4 right-8'>
+                        Read more
                     </button>
                 </div>
             </div>
