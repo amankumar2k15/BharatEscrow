@@ -77,12 +77,12 @@ const Navbar = () => {
                                     Home
                                 </Link>
                             </li>
-
+                            {Object.values(menuItem).map((item, index) => console.log(item.to === currentPath))}
                             {
-                                Object.values(menuItem).map((item, index) => (
+                                Object.values(menuItem).map((item, index) =>(
                                     <li
                                         onClick={() => setHide(!hide)}
-                                        className={` ${currentPath === item.to ? "text-blue-900" : "text-black md:text-white"} block py-2 pl-3 pr-4 text-black md:text-white text-[16px] rounded hover:text-white md:hover:text-blue md:hover:bg-transparent md:p-0 hover:bg-[#096aa6]  md:dark:hover:bg-transparent dark:border-gray-700" `}
+                                        className={`${currentPath === item.to ? "md:text-blue-800" : "text-black md:text-white hover:text-white"} block py-2 pl-3 pr-4 text-black md:text-white text-[16px] rounded  md:hover:text-blue md:hover:bg-transparent md:p-0 hover:bg-[#096aa6]  md:dark:hover:bg-transparent dark:border-gray-700" `}
                                         key={index}>
                                         <Link to={item.to}>{item.text}</Link>
                                     </li>

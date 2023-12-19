@@ -45,12 +45,11 @@ const Blog = ({ setDetailRoutes }) => {
 
 
   const handleSetRoutes = (item) => {
-    const routeName = item?.title?.split(' ').map((item) => `${item.charAt(0).toUpperCase()}${item.slice(1, item.length)}`).join(" ").replaceAll(' ', "-")
-
+    const routeCal = item?.title?.split(' ').map((item)=>`${item.charAt(0).toUpperCase()}${item.slice(1,item.length)}`).join(" ").replaceAll(' ' , "-")
     localStorage.setItem("detailItem", JSON.stringify(item))
-    localStorage.setItem("detailRoute", routeName)
-    setDetailRoutes({ route: routeName, data: item })
-    navigate(`/${routeName}`)
+    localStorage.setItem("detailRoute", routeCal )
+    setDetailRoutes({ route: routeCal})
+    navigate(`/${routeCal}`)
   }
 
   return (

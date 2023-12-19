@@ -22,22 +22,21 @@ const PrivateRoutes = () => {
     const location = useLocation();
     const [detailRoutes, setDetailRoutes] = useState({ route: null, data: null })
     const routeDetail = localStorage.getItem("detailRoute")
-
+    
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [location.pathname]);
 
-
     return (
         <>
             <Suspense fallback={
-                <div className=' flex items-center justify-center h-screen'>
-                    <div className=" animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-blue-600 rounded-full dark:text-blue-500" role="status" aria-label="loading">
+                <div className='flex items-center justify-center h-screen'>
+                    <div className="animate-spin inline-block w-6 h-6 border-[3px] border-current border-t-transparent text-blue-600 rounded-full dark:text-blue-500" role="status" aria-label="loading">
                         <span className="sr-only">Loading...</span>
                     </div>
                 </div>
-
-            }>
+            }
+            >
 
                 <Routes>
                     <Route path='/' element={<Home />}></Route>
