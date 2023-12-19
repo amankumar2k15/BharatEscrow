@@ -43,7 +43,7 @@ const Footer = () => {
                     </div>
                     <div className='flex flex-col gap-4 text-xl sm:text-3xl px-2 sm:px-10'>
                         Contact with us
-                        <div className='flex flex-col gap-0 text-sm sm:text:2xl'>
+                        <div className='flex justify-start items-start flex-col gap-0 text-sm sm:text:2xl'>
                             {/* <p>Terms & Conditions</p> */}
                             <button className='hover:text-blue-600 my-2' href='#'>Facebook</button>
                             <button className='hover:text-blue-600 my-2' href='#'>Linkdin</button>
@@ -67,7 +67,7 @@ const Footer = () => {
                 </div>
 
             </div>
-            <div className='bg-gradient-to-r from-[#fff] to-[#096aa6] text-slate-800 md:text-[#e3e1dc] py-2 text-center '>
+            <div className='text-slate-700 font-semibold bg-gradient-to-r from-[#fff] to-[#096aa6] md:text-[#e3e1dc] py-2 text-center '>
                 Copyright &copy; 2023 BharatEscrow
             </div>
         </section>

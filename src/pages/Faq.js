@@ -65,84 +65,65 @@ const worksItems = [
 const FAQQuestions = [
     {
         id: 0,
-        question: "3. Why should I use Escrow for freelancer transactions?",
-        answer: "Escrow provides a secure payment environment, ensuring that freelancers receive payment for their work.It gives entities peace of mind, knowing that funds will only be released when the project is successfully accomplished.Escrow reduces the risk of fraudulent activities or non-payment for both parties involved.",
+        question: "3. How long does the escrow process take?",
+        answer: "The duration varies based on the complexity of the transaction and how quickly the agreed-upon conditions are met. BharatEscrow provides timely updates throughout the process.",
         img: buySell
     },
     {
         id: 1,
-        question: "4. How do I create an Escrow transaction?",
-        answer: "To create an Escrow transaction, you need to register an account on BharatEscrow.com.Once registered, you can initiate a new transaction by providing project details, agreed terms, and the escrow amount.The other party will receive a notification to review and accept the transaction details.",
+        question: "4. Can I use BharatEscrow for international transactions?",
+        answer: "Yes, BharatEscrow supports both domestic and international transactions, offering a seamless and secure experience globally.",
         img: null
     },
     {
         id: 2,
-        question: "5. Is there a fee for using Escrow?",
-        answer: " Yes, there is a small service fee for using Escrow services. The fee percentage may vary based on the transaction amount and other factors. You can find detailed information on our pricing page.",
+        question: "5. What happens if there is a dispute during the transaction?",
+        answer: " BharatEscrow provides a dispute resolution mechanism. The platform carefully investigates and mediates disputes to ensure fair outcomes.",
         img: fees
     },
     {
         id: 3,
-        question: "6. What payment methods are supported by Escrow?",
-        answer: " Yes, there is a small service fee for using Escrow services. The fee percentage may vary based on the transaction amount and other factors. You can find detailed information on our pricing page.",
+        question: "6. Are there any hidden fees associated with using BharatEscrow?",
+        answer: " BharatEscrow is transparent about its fee structure, and there are no hidden fees. Users are informed of any applicable charges upfront.",
         img: paymentImg
-    },
-    {
-        id: 4,
-        question: "7. What if there's a dispute during the project?",
-        answer: " In case of a dispute, both the freelancer and the entity can unveil evidence to support their claims. Our dispute resolution team will review the evidence and work towards a fair resolution.If an agreement cannot be reached, the escrowed funds will remain held until further resolution.",
-        img: disputeImg
-    }
-    ,
-    {
-        id: 5,
-        question: "8. Is BharatEscrow.com a reliable platform?",
-        answer: "BharatEscrow.com is a reputable and trusted platform for escrow services. We prioritize the security of our users' transactions and have implemented various measures to ensure a safe experience.",
-        img: reliablePlatformImg
-    },
-    {
-        id: 6,
-        question: "9. How do I withdraw funds from my Escrow account?",
-        answer: " Once funds are released from escrow, you can withdraw them to your linked bank account or payment method.",
-        img: disputeImg
     }
 ]
 
 const EscrowAdvantage = [
     {
         id: 0,
-        icon :  <RiAccountCircleLine className='text-blue-600' size={50} />,
-        advantage : " Open digital escrow account within minutes"
+        icon: <RiAccountCircleLine className='text-blue-600' size={50} />,
+        advantage: " Open digital escrow account within minutes"
 
     },
     {
         id: 1,
-        icon :  <MdOutlineApi className='text-blue-600' size={50} />,
-        advantage : "Freedom of choice-APIs or white labelled dashboards"
+        icon: <MdOutlineApi className='text-blue-600' size={50} />,
+        advantage: "Freedom of choice-APIs or white labelled dashboards"
 
     },
     {
         id: 2,
-        icon :  <BsFillFileEarmarkPostFill className='text-blue-600' size={50} />,
-        advantage : "Easily accessible digital contracts"
+        icon: <BsFillFileEarmarkPostFill className='text-blue-600' size={50} />,
+        advantage: "Easily accessible digital contracts"
 
     },
     {
         id: 3,
-        icon :     <AiFillEye className='text-blue-600' size={50} />,
-        advantage : " Cut the unpredictability and unwanted surprises"
+        icon: <AiFillEye className='text-blue-600' size={50} />,
+        advantage: " Cut the unpredictability and unwanted surprises"
 
     },
     {
         id: 4,
-        icon :     <MdOutlineSecurity className='text-blue-600' size={50} />,
-        advantage : "Add the extra layer of trust and transparency"
+        icon: <MdOutlineSecurity className='text-blue-600' size={50} />,
+        advantage: "Add the extra layer of trust and transparency"
 
     },
     {
         id: 5,
-        icon :        <AiOutlineTransaction className='text-blue-600' size={50} />,
-        advantage : "  Customised to your transaction flows"
+        icon: <AiOutlineTransaction className='text-blue-600' size={50} />,
+        advantage: "  Customised to your transaction flows"
 
     }
 ]
@@ -192,10 +173,10 @@ const Faq = () => {
                         <div className='mt-40 flex flex-col gap-10 justify-center items-center'>
                             <div className=' sm:w-8/12 '>
                                 <h2 className='text-xl sm:text-2xl text-black'>
-                                    1. What is Escrow?
+                                    1. How secure is the BharatEscrow platform?
                                 </h2>
-                                <p className='mt-5 text-md sm:text-lg text-[#9e9b9b]'>
-                                    Escrow is a secure and reliable payment service provided by BharatEscrow.com, which acts as a trusted intermediary between freelancers and entities during transactions. It ensures that both parties fulfill their obligations before funds are released.
+                                <p className='mt-5 text-md sm:text-lg text-[#211d1d]'>
+                                    BharatEscrow prioritizes security, leveraging advanced encryption and collaborating with RBI-regulated banking partners to ensure a highly secure platform.
                                 </p>
                             </div>
 
@@ -206,28 +187,28 @@ const Faq = () => {
 
                                 <div className=' flex max-w-4xl justify-center gap-12 flex-wrap '>
                                     {
-                                        EscrowAdvantage.map((item)=>{
+                                        EscrowAdvantage.map((item) => {
                                             return (
-                                                <div key={item.id} className='w-56 sm:w-64 h-56 shadow-[#9aa2af] hover:shadow-blue-600 shadow-xl black rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm  text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
-                                                <div className='flex flex-col gap-4'>
-                                                    <div className=' h-full flex flex-col justify-center items-center'>
-                                                        <div className='relative border-4 border-blue-600 pt-4 rounded-full w-28 h-28 realtive'>
-                                                            <p className='absolute top-7 left-7'>
-                                                               {item.icon}
-                                                            </p>
+                                                <div key={item.id} className='w-56 sm:w-64 h-56 shadow-[#9aa2af]  hover:shadow-blue-600 shadow-xl black rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm  text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
+                                                    <div className='flex flex-col gap-4'>
+                                                        <div className=' h-full flex flex-col justify-center items-center'>
+                                                            <div className='relative border-4 border-blue-600 pt-4 rounded-full w-28 h-28 realtive'>
+                                                                <p className='absolute top-7 left-7'>
+                                                                    {item.icon}
+                                                                </p>
+                                                            </div>
                                                         </div>
+                                                        <h2 className='text-center text-lg px-2 text-black '>
+                                                            {item.advantage}
+                                                        </h2>
                                                     </div>
-                                                    <h2 className='text-center text-lg px-2 text-black '>
-                                                       {item.advantage}
-                                                    </h2>
                                                 </div>
-                                            </div>
                                             )
                                         })
                                     }
-                                
 
-                                 
+
+
 
                                 </div>
                             </div>
@@ -242,10 +223,10 @@ const Faq = () => {
                     <div className='mt-5 flex flex-col gap-10 justify-center items-center '>
                         <div className=' sm:w-8/12   '>
                             <h2 className='text-xl sm:text-2xl  text-black'>
-                                2. How does Escrow work?
+                                2. What types of transactions are suitable for escrow services?
                             </h2>
                             <p className=' mt-4 text-lg sm:text-lg  text-[#211d1d]'>
-                                When using Escrow, both the freelancer and the entity agree to the terms of service.The entity deposits the agreed-upon funds into an escrow account.The freelancer completes the project or service as per the agreed terms.Once the entity approves the deliverables, the funds are released to the freelancer.If any disputes arise, our team mediates to find a fair resolution.
+                                Escrow services are suitable for various transactions, including online purchases, real estate transactions, freelance services, and business acquisitions.
                             </p>
                         </div>
 
@@ -262,7 +243,7 @@ const Faq = () => {
 
                                 {worksItems.map((item, index) => {
                                     return (
-                                        <div key={index} className=' w-[230px] flex-shrink-0 border-2 h-[400px] border-black hover:border-blue-600 rounded-lg  px-1'>
+                                        <div key={index} className=' w-[230px]  flex-shrink-0 border-2 h-[400px] border-black hover:border-blue-600 rounded-lg  px-1'>
                                             <div className='flex flex-col justify-center gap-y-3 items-center'>
                                                 <h3 className='text-blue-900 font-bold text-[12px] mt-2'>{item.iconHeading}</h3>
                                                 <div>
@@ -304,23 +285,23 @@ const Faq = () => {
                 {
                     FAQQuestions.map((item) => {
                         return (
-                            <div className='flex flex-col w-full px-10  bg-white ' key={item.id}>
+                            <div className='flex flex-col w-full px-10 bg-white ' key={item.id}>
                                 <div className='pt-14 flex flex-col gap-10 justify-center items-center '>
                                     <div className=' sm:w-8/12   '>
                                         <h2 className='text-xl sm:text-2xl text-black'>
                                             {item.question}
                                         </h2>
-                                        <p className=' mt-4 text-lg sm:text-xl text-[#211d1d]'>
+                                        <p className=' mt-4 text-md sm:text-lg text-[#211d1d]'>
                                             {item.answer}
                                         </p>
                                     </div>
                                     <div className='flex  w-full justify-center flex-col gap-10 items-center'>
                                         {
-                                           item?.img != null &&  <div className=' flex max-w-4xl justify-center gap-12 flex-wrap '>
-                                           <img className='sm:max-w-xl h-60' src={item?.img} alt={item.question} />
-                                       </div>
+                                            item?.img != null && <div className=' flex max-w-4xl justify-center gap-12 flex-wrap '>
+                                                <img className='sm:max-w-xl h-60' src={item?.img} alt={item.question} />
+                                            </div>
                                         }
-                                       
+
                                     </div>
                                 </div>
                             </div>
@@ -328,12 +309,13 @@ const Faq = () => {
                     })
                 }
 
-
-
-
+                <p className='text-xl sm:text-lg text-black w-8/12 px-4 bg-green-100 rounded-lg -pt-4 mb-16 mx-auto container'>
+                    "In a world where financial transparency is non-negotiable, BharatEscrow stands as a reliable partner, offering a secure and efficient platform for escrow services. By following this step-by-step guide, users can navigate the escrow process seamlessly, fostering trust and confidence in their financial transactions."
+                </p>
             </div>
+
             <Footer />
-        </section >
+        </section>
     )
 }
 
