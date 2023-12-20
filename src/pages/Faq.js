@@ -4,6 +4,8 @@ import { RiAccountCircleLine } from "react-icons/ri"
 import { MdOutlineApi } from "react-icons/md"
 import { BsFillFileEarmarkPostFill } from "react-icons/bs"
 import { AiFillEye, AiOutlineTransaction } from "react-icons/ai"
+import { GrFingerPrint } from "react-icons/gr";
+import { GrGroup } from "react-icons/gr";
 import { MdOutlineSecurity } from "react-icons/md"
 import buySell from "../assets/Faqs/buySell.jpg"
 import fees from "../assets/Faqs/fees.jpg"
@@ -11,6 +13,10 @@ import paymentImg from "../assets/Faqs/payment.jpg"
 import Footer from '../components/Footer'
 import { AiOutlineProfile } from "react-icons/ai";
 import { ImProfile } from "react-icons/im";
+import { FaHandshake, FaMagnifyingGlass } from "react-icons/fa6";
+import { FaAmazonPay, FaRegHandshake, FaLock } from "react-icons/fa";
+import { PiUsersFourFill } from "react-icons/pi";
+
 
 
 const FAQItem = ({ question, answer }) => (
@@ -27,34 +33,34 @@ const FAQItem = ({ question, answer }) => (
 const worksItems = [
     {
         iconHeading: "Agree",
-        icon: <AiOutlineProfile size={40} />,
+        icon: <GrGroup size={40} />,
         mainHeading: "Offline and Online", subHeading: "Parties AGREE to the terms",
-        para: "Buyer, seller and agent, if present, agree to the terms of the transaction.",
-        iconImg: <ImProfile size={40} />,
+        para: "Buyer, Seller & agent (if present), agrees on the terms of exchange or transaction.",
+        iconImg: <FaRegHandshake size={40} />,
         iconImgHeading: "SETUP ESCROW ONLINE"
     },
     {
-        iconHeading: "Agree",
-        icon: <AiOutlineProfile size={40} />,
-        mainHeading: "MULTI PARTY ESCROW", subHeading: "Money SECURED in Trust account ",
-        para: "Verified buyers commits to a transaction by paying money into a secure escrow account",
-        iconImg: <ImProfile size={40} />,
+        iconHeading: "Secure",
+        icon: <GrFingerPrint size={40} />,
+        mainHeading: "MULTI PARTY ESCROW", subHeading: "Money SECURED in a trusted account ",
+        para: "A verified customer agrees to deposit the money into a secured Bharat Escrow account.",
+        iconImg: <FaLock size={40} />,
         iconImgHeading: "SIGN AGREEMENT DIGITALLY"
     },
     {
-        iconHeading: "Agree",
-        icon: <AiOutlineProfile size={40} />,
-        mainHeading: "CONFIRMATION", subHeading: "Parties confirm on delivery",
-        para: "Verified seller arranges delivery of the products or services, as agreed with all the parties.",
-        iconImg: <ImProfile size={40} />,
+        iconHeading: "Deliver",
+        icon: <FaHandshake size={40} />,
+        mainHeading: "CONFIRMATION", subHeading: "Notification on Delivery Confirmation",
+        para: "As agreed on the terms, the seller arranges the delivery of the product or services",
+        iconImg: <PiUsersFourFill size={40} />,
         iconImgHeading: "CHECK YOUR GOODS"
     },
     {
-        iconHeading: "Agree",
-        icon: <AiOutlineProfile size={40} />,
-        mainHeading: "Offline and Online", subHeading: "WHEN APPROVED",
-        para: "Escrow releases money to the seller and/or agent once approved by the buyer",
-        iconImg: <ImProfile size={40} />,
+        iconHeading: "Pay",
+        icon: <FaAmazonPay size={40} />,
+        mainHeading: "Offline and Online", subHeading: "Transaction Completed ✅",
+        para: "Bharat Escrow releases the money to the customer or buyer in their bank account or after inspection of the exchange",
+        iconImg: <FaMagnifyingGlass size={40} />,
         iconImgHeading: "OR THE INSPECTION TIME PASSES"
     }
 ]
