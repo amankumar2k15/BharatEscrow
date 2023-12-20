@@ -236,7 +236,7 @@ const DetailBlog = ({ data }) => {
                 {
                   displayData?.faqs.map((item, index) => {
                     return (
-                      <div id="accordion-collapse" data-accordion="collapse" onClick={() => setRow({ index, isOpen: !faqRow.isOpen })}>
+                      <div id="accordion-collapse" key={index} data-accordion="collapse" onClick={() => setRow({ index, isOpen: !faqRow.isOpen })}>
                         <h2 id="accordion-collapse-heading-1">
                           <button
                             type="button"
