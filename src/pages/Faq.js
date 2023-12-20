@@ -1,18 +1,14 @@
 import React from 'react'
 import faq from "../assets/Faqs/faq.jpg"
 import { RiAccountCircleLine } from "react-icons/ri"
-import { MdOutlineApi } from "react-icons/md"
+import { MdOutlineApi , MdOutlineSecurity } from "react-icons/md"
 import { BsFillFileEarmarkPostFill } from "react-icons/bs"
 import { AiFillEye, AiOutlineTransaction } from "react-icons/ai"
-import { GrFingerPrint } from "react-icons/gr";
-import { GrGroup } from "react-icons/gr";
-import { MdOutlineSecurity } from "react-icons/md"
+import { GrFingerPrint , GrGroup } from "react-icons/gr";
 import buySell from "../assets/Faqs/buySell.jpg"
 import fees from "../assets/Faqs/fees.jpg"
 import paymentImg from "../assets/Faqs/payment.jpg"
 import Footer from '../components/Footer'
-import { AiOutlineProfile } from "react-icons/ai";
-import { ImProfile } from "react-icons/im";
 import { FaHandshake, FaMagnifyingGlass } from "react-icons/fa6";
 import { FaAmazonPay, FaRegHandshake, FaLock } from "react-icons/fa";
 import { PiUsersFourFill } from "react-icons/pi";

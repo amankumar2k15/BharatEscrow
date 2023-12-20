@@ -213,7 +213,7 @@ const DetailBlog = ({ data }) => {
               <div className='mt-4 flex flex-col gap-8'>
                 {displayData?.steps.map((item, index) => {
                   return (
-                    <div key={index}>
+                    <div key={item.id}>
                       <p className='text-blue-900 font-bold text-lg font-roboto'>{item.key}</p>
                       <p className='text-gray-600 text-sm font-roboto'>{item.value}</p>
                     </div>
@@ -228,7 +228,7 @@ const DetailBlog = ({ data }) => {
                 {
                   displayData?.faqs.map((item, index) => {
                     return (
-                      <div id="accordion-collapse" data-accordion="collapse" onClick={() => setRow({ index, isOpen: !faqRow.isOpen })}>
+                      <div id="accordion-collapse" key={index} data-accordion="collapse" onClick={() => setRow({ index, isOpen: !faqRow.isOpen })}>
                         <h2 id="accordion-collapse-heading-1">
                           <button
                             type="button"
@@ -242,7 +242,6 @@ const DetailBlog = ({ data }) => {
                             {faqRow.index === index && faqRow.isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
                           </button>
                         </h2>
-                        {console.log(faqRow)}
                         <div
                           id="accordion-collapse-body-1"
                           className={faqRow.index === index && faqRow.isOpen ? "visible bg-slate-100" : "hidden"}

@@ -18,7 +18,6 @@ import Footer from '../components/Footer'
 
 const BuySell = () => {
     const [selectCategory, setSelectCategory] = useState("Domain")
-    console.log(selectCategory)
 
     const categoryData = [
         { id: 0, title: "Web Design", img: domain1, category: "Domain" },

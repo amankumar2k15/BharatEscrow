@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router'
 
 const ContactForm = () => {
-
     const navigate = useNavigate()
     const [contactData, setContactData] = useState({
         Email: null, Phone: null, Name: null, Message: null
@@ -12,25 +11,23 @@ const ContactForm = () => {
         e.preventDefault()
         const formData = new FormData();
         Object.keys(contactData).forEach((item) => {
-            // console.log(contactData);
             formData.append(item, contactData[item])
         })
-        try{
-            const header =  {
+        try {
+            const header = {
                 method: 'POST',
                 mode: 'no-cors', // Set mode to 'no-cors',
                 'Accept': 'application/json, text/plain',
                 'Content-Type': 'application/json;charset=UTF-8',
                 body: formData,
             }
-            fetch(`https://sheet.best/api/sheets/471a8c9b-3456-48ce-9337-ffb79ec05e3b`,header).then((res)=>{
-                console.log(res)
-                 navigate('/')
+            fetch(`https://sheet.best/api/sheets/471a8c9b-3456-48ce-9337-ffb79ec05e3b`, header).then((res) => {
+                navigate('/')
             }).catch((err) => console.log("err====>", err))
-        }catch(err){
-            console.log("Aman" ,  err);
+        } catch (err) {
+            console.log("error while form submission ", err);
         }
-      
+
     }
 
 
@@ -38,7 +35,7 @@ const ContactForm = () => {
 
     return (
         <>
-            <form method='POST'  onSubmit={handleSubmitToSpreadSheet}>
+            <form method='POST' onSubmit={handleSubmitToSpreadSheet}>
                 <div className="relative z-0 w-full mb-6 group">
                     <input
                         type="email"
@@ -110,7 +107,7 @@ const ContactForm = () => {
                             htmlFor="Textarea"
                             className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                         >
-                            Message 
+                            Message
                         </label>
                     </div>
                 </div>

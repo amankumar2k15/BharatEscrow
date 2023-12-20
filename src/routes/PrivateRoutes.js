@@ -18,11 +18,9 @@ const PrivateRoutes = () => {
     const location = useLocation();
     const [blogRoutes, setBlogRoutes] = useState({ route: null, data: null })
     const [homeRoutes, sethomeRoutes] = useState({ route: null })
-    console.log("homeRoutes", homeRoutes)
 
     const blogDetail = localStorage.getItem("blogRoute")
     const homeDetail = localStorage.getItem("homeRoute");
-    console.log("homeDetail", homeDetail)
 
 
     useEffect(() => {
