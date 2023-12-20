@@ -8,7 +8,6 @@ import { RxCross2 } from "react-icons/rx"
 const Navbar = () => {
     const navigate = useNavigate()
     const [hide, setHide] = useState(false)
-    console.log(hide)
     const location = useLocation();
     const currentPath = location.pathname;
 

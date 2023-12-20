@@ -217,12 +217,11 @@ const DetailBlog = ({ data }) => {
             </div>
 
             <div className='mt-8 flex flex-col gap-0'>
-              {console.log(displayData)}
               <p className='text-blue-900 font-bold text-2xl font-roboto underline'>How to operate :-</p>
               <div className='mt-4 flex flex-col gap-8'>
                 {displayData?.steps.map((item, index) => {
                   return (
-                    <div key={index}>
+                    <div key={item.id}>
                       <p className='text-blue-900 font-bold text-lg font-roboto'>{item.key}</p>
                       <p className='text-gray-600 text-sm font-roboto'>{item.value}</p>
                     </div>
@@ -251,7 +250,6 @@ const DetailBlog = ({ data }) => {
                             {faqRow.index === index && faqRow.isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
                           </button>
                         </h2>
-                        {console.log(faqRow)}
                         <div
                           id="accordion-collapse-body-1"
                           className={faqRow.index === index && faqRow.isOpen ? "visible bg-slate-100" : "hidden"}
