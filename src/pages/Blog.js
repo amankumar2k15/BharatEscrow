@@ -1,8 +1,6 @@
 import React from 'react'
 import Footer from '../components/Footer'
 import blogImg from "../assets/blog/blog1.jpg"
-// import tailwindImg from "../assets/blog/Tailwind css.jpg"
-// import moneyBack from "../assets/blog/moneyBack.jpg"
 import { useNavigate } from 'react-router-dom'
 
 const Blog = ({ setBlogRoutes }) => {

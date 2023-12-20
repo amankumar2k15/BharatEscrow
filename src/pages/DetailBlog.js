@@ -3,12 +3,6 @@ import React, { useEffect, useState } from 'react'
 import Footer from '../components/Footer'
 import { CgProfile } from "react-icons/cg";
 import { IoShareSocialOutline } from "react-icons/io5";
-import { TbBrandFacebook } from "react-icons/tb";
-import { RiTwitterXFill } from "react-icons/ri";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
-import { PiTelegramLogoBold } from "react-icons/pi";
-import { RiSkypeLine } from "react-icons/ri";
 import detailblogImg from "../assets/blog/blog1.jpg"
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 

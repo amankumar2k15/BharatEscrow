@@ -90,7 +90,7 @@ const DetailHome = ({ data }) => {
 
     useEffect(() => {
         setData(detailHomeData.filter((item) => `/${item.route}`.replaceAll(' ', '-') === location.pathname)[0]);
-    }, [data])
+    }, [data , location.pathname])
 
 
 
