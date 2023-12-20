@@ -34,35 +34,35 @@ const DetailBlog = ({ data }) => {
 
   const socialIcon = [
     {
-      icon:<><FacebookShareButton url='https://bharatescrow.com/'>
-                   <FacebookIcon size={32} round={true} />
-             </FacebookShareButton>
-           </>
+      icon: <><FacebookShareButton url='https://bharatescrow.com/'>
+        <FacebookIcon size={32} round={true} />
+      </FacebookShareButton>
+      </>
     },
     {
-      icon:<><TwitterShareButton url='https://bharatescrow.com/'>
-                   <TwitterIcon size={32} round={true} />
-             </TwitterShareButton>
-           </>
+      icon: <><TwitterShareButton url='https://bharatescrow.com/'>
+        <TwitterIcon size={32} round={true} />
+      </TwitterShareButton>
+      </>
     },
     {
-      icon:<><WhatsappShareButton url='https://bharatescrow.com/'>
-                   <WhatsappIcon size={32} round={true} />
-             </WhatsappShareButton>
-           </>
+      icon: <><WhatsappShareButton url='https://bharatescrow.com/'>
+        <WhatsappIcon size={32} round={true} />
+      </WhatsappShareButton>
+      </>
     },
     {
-      icon:<><LinkedinShareButton url='https://bharatescrow.com/'>
-                   <LinkedinIcon size={32} round={true} />
-             </LinkedinShareButton>
-           </>
-     },
-     {
-      icon:<><TelegramShareButton url='https://bharatescrow.com/'>
-                   <TelegramIcon size={32} round={true} />
-             </TelegramShareButton>
-           </>
-     }
+      icon: <><LinkedinShareButton url='https://bharatescrow.com/'>
+        <LinkedinIcon size={32} round={true} />
+      </LinkedinShareButton>
+      </>
+    },
+    {
+      icon: <><TelegramShareButton url='https://bharatescrow.com/'>
+        <TelegramIcon size={32} round={true} />
+      </TelegramShareButton>
+      </>
+    }
   ]
 
 
@@ -155,7 +155,7 @@ const DetailBlog = ({ data }) => {
 
   useEffect(() => {
     setData(dataMap.filter((item) => `/${item.title}`?.replaceAll(' ', '-').toLowerCase() === location.pathname.toLowerCase())[0])
-  }, [data, dataMap, location.pathname])
+  }, [data, location.pathname])
 
 
   return (
@@ -197,8 +197,8 @@ const DetailBlog = ({ data }) => {
                 <IoShareSocialOutline />
                 <div className=' text-[8px] uppercase'>Shares</div>
               </button>
-              <div className='flex'>
-                {socialIcon.map((item, index) => item.icon )}
+              <div className='flex gap-x-4'>
+                {socialIcon.map((item, index) => <span className='hover:-translate-y-1 transition-all duration-200 ease-out' key={index}>{item.icon}</span>)}
               </div>
             </div>
           </div>
