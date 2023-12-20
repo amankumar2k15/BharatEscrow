@@ -13,18 +13,56 @@ import detailblogImg from "../assets/blog/blog1.jpg"
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  TwitterShareButton,
+  TwitterIcon,
+  WhatsappShareButton,
+  WhatsappIcon,
+  LinkedinShareButton,
+  LinkedinIcon,
+  TelegramShareButton,
+  TelegramIcon,
+} from "react-share";
+
+
 const DetailBlog = ({ data }) => {
   const [displayData, setData] = useState();
   const [faqRow, setRow] = useState({ index: null, isOpen: false })
   const location = useLocation()
 
   const socialIcon = [
-    { icon: <TbBrandFacebook /> },
-    { icon: <RiTwitterXFill /> },
-    { icon: <FaLinkedinIn /> },
-    { icon: <FaWhatsapp /> },
-    { icon: <PiTelegramLogoBold /> },
-    { icon: <RiSkypeLine /> },
+    {
+      icon:<><FacebookShareButton url='https://bharatescrow.com/'>
+                   <FacebookIcon size={32} round={true} />
+             </FacebookShareButton>
+           </>
+    },
+    {
+      icon:<><TwitterShareButton url='https://bharatescrow.com/'>
+                   <TwitterIcon size={32} round={true} />
+             </TwitterShareButton>
+           </>
+    },
+    {
+      icon:<><WhatsappShareButton url='https://bharatescrow.com/'>
+                   <WhatsappIcon size={32} round={true} />
+             </WhatsappShareButton>
+           </>
+    },
+    {
+      icon:<><LinkedinShareButton url='https://bharatescrow.com/'>
+                   <LinkedinIcon size={32} round={true} />
+             </LinkedinShareButton>
+           </>
+     },
+     {
+      icon:<><TelegramShareButton url='https://bharatescrow.com/'>
+                   <TelegramIcon size={32} round={true} />
+             </TelegramShareButton>
+           </>
+     }
   ]
 
 
@@ -159,19 +197,10 @@ const DetailBlog = ({ data }) => {
                 <IoShareSocialOutline />
                 <div className=' text-[8px] uppercase'>Shares</div>
               </button>
-
               <div className='flex'>
-                {socialIcon.map((item, index) => {
-                  return (
-                    <button key={index} className='w-[80px] h-[25px] bg-blue-600 flex justify-center items-center text-white'>
-                      {item.icon}
-                    </button>
-                  )
-                })}
+                {socialIcon.map((item, index) => item.icon )}
               </div>
-
             </div>
-
           </div>
 
           {/* //mapping the data  */}
