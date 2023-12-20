@@ -5,12 +5,9 @@ import { MdOutlineApi } from "react-icons/md"
 import { BsFillFileEarmarkPostFill } from "react-icons/bs"
 import { AiFillEye, AiOutlineTransaction } from "react-icons/ai"
 import { MdOutlineSecurity } from "react-icons/md"
-import workImg from "../assets/Faqs/work.jpg"
 import buySell from "../assets/Faqs/buySell.jpg"
 import fees from "../assets/Faqs/fees.jpg"
 import paymentImg from "../assets/Faqs/payment.jpg"
-import disputeImg from "../assets/Faqs/dispute.jpg"
-import reliablePlatformImg from "../assets/Faqs/reliablePlatform.jpg"
 import Footer from '../components/Footer'
 import { AiOutlineProfile } from "react-icons/ai";
 import { ImProfile } from "react-icons/im";
@@ -133,7 +130,7 @@ const Faq = () => {
 
     return (
         <section className='faq'>
-            <div className='flex flex-col gap-20'>
+            <div className='flex flex-col gap-4'>
 
                 <div className=' mt-24 flex items-end flex-col gap-4 px-4 '>
                     <h1 className='mt-14 w-full  text-blue-900 font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center  font-roboto'>
@@ -164,23 +161,23 @@ const Faq = () => {
 
                 {/* Services Section  */}
                 {/* first  */}
-                <div className='flex flex-col py-10 w-full px-10 rounded-none  sm:rounded-t-[200px]'>
+                <div className='flex flex-col px-4 py-10 w-full rounded-none  sm:rounded-t-[200px]'>
 
                     <div className='flex flex-col sm:flex-wrap '>
                         <h1 className='text-blue-900 font-bold text-xl sm:text-[30px] text-center font-roboto '>
                             FAQ - Escrow Services by <div>BharatEscrow.com</div>
                         </h1>
-                        <div className='mt-40 flex flex-col gap-10 justify-center items-center'>
-                            <div className=' sm:w-8/12 '>
+                        <div className='my-12 flex flex-col gap-10 justify-center items-center'>
+                            <div className=' sm:w-9/12 '>
                                 <h2 className='text-xl sm:text-2xl text-black'>
                                     1. How secure is the BharatEscrow platform?
                                 </h2>
-                                <p className='mt-5 text-md sm:text-lg text-[#211d1d]'>
+                                <p className='mt-5 text-md text-slate-800'>
                                     BharatEscrow prioritizes security, leveraging advanced encryption and collaborating with RBI-regulated banking partners to ensure a highly secure platform.
                                 </p>
                             </div>
 
-                            <div className='flex  w-full justify-center mt-20 flex-col gap-10 items-center'>
+                            <div className='flex w-full justify-center mt-2 flex-col gap-10 items-center'>
                                 <h2 className='text-xl text-blue-900 font-semibold sm:text-[26px] text-center'>
                                     Escrow Advantage
                                 </h2>
@@ -207,9 +204,6 @@ const Faq = () => {
                                         })
                                     }
 
-
-
-
                                 </div>
                             </div>
 
@@ -219,19 +213,19 @@ const Faq = () => {
                 </div>
 
                 {/* second  */}
-                <div className='flex flex-col  w-full px-10  bg-white  '>
+                <div className='flex flex-col w-full px-4 bg-white  '>
                     <div className='mt-5 flex flex-col gap-10 justify-center items-center '>
-                        <div className=' sm:w-8/12   '>
-                            <h2 className='text-xl sm:text-2xl  text-black'>
+                        <div className='sm:w-9/12'>
+                            <h2 className='text-xl sm:text-2xl text-black'>
                                 2. What types of transactions are suitable for escrow services?
                             </h2>
-                            <p className=' mt-4 text-lg sm:text-lg  text-[#211d1d]'>
+                            <p className=' mt-4 text-md text-slate-800'>
                                 Escrow services are suitable for various transactions, including online purchases, real estate transactions, freelance services, and business acquisitions.
                             </p>
                         </div>
 
 
-                        <div className='flex  w-full justify-center flex-col gap-10 items-center'>
+                        <div className='flex w-full justify-center flex-col my-4 gap-10 items-center'>
                             <div className=' flex max-w-4xl justify-center gap-12 flex-wrap '>
                                 <div className='w-[300px] text-center'>
                                     <h3 className='text-xl uppercase font-medium'>How it works</h3>
@@ -241,9 +235,10 @@ const Faq = () => {
 
                             <div className='flex justify-around flex-wrap gap-4'>
 
+                                {/* //how it works  4 easy steps  */}
                                 {worksItems.map((item, index) => {
                                     return (
-                                        <div key={index} className=' w-[230px]  flex-shrink-0 border-2 h-[400px] border-black hover:border-blue-600 rounded-lg  px-1'>
+                                        <div key={index} className='w-[230px] flex-shrink-0 border-2 h-[400px] border-black hover:border-blue-600 rounded-lg  px-1'>
                                             <div className='flex flex-col justify-center gap-y-3 items-center'>
                                                 <h3 className='text-blue-900 font-bold text-[12px] mt-2'>{item.iconHeading}</h3>
                                                 <div>
@@ -270,7 +265,7 @@ const Faq = () => {
 
 
 
-                <div className='flex flex-col w-full px-10   bg-white  '>
+                <div className='flex flex-col w-full px-4 bg-white  '>
                     <div className='py-4 flex flex-col gap-10 justify-center items-center '>
 
 
@@ -285,17 +280,17 @@ const Faq = () => {
                 {
                     FAQQuestions.map((item) => {
                         return (
-                            <div className='flex flex-col w-full px-10 bg-white ' key={item.id}>
+                            <div className='flex flex-col w-full px-4 bg-white' key={item.id}>
                                 <div className='pt-14 flex flex-col gap-10 justify-center items-center '>
-                                    <div className=' sm:w-8/12   '>
+                                    <div className=' sm:w-9/12   '>
                                         <h2 className='text-xl sm:text-2xl text-black'>
                                             {item.question}
                                         </h2>
-                                        <p className=' mt-4 text-md sm:text-lg text-[#211d1d]'>
+                                        <p className=' mt-4 text-md text-slate-800'>
                                             {item.answer}
                                         </p>
                                     </div>
-                                    <div className='flex  w-full justify-center flex-col gap-10 items-center'>
+                                    <div className='flex w-full justify-center flex-col gap-10 items-center'>
                                         {
                                             item?.img != null && <div className=' flex max-w-4xl justify-center gap-12 flex-wrap '>
                                                 <img className='sm:max-w-xl h-60' src={item?.img} alt={item.question} />
@@ -309,7 +304,7 @@ const Faq = () => {
                     })
                 }
 
-                <p className='text-xl sm:text-lg text-black w-8/12 px-4 bg-green-100 rounded-lg -pt-4 mb-16 mx-auto container'>
+                <p className='text-md text-slate-800 w-8/12 px-4 py-4 bg-green-100 rounded-lg -pt-4 mb-16 mx-auto container'>
                     "In a world where financial transparency is non-negotiable, BharatEscrow stands as a reliable partner, offering a secure and efficient platform for escrow services. By following this step-by-step guide, users can navigate the escrow process seamlessly, fostering trust and confidence in their financial transactions."
                 </p>
             </div>

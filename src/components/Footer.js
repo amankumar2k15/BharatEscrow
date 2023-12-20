@@ -6,8 +6,8 @@ const Footer = () => {
 
     const linkList = [
         { to: "/disclaimer", text: "Disclaimer" },
-        { to: "/Home", text: "Home", },
-        { to: "/howitworks", text: "How it works" },
+        { to: "/", text: "Home", },
+        { to: "/how-it-works", text: "How it works" },
         { to: "/faqs", text: "Faqs", },
         { to: "/blog", text: "Blog", },
         { to: "/contact", text: "Contact", },

@@ -16,8 +16,6 @@ const DetailBlog = ({ data }) => {
   const [displayData, setData] = useState();
   const [faqRow, setRow] = useState(null)
   const location = useLocation()
-  const localStorageData = JSON.parse(localStorage.getItem("detailItem"))
-  const detailItem = data.data == null ? { data: localStorageData } : data
 
   const socialIcon = [
     { icon: <TbBrandFacebook /> },
@@ -117,9 +115,8 @@ const DetailBlog = ({ data }) => {
   ]
 
   useEffect(() => {
-    console.log(location.pathname.toLowerCase());
     setData(dataMap.filter((item) => `/${item.title}`?.replaceAll(' ', '-').toLowerCase() === location.pathname.toLowerCase())[0])
-  }, [data])
+  }, [data, dataMap, location.pathname])
 
 
   return (
@@ -129,29 +126,6 @@ const DetailBlog = ({ data }) => {
         <div className='font-bold text-3xl mb-12 sm:text-4xl md:text-5xl mt-4 w-full text-center text-blue-900'>
           {displayData?.title}
         </div>
-
-        {/* <div className="grid grid-cols-1 gap-4 w-full h-full">
-
-          <div key={detailItem?.data.id} className="bg-white container mx-auto p-4 shadow-md rounded-md max-w-[1000px]">
-
-            <div className='flex justify-center mb-10'>
-              <img
-                src={detailItem?.data.img}
-                alt={detailItem?.data.title}
-                className="w-[400px] h-[300px] object-cover rounded-md mb-4"
-              />
-            </div>
-            <h2 className='text-xl font-bold mb-4'>Important bits</h2>
-            <ul className="list-disc pl-4 gap-y-3 text-lg text-slate-700 flex flex-col">
-              {detailItem?.data.bulletPoints?.map((point, index) => (
-                <li className='font-thin' key={index}>{point.data}</li>
-              ))}
-            </ul>
-
-            <h2 className="text-xl mt-7 mb-4 font-bold ">{detailItem?.data.title}</h2>
-            <p className="text-slate-700 mb-4 text-lg">{detailItem?.data.description}</p>
-          </div>
-        </div> */}
 
         {/* pulished */}
         <div className='container mx-auto items-center flex justify-center flex-col px-4' >
@@ -172,9 +146,6 @@ const DetailBlog = ({ data }) => {
           {/* img  */}
           <div className='max-w-5xl w-[700px] h-[400px] relative flex items-center justify-center'>
             <img src={detailblogImg} alt='imggDetailBlog' className='w-[700px] h-[400px]' />
-            {/* <p className='text-center text-4xl absolute text-white'>
-              Tailwind Nextjs Starter Blog
-            </p> */}
           </div>
 
           <div className='max-w-5xl mt-4 '>

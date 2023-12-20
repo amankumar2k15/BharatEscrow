@@ -18,6 +18,7 @@ import Footer from '../components/Footer'
 
 const BuySell = () => {
     const [selectCategory, setSelectCategory] = useState("Domain")
+    console.log(selectCategory)
 
     const categoryData = [
         { id: 0, title: "Web Design", img: domain1, category: "Domain" },
@@ -47,8 +48,10 @@ const BuySell = () => {
                     </div>
                     <ul className=' uppercase font-bold text-sm sm:text-md md:text-lg w-full text-center leading-tight mt-5  flex justify-evenly flex-wrap'>
                         {["Domain", "Websites", "Car or Trucks", "Gadgets", "Motorcycles"].map((item, index) => {
+
                             return (
-                                <li key={index} className='inline-block  transition-all duration-150 ease-in-out  text-blue-900  hover:text-blue-700  cursor-pointer py-3 px-3 '
+                                <li key={index}
+                                    className={`${selectCategory === item && "bg-slate-300"} inline-block px-4 py-2 rounded-lg transition-all duration-150 ease-in-out text-blue-900 cursor-pointer`}
                                     onClick={() => setSelectCategory(item)}>
                                     {item}
                                 </li>
