@@ -14,7 +14,7 @@ import detailblogImg from "../assets/blog/blog1.jpg"
 
 const DetailBlog = ({ data }) => {
   const [displayData, setData] = useState();
-  const [faqRow, setRow] = useState(null)
+  const [faqRow, setRow] = useState({index : null , isOpen : false})
   const location = useLocation()
 
   const socialIcon = [
@@ -207,7 +207,7 @@ const DetailBlog = ({ data }) => {
                 {
                   displayData?.faqs.map((item, index) => {
                     return (
-                      <div id="accordion-collapse" data-accordion="collapse" onClick={() => setRow(index)}>
+                      <div id="accordion-collapse" data-accordion="collapse" onClick={() => setRow({index , isOpen :!faqRow.isOpen })}>
                         <h2 id="accordion-collapse-heading-1">
                           <button
                             type="button"
@@ -235,9 +235,10 @@ const DetailBlog = ({ data }) => {
                             </svg>
                           </button>
                         </h2>
+                        {console.log(faqRow)}
                         <div
                           id="accordion-collapse-body-1"
-                          className={faqRow === index ? "visible bg-slate-100" : "hidden"}
+                          className={faqRow.index === index && faqRow.isOpen ? "visible bg-slate-100" : "hidden"}
                           aria-labelledby="accordion-collapse-heading-1"
                         >
                           <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
