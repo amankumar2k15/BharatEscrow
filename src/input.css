@@ -8,6 +8,37 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* //home moving text  */
+/* Define keyframes for the animation */
+@keyframes highlight {
+    0% {
+        background-position: 100% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* Apply styles to the animated text */
+.animated-text {
+    background: linear-gradient(90deg, #3498db, #e74c3c);
+    background-clip: text;
+    color: transparent;
+    padding: 0.2em 0;
+    animation: highlight 3s linear infinite;
+}
+
+/* Style the highlighted text differently */
+.highlight-text {
+    background: linear-gradient(90deg, #e74c3c, #3498db);
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    padding: 0.2em 0;
+    animation: highlight 3s linear infinite reverse;
+}
+
 /* //shading effect  */
 .shadingEffect {
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);

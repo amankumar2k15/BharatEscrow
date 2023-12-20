@@ -39,22 +39,29 @@ const Home = ({ sethomeRoutes }) => {
 
     return (
         <section className='home'>
-            <div className='py-32 xl:py-20 m-auto flex flex-col xl:flex-row items-center justify-center px-8 gap-5 ' >
+            <div className='py-36 sm:py-32 xl:py-20 m-auto flex flex-row flex-wrap items-center justify-around max-w-[1200px] lg:justify-center px-8 gap-5 ' >
                 <div className='flex justify-center flex-col gap-1 text-center xl:text-start '>
-                    <div className='flex gap-0 flex-col leading-tight '>
-                        <div className='text-[43px] sm:text-6xl font-bold text-blue-900 '>
-                            Welcome to
-                        </div>
-                        <div className='text-[43px] sm:text-6xl text-blue-900 font-bold'>
-                            Bharat<span className='text-blue-900'>Escrow</span>
+                    <div className='flex justify-center flex-col gap-1 text-center xl:text-start'>
+                        <div className='flex gap-0 flex-col leading-tight'>
+                            <div className='text-[33px] md:text-5xl lg:text-6xl font-bold'>
+                                <span className='animated-text'>
+                                    Welcome to
+                                </span>
+                            </div>
+                            <div className='text-[33px] md:text-5xl lg:text-6xl font-bold'>
+                                <span className='animated-text'>
+                                    Bharat<span className='highlight-text ml-2 sm:ml-0'>Escrow</span>
+                                </span>
+                            </div>
                         </div>
                     </div>
+
                     <div className=' text-md text-dark pl-2'>
                         We prioritize the protection of both buyers and sellers.
                     </div>
                 </div>
-                <div className='max-w-[400px] xl:max-w-[600px] xl:h-[500px] bg-red-400 flex justify-center'>
-                    <img src={Banner} alt='bannerImg w-[400px] xl:w-[600px] xl:h-[500px] object-cover' />
+                <div className='max-w-[400px] md:max-w-[450px] xl:max-w-[600px] xl:h-[500px] flex justify-center'>
+                    <img src={Banner} alt='bannerImg md:w-[400px] md:w-[450px] xl:w-[600px] xl:h-[500px] object-cover' />
                 </div>
             </div>
 
