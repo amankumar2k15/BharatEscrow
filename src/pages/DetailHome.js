@@ -96,16 +96,16 @@ const DetailHome = ({ data }) => {
 
     return (
         <>
-            <div className='flex flex-col py-10 w-full px-10 rounded-none  sm:rounded-t-[200px]'>
+            <div className='flex flex-col py-10 w-full px-4 sm:px-10 rounded-none sm:rounded-t-[200px]'>
 
-                <div className=' mt-28 font-bold text-3xl sm:text-4xl md:text-5xl w-full text-center text-blue-900'>
+                <div className='mt-28 font-bold text-3xl sm:text-4xl md:text-5xl w-full text-center text-blue-900'>
                     {displayData?.route}
                 </div>
 
                 <div className='flex flex-col sm:flex-wrap '>
-                    <div className='mt-16 flex flex-col gap-10 justify-center items-center'>
+                    <div className='mt-8 sm:mt-16 flex flex-col gap-10 justify-center items-center'>
                         <div className='sm:w-8/12'>
-                            <h2 className='text-xl sm:text-2xl text-black'>
+                            <h2 className='text-lg font-medium sm:text-xl md:text-2xl text-black'>
                                 {displayData?.title}
                             </h2>
                             <p className='mt-5 text-md text-slate-800'>
@@ -116,7 +116,7 @@ const DetailHome = ({ data }) => {
                 </div>
 
                 <div className='flex flex-col sm:flex-wrap '>
-                    <div className='mt-16 flex flex-col gap-10 justify-center items-center'>
+                    <div className='mt-8 sm:mt-16 flex flex-col gap-10 justify-center items-center'>
                         <div className=' sm:w-8/12 '>
                             <h2 className='text-xl sm:text-2xl text-black'>
                                 {displayData?.key1}
@@ -147,7 +147,7 @@ const DetailHome = ({ data }) => {
                 })}
 
                 <div className='flex flex-col sm:flex-wrap '>
-                    <div className='mt-16 flex flex-col gap-10 justify-center items-center'>
+                    <div className='mt-8 sm:mt-16 flex flex-col gap-10 justify-center items-center'>
                         <div className=' sm:w-8/12 '>
                             <h2 className='text-xl sm:text-2xl text-black'>
                                 {displayData?.key2}
@@ -160,7 +160,7 @@ const DetailHome = ({ data }) => {
                 </div>
 
                 <div className='flex flex-col sm:flex-wrap '>
-                    <div className='mt-16 flex flex-col gap-10 justify-center items-center'>
+                    <div className='mt-8 sm:mt-16 flex flex-col gap-10 justify-center items-center'>
                         <div className=' sm:w-8/12 '>
                             <h2 className='text-xl sm:text-2xl text-black'>
                                 Conclusion

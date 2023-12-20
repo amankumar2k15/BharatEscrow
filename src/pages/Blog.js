@@ -43,12 +43,19 @@ const Blog = ({ setDetailRoutes }) => {
                   <div key={item.id} className='relative rounded-xl  shadow-lg shadow-black hover:-translate-y-1 transition-all duration-300 ease-in-out text-black h-[430px] md:h-[450px] max-w-[330px] px-4 flex flex-col gap-y-4'>
                     <h2 className='text-md mt-5 text-blue-900 font-bold hover:underline ' onClick={() => handleSetRoutes(item)}>{item.title}</h2>
                     <div className='md:h-[200px] max-w-[345px]' >
-                      <img className='md:h-[200px] w-[345px] object-contain' src={item.img} alt='blogImg' />
+                      <img className='md:h-[200px] cursor-pointer w-[345px] object-contain'
+                        src={item.img} alt='blogImg'
+                        onClick={() => handleSetRoutes(item)}
+                      />
                     </div>
                     <h5 className='text-md mt-5 text-blue-900 font-bold'>{item.question1}</h5>
 
                     <p className='text-sm'>{item.answer1?.slice(0, 100)}</p>
-                    <button className='text-right text-blue-900 hover:text-black absolute right-4 bottom-4  hover:underline ' onClick={() => handleSetRoutes(item)}>Read more</button>
+                    <button className='text-right text-blue-900 hover:text-black absolute right-4 bottom-4  hover:underline '
+                      onClick={() => handleSetRoutes(item)}
+                    >
+                      Read more
+                    </button>
                   </div>
                 )
               })

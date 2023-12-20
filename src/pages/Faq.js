@@ -15,10 +15,10 @@ import { ImProfile } from "react-icons/im";
 
 const FAQItem = ({ question, answer }) => (
     <div className='mt-8 justify-center flex flex-col'>
-        <div className='flex  items-center'>
-            <details >
-                <summary className='text-lg font-semibold  md:text-2xl text-gray-700'>{question} </summary>
-                <div className='text-gray-500'>{answer}</div>
+        <div className='flex items-center w-full'>
+            <details className='w-full' >
+                <summary className='text-md white font-semibold  md:text-xl text-gray-700'>{question} </summary>
+                <div className='mt-4 ml-6 max-w-[400px] text-gray-500'>{answer}</div>
             </details>
         </div>
     </div>
@@ -133,13 +133,13 @@ const Faq = () => {
             <div className='flex flex-col gap-4'>
 
                 <div className=' mt-24 flex items-end flex-col gap-4 px-4 '>
-                    <h1 className='mt-14 w-full  text-blue-900 font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center  font-roboto'>
+                    <h1 className='mt-14 w-full text-blue-900 font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center font-roboto'>
                         Frequently Asked Questions
                     </h1>
-                    <div className='flex flex-col sm:flex-row gap-8 mx-auto'>
-                        <div className='flex-1 flex justify-center flex-col space-y-8 px-4 md:px-20 lg:px-32 xl:px-40 '>
+                    <div className='flex flex-col lg:flex-row flex-wrap items-center gap-8 mx-auto'>
+                        <div className='flex-1 flex justify-center flex-col space-y-8 px-4 md:px-16  '>
                             <FAQItem
-                                question="What does “escrow” mean?"
+                                question="What does “Escrow” mean?"
                                 answer="An escrow is a financial and legal agreement designed to protect Buyers and Sellers in a transaction. For a fee, an independent third party holds payment until everyone fulfills their responsibilities in the transaction."
                             />
                             <FAQItem
@@ -151,7 +151,7 @@ const Faq = () => {
                                 answer="If the merchandise is accepted, BharatEscrow.com releases funds to the Seller from the Escrow Account."
                             />
                         </div>
-                        <div className='w-[300px] sm:w-[300px] md:w-[400px]'>
+                        <div className='w-[280px] sm:w-[300px] md:w-[400px]'>
                             <img className='w-full object-cover' src={faq} alt='faqImage' />
                         </div>
                     </div>
@@ -167,7 +167,7 @@ const Faq = () => {
                         <h1 className='text-blue-900 font-bold text-xl sm:text-[30px] text-center font-roboto '>
                             FAQ - Escrow Services by <div>BharatEscrow.com</div>
                         </h1>
-                        <div className='my-12 flex flex-col gap-10 justify-center items-center'>
+                        <div className='my-8 sm:my-16 flex flex-col gap-10 justify-center items-center'>
                             <div className=' sm:w-9/12 '>
                                 <h2 className='text-xl sm:text-2xl text-black'>
                                     1. How secure is the BharatEscrow platform?
@@ -281,7 +281,7 @@ const Faq = () => {
                     FAQQuestions.map((item) => {
                         return (
                             <div className='flex flex-col w-full px-4 bg-white' key={item.id}>
-                                <div className='pt-14 flex flex-col gap-10 justify-center items-center '>
+                                <div className='pt-8 flex flex-col gap-10 justify-center items-center '>
                                     <div className=' sm:w-9/12   '>
                                         <h2 className='text-xl sm:text-2xl text-black'>
                                             {item.question}
@@ -304,7 +304,7 @@ const Faq = () => {
                     })
                 }
 
-                <p className='text-xl sm:text-lg text-black w-8/12 px-4 bg-green-100 rounded-lg -pt-4 p-6 mb-16 mx-auto container'>
+                <p className='text-md md:text-lg text-black  sm:w-8/12 py-4 px-4 bg-green-100 rounded-lg -pt-4 mb-16 mx-auto container'>
                     "In a world where financial transparency is non-negotiable, BharatEscrow stands as a reliable partner, offering a secure and efficient platform for escrow services. By following this step-by-step guide, users can navigate the escrow process seamlessly, fostering trust and confidence in their financial transactions."
                 </p>
             </div>

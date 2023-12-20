@@ -55,11 +55,10 @@ const sections = [
 
 const Section = ({ title, id, content, image, reversed }) => {
     return (
-        <div className={`flex flex-col justify-center items-center ${reversed ? "sm:flex-row-reverse" : "sm:flex-row"} px-6 sm:flex-wrap md:flex-nowrap gap-y-4 sm:justify-evenly`}>
-            <div className='flex flex-col justify-center gap-4 mb-8 w-11/12  md:w-[500px] mx-2 md:px-6'>
-                <h2 className='text-lg inline-flex font-semibold sm:text-xl md:text-2xl whitespace-nowrap text-blue-900'>
-                    <div className='no-underline '>{`Step ${id + 1}: `}</div>
-                    &nbsp;{title}
+        <div className={`flex flex-col justify-center items-center ${reversed ? "sm:flex-row-reverse" : "sm:flex-row"} px-2 md:px-10 sm:flex-wrap md:flex-nowrap gap-y-4 sm:justify-evenly`}>
+            <div className='flex flex-col justify-center gap-4 mb-8 w-11/12 md:w-[500px] mx-2 md:px-6'>
+                <h2 className='text-md flex flex-row font-semibold sm:text-lg md:text-2xl text-blue-900'>
+                    <div className='no-underline'>{`Step ${id + 1}: ${title}`}</div>
                 </h2>
                 <h3 className='text-md text-justify text-slate-800'>{content}</h3>
             </div>
@@ -77,12 +76,12 @@ const HowItWorks = () => (
                 <h1 className=' text-blue-900 font-bold text-2xl  sm:text-3xl md:text-4xl lg:text-5xl text-center font-roboto'>How does BharatEscrow work?</h1>
             </div>
 
-            <div className='px-10 py-8'>
+            <div className=' px-4 md:px-10 py-8'>
                 <h2 className='text-lg font-semibold sm:text-xl md:text-2xl underline text-blue-900'>What is an Escrow Account?</h2>
                 <p className=' mt-2 text-md  text-justify text-slate-800'>It is an intermittent account that is only active till the transaction is completed. The account is closed once all of the criteria between the buyer and seller have been met. Escrows often involve the deposit of a monetary-valued document. These documents could be deeds, written instruments, payment pledges, licenses, patents, cheques, bonds, or mortgages.</p>
             </div>
 
-            <div className='px-10 py-4'>
+            <div className='px-4 md:px-10 py-4'>
                 <h2 className='text-lg font-semibold sm:text-xl md:text-2xl underline text-blue-900'>Details about Escrow Account?</h2>
                 <p className=' mt-2 text-md  text-justify text-slate-800'>In an era where financial transparency is paramount, the use of escrow accounts has become a cornerstone for secure transactions. BharatEscrow, in collaboration with multiple RBI-regulated banking partners, is at the forefront of delivering unparalleled financial transparency between buyers and sellers. This comprehensive guide outlines the step-by-step process of utilizing an escrow account with BharatEscrow, aligning with the vision of providing financial transparency to everyone.</p>
             </div>

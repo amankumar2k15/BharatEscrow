@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import BeIMg from "../assets/Home/logo.jpg"
+import BeIMgSmall from "../assets/Home/logo1.jpg"
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { GiHamburgerMenu } from "react-icons/gi"
 import { RxCross2 } from "react-icons/rx"
@@ -7,6 +8,7 @@ import { RxCross2 } from "react-icons/rx"
 const Navbar = () => {
     const navigate = useNavigate()
     const [hide, setHide] = useState(false)
+    console.log(hide)
     const location = useLocation();
     const currentPath = location.pathname;
 
@@ -39,11 +41,19 @@ const Navbar = () => {
 
             <nav className="fixed px-4 top-0 left-0 right-0 border-gray-200 dark:bg-white-900 border-none py-0 z-50 bg-gradient-to-r from-[#fff] to-[#096aa6]">
                 <div className="flex justify-between relative flex-wrap md:flex-nowrap md:whitespace-nowrap items-center p-4">
-                    <div className="flex items-center w-[150px] sm:w-[200px] h-[40px]">
+                    <div className=" hidden sm:flex items-center w-[150px] sm:w-[200px] h-[40px]">
                         <img
                             onClick={() => navigate('/')}
                             src={BeIMg}
-                            className="w-[150px] sm:w-[200px] h-[50px] mr-3 rounded-lg cursor-pointer"
+                            className="w-[150px] h-[50px] mr-3 rounded-lg cursor-pointer"
+                            alt="Logo"
+                        />
+                    </div>
+                    <div className="flex sm:hidden items-center w-[150px] sm:w-[200px] h-[30px]">
+                        <img
+                            onClick={() => navigate('/')}
+                            src={BeIMgSmall}
+                            className="w-[40px] sm:w-[200px] h-[40px] mr-3 rounded-lg cursor-pointer"
                             alt="Logo"
                         />
                     </div>
@@ -73,7 +83,7 @@ const Navbar = () => {
                                         to="/"
                                         className={`${currentPath === "/" ? "text-blue-900" : " hover:text-white md:hover:text-blue-900  md:text-white"} text-black hover:text-white md:hover:text-blue-900 block py-2 pl-3 pr-4 hover:bg-[#096aa6] md:hover:bg-transparent text-[16px] rounded md:bg-transparent md:p-0 `}
                                         aria-current="page"
-                                        onClick={() => setHide(!hide)}
+                                        onClick={() => setHide(false)}
                                     >
                                         Home
                                     </Link>
@@ -81,7 +91,7 @@ const Navbar = () => {
                                 {
                                     Object.values(menuItem).map((item, index) => (
                                         <li
-                                            onClick={() => setHide(!hide)}
+                                            onClick={() => setHide(false)}
                                             className={`${currentPath === item.to ? "md:text-blue-800 hover:text-white md:hover:text-blue-900" : "text-black hover:text-white md:hover:text-blue-900  md:text-white "} text-black block py-2 pl-3 pr-4 text-[16px] rounded md:hover:text-blue md:hover:bg-transparent md:p-0 hover:bg-[#096aa6] md:dark:hover:bg-transparent dark:border-gray-700" `}
                                             key={index}>
                                             <Link className='block' to={item.to}>{item.text}</Link>

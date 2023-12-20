@@ -10,11 +10,12 @@ import { FaWhatsapp } from "react-icons/fa";
 import { PiTelegramLogoBold } from "react-icons/pi";
 import { RiSkypeLine } from "react-icons/ri";
 import detailblogImg from "../assets/blog/blog1.jpg"
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 
 const DetailBlog = ({ data }) => {
   const [displayData, setData] = useState();
-  const [faqRow, setRow] = useState({index : null , isOpen : false})
+  const [faqRow, setRow] = useState({ index: null, isOpen: false })
   const location = useLocation()
 
   const socialIcon = [
@@ -207,32 +208,18 @@ const DetailBlog = ({ data }) => {
                 {
                   displayData?.faqs.map((item, index) => {
                     return (
-                      <div id="accordion-collapse" data-accordion="collapse" onClick={() => setRow({index , isOpen :!faqRow.isOpen })}>
+                      <div id="accordion-collapse" data-accordion="collapse" onClick={() => setRow({ index, isOpen: !faqRow.isOpen })}>
                         <h2 id="accordion-collapse-heading-1">
                           <button
                             type="button"
-                            className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3"
+                            className={`${index === 0 ? "rounded-t-xl border-b-0" : index === displayData.faqs.length - 1 && "rounded-b-xl"} flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border  border-gray-200 focus:ring-4 focus:ring-gray-200 hover:bg-gray-100 gap-3`}
                             data-accordion-target="#accordion-collapse-body-1"
                             aria-expanded="true"
                             aria-controls="accordion-collapse-body-1"
                           >
                             <span>{item.doubt}</span>
-                            <svg
-                              data-accordion-icon=""
-                              className="w-3 h-3 rotate-180 shrink-0"
-                              aria-hidden="true"
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="none"
-                              viewBox="0 0 10 6"
-                            >
-                              <path
-                                stroke="currentColor"
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M9 5 5 1 1 5"
-                              />
-                            </svg>
+                            {/* icon  */}
+                            {faqRow.index === index && faqRow.isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
                           </button>
                         </h2>
                         {console.log(faqRow)}
@@ -241,7 +228,7 @@ const DetailBlog = ({ data }) => {
                           className={faqRow.index === index && faqRow.isOpen ? "visible bg-slate-100" : "hidden"}
                           aria-labelledby="accordion-collapse-heading-1"
                         >
-                          <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+                          <div className="p-5 border border-b-0 border-gray-200 ">
                             <p className="mb-2 text-gray-500 dark:text-gray-400">
                               {item.solution}
                             </p>
