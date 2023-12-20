@@ -5,7 +5,7 @@ import blogImg from "../assets/blog/blog1.jpg"
 // import moneyBack from "../assets/blog/moneyBack.jpg"
 import { useNavigate } from 'react-router-dom'
 
-const Blog = ({ setDetailRoutes }) => {
+const Blog = ({ setBlogRoutes }) => {
   const navigate = useNavigate()
 
   const BlogData = [
@@ -21,9 +21,8 @@ const Blog = ({ setDetailRoutes }) => {
 
   const handleSetRoutes = (item) => {
     const routeCal = item?.title?.split(' ').map((item) => `${item.charAt(0).toUpperCase()}${item.slice(1, item.length)}`).join(" ").replaceAll(' ', "-")
-    // localStorage.setItem("detailItemID", item.id)
-    localStorage.setItem("detailRoute", routeCal)
-    setDetailRoutes({ route: routeCal })
+    localStorage.setItem("blogRoute", routeCal)
+    setBlogRoutes({ route: routeCal })
     navigate(`/${routeCal}`)
   }
 

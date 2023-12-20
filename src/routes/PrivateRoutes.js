@@ -14,24 +14,21 @@ const DetailHome = lazy(() => import('../pages/DetailHome'));
 
 
 
-
-
-
-
-
-
 const PrivateRoutes = () => {
     const location = useLocation();
-    const [detailRoutes, setDetailRoutes] = useState({ route: null, data: null })
+    const [blogRoutes, setBlogRoutes] = useState({ route: null, data: null })
     const [homeRoutes, sethomeRoutes] = useState({ route: null })
+    console.log("homeRoutes", homeRoutes)
 
-    const routeDetail = localStorage.getItem("detailRoute")
+    const blogDetail = localStorage.getItem("blogRoute")
     const homeDetail = localStorage.getItem("homeRoute");
+    console.log("homeDetail", homeDetail)
 
-    
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [location.pathname]);
+
 
     return (
         <>
@@ -46,16 +43,17 @@ const PrivateRoutes = () => {
 
                 <Routes>
                     <Route path='/' element={<Home sethomeRoutes={sethomeRoutes} />}></Route>
+                    <Route path={`/${!homeDetail ? homeRoutes.route : homeDetail}`} element={<DetailHome data={homeRoutes} />}></Route>
+
                     <Route path='/buy-sell' element={<BuySell />}></Route>
                     <Route path='/faqs' element={<Faq />}></Route>
                     <Route path='/contact' element={<Contact />}></Route>
                     <Route path='/how-it-works' element={<HowItWorks />}></Route>
                     <Route path='/disclaimer' element={<Disclaimer />}></Route>
                     <Route path='/privacy' element={<Privacy />}></Route>
-                    <Route path='/blog' element={<Blog setDetailRoutes={setDetailRoutes} />}></Route>
-                    <Route path={`/${!routeDetail ? detailRoutes.route : routeDetail}`} element={<DetailBlog data={detailRoutes} />}></Route>
-                    <Route path={`/${!homeDetail ? homeRoutes.route : homeDetail}`} element={<DetailHome data={homeRoutes} />}></Route>
 
+                    <Route path='/blog' element={<Blog setBlogRoutes={setBlogRoutes} />}></Route>
+                    <Route path={`/${!blogDetail ? blogRoutes.route : blogDetail}`} element={<DetailBlog data={blogRoutes} />}></Route>
                 </Routes>
             </Suspense>
         </>

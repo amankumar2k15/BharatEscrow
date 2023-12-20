@@ -23,53 +23,16 @@ const Home = ({ sethomeRoutes }) => {
     }
 
     const INDUSTRIESData = [
-        {
-            id: 0,
-            title: "MSME",
-            image: MSME
-        },
-        {
-            id: 1,
-            title: "ECOMMERCE",
-            image: domain2
-        },
-        {
-            id: 2,
-            title: "DIGITAL",
-            image: domain3
-        },
-        {
-            id: 3,
-            title: "FREELANCER ",
-            image: Websites1
-        },
-        {
-            id: 4,
-            title: "PROPERTY DEALING ",
-            image: Websites2
-        },
-        {
-            id: 5,
-            title: "ECOMMERCE",
-            image: domain2
-        },
-        {
-            id: 6,
-            title: "APP DEVELOPMENT",
-            image: MSME
-        },
-        {
-            id: 7,
-            title: "FIRA",
-            image: Car1
-        },
-        {
-            id: 8,
-            title: "WEBSITE DEVELOPMENT",
-            image: websiteDevelopment
-        }
+        { id: 0, title: "MSME", image: MSME },
+        { id: 1, title: "ECOMMERCE", image: domain2 },
+        { id: 2, title: "DIGITAL", image: domain3 },
+        { id: 3, title: "FREELANCER ", image: Websites1 },
+        { id: 4, title: "PROPERTY DEALING ", image: Websites2 },
+        { id: 5, title: "ECOMMERCE", image: domain2 },
+        { id: 6, title: "APP DEVELOPMENT", image: MSME },
+        { id: 7, title: "FIRA", image: Car1 },
+        { id: 8, title: "WEBSITE DEVELOPMENT", image: websiteDevelopment }
     ]
-
 
 
 

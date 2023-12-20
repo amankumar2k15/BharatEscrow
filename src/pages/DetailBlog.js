@@ -145,8 +145,8 @@ const DetailBlog = ({ data }) => {
           </div>
 
           {/* img  */}
-          <div className='max-w-5xl w-[700px] h-[400px] relative flex items-center justify-center'>
-            <img src={detailblogImg} alt='imggDetailBlog' className='w-[700px] h-[400px]' />
+          <div className='md:max-w-[700px] max-h-[400px] relative flex items-center justify-center'>
+            <img src={detailblogImg} alt='imggDetailBlog' className='md:max-w-[700px] max-h-[400px]' />
           </div>
 
           <div className='max-w-5xl mt-4 '>
@@ -163,7 +163,7 @@ const DetailBlog = ({ data }) => {
               <div className='flex'>
                 {socialIcon.map((item, index) => {
                   return (
-                    <button key={index} className='w-[80px] h-[25px] bg-blue-600 flex justify-center items-center text-white'>
+                    <button key={index} className='md:w-[80px] h-[25px] bg-blue-600 flex justify-center items-center text-white'>
                       {item.icon}
                     </button>
                   )
