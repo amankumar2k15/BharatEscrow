@@ -309,7 +309,7 @@ const Faq = () => {
                     })
                 }
 
-                <p className='text-xl sm:text-lg text-black w-8/12 px-4 bg-green-100 rounded-lg -pt-4 mb-16 mx-auto container'>
+                <p className='text-xl sm:text-lg text-black w-8/12 px-4 bg-green-100 rounded-lg -pt-4 p-6 mb-16 mx-auto container'>
                     "In a world where financial transparency is non-negotiable, BharatEscrow stands as a reliable partner, offering a secure and efficient platform for escrow services. By following this step-by-step guide, users can navigate the escrow process seamlessly, fostering trust and confidence in their financial transactions."
                 </p>
             </div>
