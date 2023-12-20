@@ -46,7 +46,7 @@ const Footer = () => {
                         <div className='flex justify-start items-start flex-col gap-0 text-sm sm:text:2xl'>
                             {/* <p>Terms & Conditions</p> */}
                             <button className='hover:text-blue-600 my-2' href='#'>Facebook</button>
-                            <button className='hover:text-blue-600 my-2' href='#'>Linkdin</button>
+                            <button className='hover:text-blue-600 my-2' href='#'>Linkedin</button>
                             <button className='hover:text-blue-600 my-2' href='#'>Twitter</button>
                             <button className='hover:text-blue-600 my-2' href='#'>Instagram</button>
                             {/* <a className='hover:text-blue-600 my-2' href='#'>Facebook</a>

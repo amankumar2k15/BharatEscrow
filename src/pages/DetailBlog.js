@@ -63,7 +63,7 @@ const DetailBlog = ({ data }) => {
       icon:
         <>
           <TelegramShareButton url='https://bharatescrow.com/'>
-            <TelegramIcon size={32} />
+            <TelegramIcon size={32} round={true} />
           </TelegramShareButton>
         </>
     }
@@ -74,7 +74,7 @@ const DetailBlog = ({ data }) => {
     {
       id: 0,
       title: "A Step-by-Step Guide to Escrow Accounts with BharatEscrow",
-      question1: "What is an escrow account?",
+      question1: "What is an Escrow Account?",
       answer1: "It is an intermittent account that is only active till the transaction is completed. The account is closed once all of the criteria between the buyer and seller have been met. Escrows often involve the deposit of a monetary-valued document. These documents could be deeds, written instruments, payment pledges, licenses, patents, cheques, bonds, or mortgages.",
       detail: { key: "Details about Escrow Account", value: "In an era where financial transparency is paramount, the use of escrow accounts has become a cornerstone for secure transactions. BharatEscrow, in collaboration with multiple RBI-regulated banking partners, is at the forefront of delivering unparalleled financial transparency between buyers and sellers. This comprehensive guide outlines the step-by-step process of utilizing an escrow account with BharatEscrow, aligning with the vision of providing financial transparency to everyone." },
       steps: [
@@ -210,22 +210,22 @@ const DetailBlog = ({ data }) => {
           <div className='max-w-5xl mt-[104px] flex flex-col text-black md:px-3 '>
             <div className='-mt-4'>
               <p className=' text-blue-900 font-bold text-2xl font-roboto'>{displayData?.question1}</p>
-              <p className='text-gray-600 text-sm font-roboto'>{displayData?.answer1}</p>
+              <p className='text-gray-600 text-lg font-roboto mt-2'>{displayData?.answer1}</p>
             </div>
 
             <div className='mt-8'>
               <p className='text-blue-900 font-bold text-2xl font-roboto'>{displayData?.detail?.key}</p>
-              <p className='text-gray-600 text-sm font-roboto'>{displayData?.detail?.value}</p>
+              <p className='text-gray-600 text-lg font-roboto mt-2'>{displayData?.detail?.value}</p>
             </div>
 
             <div className='mt-8 flex flex-col gap-0'>
               <p className='text-blue-900 font-bold text-2xl font-roboto underline'>How to operate :-</p>
-              <div className='mt-4 flex flex-col gap-8'>
-                {displayData?.steps.map((item, index) => {
+              <div className='mt-5 flex flex-col gap-8'>
+                {displayData?.steps.map((item) => {
                   return (
                     <div key={item.id}>
-                      <p className='text-blue-900 font-bold text-lg font-roboto'>{item.key}</p>
-                      <p className='text-gray-600 text-sm font-roboto'>{item.value}</p>
+                      <p className='text-blue-900 font-bold text-xl mt-2 font-roboto'>{item.key}</p>
+                      <p className='text-gray-600 text-lg font-roboto mt-2'>{item.value}</p>
                     </div>
                   )
                 })
@@ -249,7 +249,7 @@ const DetailBlog = ({ data }) => {
                             aria-expanded="true"
                             aria-controls="accordion-collapse-body-1"
                           >
-                            <span>{item.doubt}</span>
+                            <span className='font-bold text-lg text-slate-700'> {item.doubt}</span>
                             {/* icon  */}
                             {faqRow.index === index && faqRow.isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
                           </button>
@@ -260,7 +260,7 @@ const DetailBlog = ({ data }) => {
                           aria-labelledby="accordion-collapse-heading-1"
                         >
                           <div className="p-5 border border-b-0 border-gray-200 ">
-                            <p className="mb-2 text-gray-500 dark:text-gray-400">
+                            <p className="mb-2 text-slate-600 text-md">
                               {item.solution}
                             </p>
 
@@ -278,7 +278,7 @@ const DetailBlog = ({ data }) => {
 
               <div className='mt-8'>
                 <p className='text-blue-900 font-bold text-2xl font-roboto'>Conclusion</p>
-                <p className='text-gray-600 text-sm font-roboto'>{displayData?.conclusion}</p>
+                <p className='text-gray-600 text-lg font-roboto mt-2'>{displayData?.conclusion}</p>
               </div>
             </div>
 

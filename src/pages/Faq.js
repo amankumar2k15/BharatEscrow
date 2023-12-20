@@ -174,7 +174,7 @@ const Faq = () => {
                                 <h2 className='text-xl sm:text-2xl text-black'>
                                     1. How secure is the BharatEscrow platform?
                                 </h2>
-                                <p className='mt-5 text-md text-slate-800'>
+                                <p className='mt-5 text-lg text-slate-800'>
                                     BharatEscrow prioritizes security, leveraging advanced encryption and collaborating with RBI-regulated banking partners to ensure a highly secure platform.
                                 </p>
                             </div>
@@ -221,7 +221,7 @@ const Faq = () => {
                             <h2 className='text-xl sm:text-2xl text-black'>
                                 2. What types of transactions are suitable for escrow services?
                             </h2>
-                            <p className=' mt-4 text-md text-slate-800'>
+                            <p className=' mt-4 text-lg text-slate-800'>
                                 Escrow services are suitable for various transactions, including online purchases, real estate transactions, freelance services, and business acquisitions.
                             </p>
                         </div>
@@ -288,7 +288,7 @@ const Faq = () => {
                                         <h2 className='text-xl sm:text-2xl text-black'>
                                             {item.question}
                                         </h2>
-                                        <p className=' mt-4 text-md text-slate-800'>
+                                        <p className=' mt-4 text-lg text-slate-800'>
                                             {item.answer}
                                         </p>
                                     </div>
@@ -306,7 +306,7 @@ const Faq = () => {
                     })
                 }
 
-                <p className='text-md md:text-lg text-black  sm:w-8/12 py-4 px-4 bg-green-100 rounded-lg -pt-4 mb-16 mx-auto container'>
+                <p className='text-lg text-black  sm:w-8/12 py-4 px-4 bg-green-100 rounded-lg -pt-4 mb-16 mx-auto container'>
                     "In a world where financial transparency is non-negotiable, BharatEscrow stands as a reliable partner, offering a secure and efficient platform for escrow services. By following this step-by-step guide, users can navigate the escrow process seamlessly, fostering trust and confidence in their financial transactions."
                 </p>
             </div>

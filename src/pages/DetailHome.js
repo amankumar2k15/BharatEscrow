@@ -93,7 +93,6 @@ const DetailHome = ({ data }) => {
     }, [data, location.pathname])
 
 
-
     return (
         <>
             <div className='flex flex-col py-10 w-full px-4 sm:px-10 rounded-none sm:rounded-t-[200px]'>

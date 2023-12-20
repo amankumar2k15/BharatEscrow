@@ -57,7 +57,7 @@ const BuySell = () => {
                             )
                         })}
                     </ul>
-                    <div className='flex flex-wrap flex-shrink justify-between space-y-2 gap-4 px-2  '>
+                    <div className='homeShadingEffect flex flex-wrap flex-shrink justify-between space-y-2 gap-4 px-2  '>
                         {
                             categoryData.filter((item) => item.category === selectCategory).map((item, index) => {
                                 return (
