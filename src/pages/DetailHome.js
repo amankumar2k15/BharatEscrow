@@ -90,7 +90,7 @@ const DetailHome = ({ data }) => {
 
     useEffect(() => {
         setData(detailHomeData.filter((item) => `/${item.route}`.replaceAll(' ', '-') === location.pathname)[0]);
-    }, [data , location.pathname])
+    }, [data, location.pathname])
 
 
 
@@ -98,7 +98,7 @@ const DetailHome = ({ data }) => {
         <>
             <div className='flex flex-col py-10 w-full px-4 sm:px-10 rounded-none sm:rounded-t-[200px]'>
 
-                <div className='mt-28 font-bold text-3xl sm:text-4xl md:text-5xl w-full sm:text-center text-blue-900'>
+                <div className='shadingEffect mt-28 font-bold text-3xl sm:text-4xl md:text-5xl w-full sm:text-center text-blue-900'>
                     {displayData?.route}
                 </div>
 

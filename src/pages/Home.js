@@ -2,6 +2,7 @@ import React from 'react'
 import Footer from '../components/Footer'
 import Box from '../components/Box'
 import MSME from "../assets/Home/MSME.jpg"
+import Banner from "../assets/Home/banner.jpg"
 import domain2 from "../assets/buyorsell/Domain2.png"
 import domain3 from "../assets/buyorsell/Domain3.png"
 import Websites1 from "../assets/buyorsell/Websites1.png"
@@ -38,19 +39,22 @@ const Home = ({ sethomeRoutes }) => {
 
     return (
         <section className='home'>
-            <div className='background-image-opacity h-[652px] m-auto flex justify-center px-8 gap-5 flex-wrap ' >
-                <div className='flex justify-center content-start flex-col gap-1 '>
+            <div className='py-32 xl:py-20 m-auto flex flex-col xl:flex-row items-center justify-center px-8 gap-5 ' >
+                <div className='flex justify-center flex-col gap-1 text-center xl:text-start '>
                     <div className='flex gap-0 flex-col leading-tight '>
-                        <div className='text-[43px] sm:text-6xl md:text-7xl font-bold text-blue-900 '>
+                        <div className='text-[43px] sm:text-6xl font-bold text-blue-900 '>
                             Welcome to
                         </div>
-                        <div className='text-[43px] sm:text-6xl md:text-7xl text-blue-900 font-bold'>
+                        <div className='text-[43px] sm:text-6xl text-blue-900 font-bold'>
                             Bharat<span className='text-blue-900'>Escrow</span>
                         </div>
                     </div>
                     <div className=' text-md text-dark pl-2'>
                         We prioritize the protection of both buyers and sellers.
                     </div>
+                </div>
+                <div className='max-w-[400px] xl:max-w-[600px] xl:h-[500px] bg-red-400 flex justify-center'>
+                    <img src={Banner} alt='bannerImg w-[400px] xl:w-[600px] xl:h-[500px] object-cover' />
                 </div>
             </div>
 
@@ -88,7 +92,7 @@ const Home = ({ sethomeRoutes }) => {
 
 
             <div className=' flex pt-28 pb-[83px] font-roboto flex-col gap-5 px-2 ' >
-                <div className='font-bold uppercase mb-10 text-3xl sm:text-4xl md:text-5xl mt-8 sm:mt-0 w-full text-center text-blue-900'>
+                <div className='shadingEffect font-bold uppercase mb-10 text-3xl sm:text-4xl md:text-5xl mt-8 sm:mt-0 w-full text-center text-blue-900'>
                     Industries we serve
                 </div>
                 <div className='flex flex-wrap flex-shrink justify-between space-y-2 gap-4 px-2  '>

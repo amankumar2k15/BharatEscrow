@@ -1,11 +1,16 @@
 @tailwind base;
 @tailwind components;
-
-
 @tailwind utilities;
+
+
 
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+/* //shading effect  */
+.shadingEffect {
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 .hoverEffect::after {
@@ -17,15 +22,13 @@ body {
     /* or any other color you prefer */
     margin: auto;
     transition: all 0.7s ease-in-out;
-
 }
 
 .hoverEffect:hover::after {
     width: 50%;
 }
 
-/* Slider  */
-/* textSlider */
+
 .textShopHubParent {
     overflow: hidden;
     height: 30px;

@@ -41,13 +41,13 @@ const BuySell = () => {
     return (
         <>
             <section className='buySell my-4 mt-10 border-y-2 border-white'>
-                <div className=' flex pt-28 pb-[83px] font-roboto flex-col gap-5 px-2 ' >
-                    <div className='font-bold text-3xl sm:text-4xl md:text-5xl mt-8 sm:mt-0 w-full text-center text-blue-900'>
+                <div className='flex pt-28 pb-[83px] font-roboto flex-col gap-5 px-2 ' >
+                    <div className='shadingEffect font-bold text-3xl sm:text-4xl md:text-5xl mt-8 sm:mt-0 w-full text-center text-blue-900'>
                         Buy or sell items
                     </div>
+
                     <ul className=' uppercase font-bold text-sm sm:text-md md:text-lg w-full text-center leading-tight mt-5  flex justify-evenly flex-wrap'>
                         {["Domain", "Websites", "Car or Trucks", "Gadgets", "Motorcycles"].map((item, index) => {
-
                             return (
                                 <li key={index}
                                     className={`${selectCategory === item && "bg-slate-300"} inline-block px-4 py-2 rounded-lg transition-all duration-150 ease-in-out text-blue-900 cursor-pointer`}

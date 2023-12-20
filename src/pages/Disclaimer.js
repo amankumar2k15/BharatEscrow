@@ -8,7 +8,7 @@ const Disclaimer = () => {
         <>
             <div className='mt-40 container text-black mx-auto max-w-[800px] font-roboto  px-4 sm:px-10'>
                 <div>
-                    <h2 className='mt-14 w-full text-blue-900 font-bold text-3xl md:text-4xl lg:text-5xl text-center font-roboto'>
+                    <h2 className='shadingEffect mt-14 w-full text-blue-900 font-bold text-3xl md:text-4xl lg:text-5xl text-center font-roboto'>
                         Disclaimer
                     </h2>
                     <p className='text-md mt-8 px-2 text-slate-800'>Bharat Escrow owns and operates the website www.bharatescrow.com including any sub-domains (hereinafter referred to as the “Website”). The Company acts as a facilitator for collections and payments for the transaction management and escrow facilitation services between the Buyer and Seller and Merchant/ Intermediary (hereinafter referred to as the User, You or Your) for transactions relating to Assets, Goods and Services. Buyer, Seller Merchant, ATS shall have the meaning and definition as contained in the Terms of Services available on the Website.</p>

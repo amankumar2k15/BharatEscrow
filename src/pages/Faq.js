@@ -1,10 +1,10 @@
 import React from 'react'
 import faq from "../assets/Faqs/faq.jpg"
 import { RiAccountCircleLine } from "react-icons/ri"
-import { MdOutlineApi , MdOutlineSecurity } from "react-icons/md"
+import { MdOutlineApi, MdOutlineSecurity } from "react-icons/md"
 import { BsFillFileEarmarkPostFill } from "react-icons/bs"
 import { AiFillEye, AiOutlineTransaction } from "react-icons/ai"
-import { GrFingerPrint , GrGroup } from "react-icons/gr";
+import { GrFingerPrint, GrGroup } from "react-icons/gr";
 import buySell from "../assets/Faqs/buySell.jpg"
 import fees from "../assets/Faqs/fees.jpg"
 import paymentImg from "../assets/Faqs/payment.jpg"
@@ -135,7 +135,7 @@ const Faq = () => {
             <div className='flex flex-col gap-4'>
 
                 <div className=' mt-24 flex items-end flex-col gap-4 px-4 '>
-                    <h1 className='mt-14 w-full text-blue-900 font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center font-roboto'>
+                    <h1 className='shadingEffect mt-14 w-full text-blue-900 font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center font-roboto'>
                         Frequently Asked Questions
                     </h1>
                     <div className='flex flex-col lg:flex-row flex-wrap items-center gap-8 mx-auto'>

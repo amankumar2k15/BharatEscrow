@@ -73,7 +73,7 @@ const HowItWorks = () => (
     <section className='howItWork'>
         <div className='max-w-5xl mt-[104px] flex flex-col mx-auto text-black md:px-3 '>
             <div className='mt-14 mb-4'>
-                <h1 className=' text-blue-900 font-bold text-2xl  sm:text-3xl md:text-4xl lg:text-5xl text-center font-roboto'>How does BharatEscrow work?</h1>
+                <h1 className='shadingEffect text-blue-900 font-bold text-2xl  sm:text-3xl md:text-4xl lg:text-5xl text-center font-roboto'>How does BharatEscrow work?</h1>
             </div>
 
             <div className=' px-4 md:px-10 py-8'>
@@ -87,7 +87,7 @@ const HowItWorks = () => (
             </div>
 
 
-          
+
             {sections.map((section, index) => <Section key={index} {...section} />)}
         </div>
         <GetInTouch />

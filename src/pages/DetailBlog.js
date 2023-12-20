@@ -23,39 +23,49 @@ import {
 
 const DetailBlog = ({ data }) => {
   const [displayData, setData] = useState();
-  const [faqRow, setRow] = useState({ index: null, isOpen: false })
+  const [faqRow, setFaqRow] = useState({ index: null, isOpen: false })
   const location = useLocation()
 
   const socialIcon = [
     {
-      icon: <><FacebookShareButton url='https://bharatescrow.com/'>
-        <FacebookIcon size={32} round={true} />
-      </FacebookShareButton>
-      </>
+      icon:
+        <>
+          <FacebookShareButton url='https://bharatescrow.com/'>
+            <FacebookIcon size={32} round={true} />
+          </FacebookShareButton>
+        </>
     },
     {
-      icon: <><TwitterShareButton url='https://bharatescrow.com/'>
-        <TwitterIcon size={32} round={true} />
-      </TwitterShareButton>
-      </>
+      icon:
+        <>
+          <TwitterShareButton url='https://bharatescrow.com/'>
+            <TwitterIcon size={32} round={true} />
+          </TwitterShareButton>
+        </>
     },
     {
-      icon: <><WhatsappShareButton url='https://bharatescrow.com/'>
-        <WhatsappIcon size={32} round={true} />
-      </WhatsappShareButton>
-      </>
+      icon:
+        <>
+          <WhatsappShareButton url='https://bharatescrow.com/'>
+            <WhatsappIcon size={32} round={true} />
+          </WhatsappShareButton>
+        </>
     },
     {
-      icon: <><LinkedinShareButton url='https://bharatescrow.com/'>
-        <LinkedinIcon size={32} round={true} />
-      </LinkedinShareButton>
-      </>
+      icon:
+        <>
+          <LinkedinShareButton url='https://bharatescrow.com/'>
+            <LinkedinIcon size={32} round={true} />
+          </LinkedinShareButton>
+        </>
     },
     {
-      icon: <><TelegramShareButton url='https://bharatescrow.com/'>
-        <TelegramIcon size={32} round={true} />
-      </TelegramShareButton>
-      </>
+      icon:
+        <>
+          <TelegramShareButton url='https://bharatescrow.com/'>
+            <TelegramIcon size={32} />
+          </TelegramShareButton>
+        </>
     }
   ]
 
@@ -156,7 +166,7 @@ const DetailBlog = ({ data }) => {
     <section>
       <div className='mb-10 pb-12 flex flex-col justify-center items-center mt-32 border '>
 
-        <div className='font-bold text-3xl mb-12 sm:text-4xl md:text-5xl mt-4 w-full text-center text-blue-900'>
+        <div className='shadingEffect font-bold text-3xl mb-12 sm:text-4xl md:text-5xl mt-4 w-full text-center text-blue-900'>
           {displayData?.title}
         </div>
 
@@ -228,7 +238,9 @@ const DetailBlog = ({ data }) => {
                 {
                   displayData?.faqs.map((item, index) => {
                     return (
-                      <div id="accordion-collapse" key={index} data-accordion="collapse" onClick={() => setRow({ index, isOpen: !faqRow.isOpen })}>
+                      <div id="accordion-collapse" key={index} data-accordion="collapse"
+                        onClick={() => setFaqRow({ index, isOpen: !faqRow.isOpen })}
+                      >
                         <h2 id="accordion-collapse-heading-1">
                           <button
                             type="button"
