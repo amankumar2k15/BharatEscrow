@@ -16,7 +16,7 @@ const Contact = () => {
                     </h1>
 
                     <div className='py-5 flex flex-col sm:flex-row justify-center gap-24 w-full sm:flex-wrap items-center'>
-                        {/* left  */}
+
                         <iframe
                             title='map'
                             src={srcImg}
@@ -27,7 +27,7 @@ const Contact = () => {
                             className=' h-[300px] w-full px-4 md:w-[600px]'
                         />
 
-                        {/* right  */}
+
                         <div className='w-full sm:w-[400px] px-4 sm:px-0 h-[250px] gap-5'>
                             <ContactForm />
                         </div>

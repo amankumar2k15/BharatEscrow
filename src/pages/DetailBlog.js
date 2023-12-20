@@ -3,12 +3,6 @@ import React, { useEffect, useState } from 'react'
 import Footer from '../components/Footer'
 import { CgProfile } from "react-icons/cg";
 import { IoShareSocialOutline } from "react-icons/io5";
-import { TbBrandFacebook } from "react-icons/tb";
-import { RiTwitterXFill } from "react-icons/ri";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
-import { PiTelegramLogoBold } from "react-icons/pi";
-import { RiSkypeLine } from "react-icons/ri";
 import detailblogImg from "../assets/blog/blog1.jpg"
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
@@ -166,7 +160,6 @@ const DetailBlog = ({ data }) => {
           {displayData?.title}
         </div>
 
-        {/* pulished */}
         <div className='container mx-auto items-center flex justify-center flex-col px-4' >
           <div className='flex gap-2 items-center mb-4'>
             <div>
@@ -182,7 +175,7 @@ const DetailBlog = ({ data }) => {
             </div>
           </div>
 
-          {/* img  */}
+
           <div className='md:max-w-[700px] max-h-[400px] relative flex items-center justify-center'>
             <img src={detailblogImg} alt='imggDetailBlog' className='md:max-w-[700px] max-h-[400px]' />
           </div>
@@ -203,7 +196,6 @@ const DetailBlog = ({ data }) => {
             </div>
           </div>
 
-          {/* //mapping the data  */}
 
           <div className='max-w-5xl mt-[104px] flex flex-col text-black md:px-3 '>
             <div className='-mt-4'>
@@ -217,7 +209,6 @@ const DetailBlog = ({ data }) => {
             </div>
 
             <div className='mt-8 flex flex-col gap-0'>
-              {console.log(displayData)}
               <p className='text-blue-900 font-bold text-2xl font-roboto underline'>How to operate :-</p>
               <div className='mt-4 flex flex-col gap-8'>
                 {displayData?.steps.map((item, index) => {

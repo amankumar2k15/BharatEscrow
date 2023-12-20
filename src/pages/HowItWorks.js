@@ -87,7 +87,7 @@ const HowItWorks = () => (
             </div>
 
 
-            {/* sections mapping data  */}
+          
             {sections.map((section, index) => <Section key={index} {...section} />)}
         </div>
         <GetInTouch />

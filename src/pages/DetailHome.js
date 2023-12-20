@@ -128,7 +128,6 @@ const DetailHome = ({ data }) => {
                     </div>
                 </div>
 
-                {/* //Mapping Data  */}
                 {displayData?.questions?.map((item) => {
                     return (
                         <div key={item.id} className='flex flex-col sm:flex-wrap '>
