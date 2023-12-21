@@ -12,7 +12,7 @@ const Privacy = () => {
                     <h2 className='mt-14 w-full text-blue-900 font-bold text-3xl md:text-4xl lg:text-5xl text-center font-roboto'>
                         Our Privacy Policy
                     </h2>
-                    <p className='text-md mt-8 px-2 text-slate-800'>At bharatescrow, accessible from bharatescrow.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by bharatescrow and how we use it</p>
+                    <p className='text-md mt-8 px-2 text-slate-800'>At Bharat Escrow, accessible from Bharat Escrow, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by bharatescrow and how we use it</p>
                     <p className='text-md mt-8 px-2 text-gray-700'>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
                     <p className='text-md mt-8 px-2 text-slate-800'>This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in bharatescrow. This policy is not applicable to any information collected offline or via channels other than this website.</p>
 

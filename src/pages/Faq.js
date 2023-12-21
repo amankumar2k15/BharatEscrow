@@ -10,8 +10,9 @@ import fees from "../assets/Faqs/fees.jpg"
 import paymentImg from "../assets/Faqs/payment.jpg"
 import Footer from '../components/Footer'
 import { FaHandshake, FaMagnifyingGlass } from "react-icons/fa6";
-import { FaAmazonPay, FaRegHandshake, FaLock } from "react-icons/fa";
+import { FaRegHandshake, FaLock } from "react-icons/fa";
 import { PiUsersFourFill } from "react-icons/pi";
+import { RiWechatPayLine } from "react-icons/ri";
 
 
 
@@ -53,7 +54,7 @@ const worksItems = [
     },
     {
         iconHeading: "Pay",
-        icon: <FaAmazonPay size={40} />,
+        icon: <RiWechatPayLine size={40} />,
         mainHeading: "Offline and Online", subHeading: "Transaction Completed ✅",
         para: "Bharat Escrow releases the money to the customer or buyer in their bank account or after inspection of the exchange",
         iconImg: <FaMagnifyingGlass size={40} />,
@@ -64,26 +65,26 @@ const worksItems = [
 const FAQQuestions = [
     {
         id: 0,
-        question: "3. How long does the escrow process take?",
-        answer: "The duration varies based on the complexity of the transaction and how quickly the agreed-upon conditions are met. BharatEscrow provides timely updates throughout the process.",
+        question: "3. How long does the Escrow process take?",
+        answer: "The duration varies based on the complexity of the transaction and how quickly the agreed-upon conditions are met. Bharat Escrow provides timely updates throughout the process.",
         img: buySell
     },
     {
         id: 1,
-        question: "4. Can I use BharatEscrow for international transactions?",
-        answer: "Yes, BharatEscrow supports both domestic and international transactions, offering a seamless and secure experience globally.",
+        question: "4. Can I use Bharat Escrow for international transactions?",
+        answer: "Yes, Bharat Escrow supports both domestic and international transactions, offering a seamless and secure experience globally.",
         img: null
     },
     {
         id: 2,
         question: "5. What happens if there is a dispute during the transaction?",
-        answer: " BharatEscrow provides a dispute resolution mechanism. The platform carefully investigates and mediates disputes to ensure fair outcomes.",
+        answer: " Bharat Escrow provides a dispute resolution mechanism. The platform carefully investigates and mediates disputes to ensure fair outcomes.",
         img: fees
     },
     {
         id: 3,
-        question: "6. Are there any hidden fees associated with using BharatEscrow?",
-        answer: " BharatEscrow is transparent about its fee structure, and there are no hidden fees. Users are informed of any applicable charges upfront.",
+        question: "6. Are there any hidden fees associated with using Bharat Escrow?",
+        answer: " Bharat Escrow is transparent about its fee structure, and there are no hidden fees. Users are informed of any applicable charges upfront.",
         img: paymentImg
     }
 ]
@@ -142,14 +143,14 @@ const Faq = () => {
                         <div className='flex-1 flex justify-center flex-col space-y-8 px-4 md:px-16  '>
                             <FAQItem
                                 question="What does “Escrow” mean?"
-                                answer="An escrow is a financial and legal agreement designed to protect Buyers and Sellers in a transaction. For a fee, an independent third party holds payment until everyone fulfills their responsibilities in the transaction."
+                                answer="An Escrow is a financial and legal agreement designed to protect Buyers and Sellers in a transaction. For a fee, an independent third party holds payment until everyone fulfills their responsibilities in the transaction."
                             />
                             <FAQItem
-                                question="What can you buy or sell with BharatEscrow.com?"
-                                answer="BharatEscrow.com can help you safely buy or sell a variety of goods and services online for example buying or selling cars, watches, domains, refrigerators, ac etc."
+                                question="What can you buy or sell with Bharat Escrow?"
+                                answer="Bharat Escrow can help you safely buy or sell a variety of goods and services online for example buying or selling cars, watches, domains, refrigerators, ac etc."
                             />
                             <FAQItem
-                                question="BharatEscrow.com pays the Seller?"
+                                question="Bharat Escrow pays the Seller?"
                                 answer="If the merchandise is accepted, Bharat Escrow releases funds to the Seller from the Escrow Account."
                             />
                         </div>
@@ -167,15 +168,15 @@ const Faq = () => {
 
                     <div className='flex flex-col sm:flex-wrap '>
                         <h1 className='text-blue-900 font-bold text-xl sm:text-[30px] text-center font-roboto '>
-                            FAQ - Escrow Services by <div>BharatEscrow.com</div>
+                            FAQ - Escrow Services by <div>Bharat Escrow</div>
                         </h1>
                         <div className='my-8 sm:my-16 flex flex-col gap-10 justify-center items-center'>
                             <div className=' sm:w-9/12 '>
                                 <h2 className='text-xl sm:text-2xl text-black'>
-                                    1. How secure is the BharatEscrow platform?
+                                    1. How secure is the Bharat Escrow platform?
                                 </h2>
                                 <p className='mt-5 text-lg text-slate-800'>
-                                    BharatEscrow prioritizes security, leveraging advanced encryption and collaborating with RBI-regulated banking partners to ensure a highly secure platform.
+                                    Bharat Escrow prioritizes security, leveraging advanced encryption and collaborating with RBI-regulated banking partners to ensure a highly secure platform.
                                 </p>
                             </div>
 
