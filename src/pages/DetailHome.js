@@ -85,7 +85,9 @@ const detailHomeData = [
 
 const DetailHome = ({ data }) => {
     const location = useLocation()
+    console.log(location.pathname)
     const [displayData, setData] = useState();
+    console.log("displayData", displayData)
 
 
     useEffect(() => {

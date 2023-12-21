@@ -146,11 +146,11 @@ const Faq = () => {
                             />
                             <FAQItem
                                 question="What can you buy or sell with BharatEscrow.com?"
-                                answer="Escrow.com can help you safely buy or sell a variety of goods and services online for example buying or selling cars, watches, domains, refrigerators, ac etc."
+                                answer="BharatEscrow.com can help you safely buy or sell a variety of goods and services online for example buying or selling cars, watches, domains, refrigerators, ac etc."
                             />
                             <FAQItem
                                 question="BharatEscrow.com pays the Seller?"
-                                answer="If the merchandise is accepted, BharatEscrow.com releases funds to the Seller from the Escrow Account."
+                                answer="If the merchandise is accepted, Bharat Escrow releases funds to the Seller from the Escrow Account."
                             />
                         </div>
                         <div className='w-[280px] sm:w-[300px] md:w-[400px]'>
@@ -188,7 +188,7 @@ const Faq = () => {
                                     {
                                         EscrowAdvantage.map((item) => {
                                             return (
-                                                <div key={item.id} className='w-56 sm:w-64 h-56 shadow-[#9aa2af]  hover:shadow-blue-600 shadow-xl black rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm  text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
+                                                <div key={item.id} className='w-56 sm:w-64 h-56 shadow-[#9aa2af] hover:shadow-blue-600 shadow-xl black rounded-xl transition-all ease-in-out duration-300 sm:hover:-translate-y-1  max-w-sm  text-center  text-black text-xl flex flex-col justify-center items-center gap-4'>
                                                     <div className='flex flex-col gap-4'>
                                                         <div className=' h-full flex flex-col justify-center items-center'>
                                                             <div className='relative border-4 border-blue-600 pt-4 rounded-full w-28 h-28 realtive'>
@@ -306,8 +306,8 @@ const Faq = () => {
                     })
                 }
 
-                <p className='text-lg text-black  sm:w-8/12 py-4 px-4 bg-green-100 rounded-lg -pt-4 mb-16 mx-auto container'>
-                    "In a world where financial transparency is non-negotiable, BharatEscrow stands as a reliable partner, offering a secure and efficient platform for escrow services. By following this step-by-step guide, users can navigate the escrow process seamlessly, fostering trust and confidence in their financial transactions."
+                <p className='text-lg text-black sm:w-8/12 py-4 px-4 bg-green-100 rounded-lg -pt-4 mb-16 mx-auto container'>
+                    "In a world where financial transparency is non-negotiable, Bharat Escrow stands as a reliable partner, offering a secure and efficient platform for escrow services. By following this step-by-step guide, users can navigate the escrow process seamlessly, fostering trust and confidence in their financial transactions."
                 </p>
             </div>
 

@@ -159,6 +159,7 @@ const DetailBlog = ({ data }) => {
 
   useEffect(() => {
     setData(dataMap.filter((item) => `/${item.title}`?.replaceAll(' ', '-').toLowerCase() === location.pathname.toLowerCase())[0])
+    // eslint-disable-next-line
   }, [data, location.pathname])
 
 

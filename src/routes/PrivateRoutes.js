@@ -16,7 +16,7 @@ const DetailHome = lazy(() => import('../pages/DetailHome'));
 
 const PrivateRoutes = () => {
     const location = useLocation();
-    const [blogRoutes, setBlogRoutes] = useState({ route: null, data: null })
+    const [blogRoutes, setBlogRoutes] = useState({ route: null })
     const [homeRoutes, sethomeRoutes] = useState({ route: null })
 
     const blogDetail = localStorage.getItem("blogRoute")
@@ -24,7 +24,10 @@ const PrivateRoutes = () => {
 
 
     useEffect(() => {
-        window.scrollTo(0, 0);
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     }, [location.pathname]);
 
 
@@ -41,7 +44,10 @@ const PrivateRoutes = () => {
 
                 <Routes>
                     <Route path='/' element={<Home sethomeRoutes={sethomeRoutes} />}></Route>
-                    <Route path={`/${!homeDetail ? homeRoutes.route : homeDetail}`} element={<DetailHome data={homeRoutes} />}></Route>
+                    <Route
+                        path={`/${!homeDetail ? homeRoutes.route : homeDetail}`}
+                        element={<DetailHome data={homeRoutes} />}>
+                    </Route>
 
                     <Route path='/buy-sell' element={<BuySell />}></Route>
                     <Route path='/faqs' element={<Faq />}></Route>
@@ -51,7 +57,10 @@ const PrivateRoutes = () => {
                     <Route path='/privacy' element={<Privacy />}></Route>
 
                     <Route path='/blog' element={<Blog setBlogRoutes={setBlogRoutes} />}></Route>
-                    <Route path={`/${!blogDetail ? blogRoutes.route : blogDetail}`} element={<DetailBlog data={blogRoutes} />}></Route>
+                    <Route
+                        path={`/${!blogDetail ? blogRoutes.route : blogDetail}`}
+                        element={<DetailBlog data={blogRoutes} />}>
+                    </Route>
                 </Routes>
             </Suspense>
         </>
