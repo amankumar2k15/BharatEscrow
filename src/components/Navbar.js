@@ -74,8 +74,8 @@ const Navbar = () => {
                     </div>
 
                     {/* ----Middle Text---- */}
-                    <div className={`${hide ? "visible absolute md:relative  md:top-auto top-16 transition-all duration-700 ease-in-out " : "-top-[400px] md:right-auto"} block w-full right-[2px] `}>
-                        <div className={` ${hide ? "visible" : "hidden"} justify-end bg-white md:bg-transparent w-full items-center mt-4 border border-1 border-solid border-black shadow-black shadow-lg rounded-lg md:border-none md:shadow-none md:flex md:w-auto md:order-1`} id="navbar-user">
+                    <div className={`${hide ? "visible absolute md:relative  md:top-auto top-16 transition-all duration-700 ease-in-out" : "-top-[400px] md:right-auto"} block w-full right-[2px] `}>
+                        <div className={` ${hide ? "visible" : "hidden"} justify-end bg-white md:bg-transparent w-full items-center border border-1 border-solid border-black shadow-black shadow-lg rounded-lg md:border-none md:shadow-none md:flex md:w-auto md:order-1`} id="navbar-user">
                             <ul className={` text-[17px] flex flex-col font-medium p-4 md:p-0 mt-4 border border-none rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0  dark:border-gray-700 `}>
                                 <li>
                                     <Link
