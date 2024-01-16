@@ -169,6 +169,7 @@ const DetailBlog = ({ data }) => {
 
         <div className='shadingEffect font-bold text-3xl mb-12 sm:text-4xl md:text-5xl mt-4 w-full text-center text-blue-900'>
           {displayData?.title}
+       
         </div>
 
         <div className='container mx-auto items-center flex justify-center flex-col px-4' >

@@ -2,12 +2,13 @@ import React from 'react'
 import Footer from '../components/Footer'
 import Box from '../components/Box'
 import MSME from "../assets/Home/MSME.jpg"
+import APPIMG from "../assets/Home/appDevelopment.jpeg"
 import Banner from "../assets/Home/banner.jpg"
-import domain2 from "../assets/buyorsell/Domain2.png"
-import domain3 from "../assets/buyorsell/Domain3.png"
-import Websites1 from "../assets/buyorsell/Websites1.png"
-import Websites2 from "../assets/buyorsell/Websites2.png"
-import websiteDevelopment from "../assets/Home/websiteDevelopment.jpg"
+import Ecommerce from "../assets/Home/Ecommerce.jpeg"
+import Digital from "../assets/Home/Digital.jpeg"
+import Freelance1 from "../assets/Home/Freelance.jpeg"
+import PropertyDealing from "../assets/Home/PropertyDealing.jpeg"
+import websiteDevelopment from "../assets/Home/websiteDevelopment.jpeg"
 import Car1 from '../assets/buyorsell/Car1.jpg'
 import "../input.css"
 import { useNavigate } from 'react-router-dom'
@@ -24,13 +25,12 @@ const Home = ({ sethomeRoutes }) => {
     }
 
     const INDUSTRIESData = [
-        { id: 0, title: "MSME", image: MSME },
-        { id: 1, title: "ECOMMERCE", image: domain2 },
-        { id: 2, title: "DIGITAL", image: domain3 },
-        { id: 3, title: "FREELANCER ", image: Websites1 },
-        { id: 4, title: "PROPERTY DEALING ", image: Websites2 },
-        { id: 5, title: "ECOMMERCE", image: domain2 },
-        { id: 6, title: "APP DEVELOPMENT", image: MSME },
+        { id: 0, title: "MSME", image: MSME   },
+        { id: 1, title: "ECOMMERCE", image: Ecommerce , route:"E-commerceDetail "},
+        { id: 2, title: "DIGITAL", image: Digital },
+        { id: 3, title: "FREELANCER ", image: Freelance1 },
+        { id: 4, title: "PROPERTY DEALING ", image: PropertyDealing },
+        { id: 6, title: "APP DEVELOPMENT", image: APPIMG },
         { id: 7, title: "FIRA", image: Car1 },
         { id: 8, title: "WEBSITE DEVELOPMENT", image: websiteDevelopment }
     ]
@@ -103,7 +103,8 @@ const Home = ({ sethomeRoutes }) => {
                     Industries we serve
                 </div>
                 <div className=' homeShadingEffect flex flex-wrap flex-shrink justify-between space-y-2 gap-4 px-2  '>
-                    {INDUSTRIESData.map((item) => <Box text={item.title} key={item.id} src={item.image} />)}
+
+                    {INDUSTRIESData.map((item) => <Box text={item.title} key={item.id} src={item.image } item ={item} />)}
                 </div>
             </div>
 

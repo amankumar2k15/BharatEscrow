@@ -1,5 +1,7 @@
 import React, { Suspense, lazy, useEffect, useState } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
+import Box from '../components/Box';
+import IndustryDetail from '../pages/IndustryDetail';
 
 const BuySell = lazy(() => import('../pages/BuySell'));
 const DetailBlog = lazy(() => import('../pages/DetailBlog'));
@@ -14,13 +16,17 @@ const DetailHome = lazy(() => import('../pages/DetailHome'));
 
 
 
+
 const PrivateRoutes = () => {
     const location = useLocation();
     const [blogRoutes, setBlogRoutes] = useState({ route: null })
     const [homeRoutes, sethomeRoutes] = useState({ route: null })
+    const [industryRoutes, setIndustryRoute] = useState({ route: null })
 
     const blogDetail = localStorage.getItem("blogRoute")
     const homeDetail = localStorage.getItem("homeRoute");
+    const insdustryDeatil = localStorage.getItem("industryRoutes")
+    console.log('dfdfdsfdf', insdustryDeatil);
 
 
     useEffect(() => {
@@ -48,7 +54,9 @@ const PrivateRoutes = () => {
                         path={`/${!homeDetail ? homeRoutes.route : homeDetail}`}
                         element={<DetailHome data={homeRoutes} />}>
                     </Route>
-
+                    <Route path='/industry' element={<Box setIndustryRoute={setIndustryRoute} />}></Route>
+                    <Route path={`/${!insdustryDeatil ? industryRoutes.route : insdustryDeatil}`} element={<IndustryDetail data={industryRoutes} />} >
+                    </Route>
                     <Route path='/buy-sell' element={<BuySell />}></Route>
                     <Route path='/faqs' element={<Faq />}></Route>
                     <Route path='/contact' element={<Contact />}></Route>
@@ -62,7 +70,7 @@ const PrivateRoutes = () => {
                         element={<DetailBlog data={blogRoutes} />}>
                     </Route>
                 </Routes>
-            </Suspense>
+            </Suspense >
         </>
     )
 }
