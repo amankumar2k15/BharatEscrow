@@ -14,7 +14,7 @@ import "../input.css"
 import { useNavigate } from 'react-router-dom'
 
 
-const Home = ({ sethomeRoutes }) => {
+const Home = ({ sethomeRoutes, setIndustryRoute }) => {
     const navigate = useNavigate()
 
     const handleSetHomeRoute = (item) => {
@@ -24,17 +24,23 @@ const Home = ({ sethomeRoutes }) => {
         navigate(`/${routeCal}`)
     }
 
+    const handleSetIndustryRoutes = (items) => {
+        const routeCal = items?.title?.split(' ').map((item) => `${item.charAt(0).toUpperCase()}${item.slice(1, item.length)}`).join(" ").replaceAll(' ', "-")
+        localStorage.setItem("industryRoutes", routeCal)
+        setIndustryRoute({ route: routeCal })
+        navigate(`/${routeCal}`)
+    }
+
     const INDUSTRIESData = [
-        { id: 0, title: "MSME", image: MSME   },
-        { id: 1, title: "ECOMMERCE", image: Ecommerce , route:"E-commerceDetail "},
+        { id: 0, title: "MSME", image: MSME },
+        { id: 1, title: "ECOMMERCE", image: Ecommerce, route: "E-commerceDetail " },
         { id: 2, title: "DIGITAL", image: Digital },
-        { id: 3, title: "FREELANCER ", image: Freelance1 },
-        { id: 4, title: "PROPERTY DEALING ", image: PropertyDealing },
+        { id: 3, title: "FREELANCER", image: Freelance1 },
+        { id: 4, title: "PROPERTY DEALING", image: PropertyDealing },
         { id: 6, title: "APP DEVELOPMENT", image: APPIMG },
         { id: 7, title: "FIRA", image: Car1 },
         { id: 8, title: "WEBSITE DEVELOPMENT", image: websiteDevelopment }
     ]
-
 
 
     return (
@@ -104,7 +110,7 @@ const Home = ({ sethomeRoutes }) => {
                 </div>
                 <div className=' homeShadingEffect flex flex-wrap flex-shrink justify-between space-y-2 gap-4 px-2  '>
 
-                    {INDUSTRIESData.map((item) => <Box text={item.title} key={item.id} src={item.image } item ={item} />)}
+                    {INDUSTRIESData.map((item) => <Box text={item.title} key={item.id} src={item.image} item={item} handleSetIndustryRoutes={handleSetIndustryRoutes} />)}
                 </div>
             </div>
 

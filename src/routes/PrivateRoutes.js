@@ -25,8 +25,8 @@ const PrivateRoutes = () => {
 
     const blogDetail = localStorage.getItem("blogRoute")
     const homeDetail = localStorage.getItem("homeRoute");
-    const insdustryDeatil = localStorage.getItem("industryRoutes")
-    console.log('dfdfdsfdf', insdustryDeatil);
+    const industryDetail = localStorage.getItem("industryRoutes")
+    console.log('industryDEtail', industryDetail);
 
 
     useEffect(() => {
@@ -49,14 +49,17 @@ const PrivateRoutes = () => {
             >
 
                 <Routes>
-                    <Route path='/' element={<Home sethomeRoutes={sethomeRoutes} />}></Route>
+                    <Route path='/' element={<Home sethomeRoutes={sethomeRoutes} setIndustryRoute={setIndustryRoute} />}></Route>
                     <Route
                         path={`/${!homeDetail ? homeRoutes.route : homeDetail}`}
                         element={<DetailHome data={homeRoutes} />}>
                     </Route>
-                    <Route path='/industry' element={<Box setIndustryRoute={setIndustryRoute} />}></Route>
-                    <Route path={`/${!insdustryDeatil ? industryRoutes.route : insdustryDeatil}`} element={<IndustryDetail data={industryRoutes} />} >
+
+                    <Route
+                        path={`/${!industryDetail ? industryRoutes.route : industryDetail}`}
+                        element={<IndustryDetail data={industryRoutes} />} >
                     </Route>
+
                     <Route path='/buy-sell' element={<BuySell />}></Route>
                     <Route path='/faqs' element={<Faq />}></Route>
                     <Route path='/contact' element={<Contact />}></Route>
