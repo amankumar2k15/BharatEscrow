@@ -7,9 +7,9 @@ const Box = ({ text, src, id , setIndustryRoute , item }) => {
     const handleSetRoutes = (items) => {
         const routeCal = items?.title?.split(' ').map((item) => `${item.charAt(0).toUpperCase()}${item.slice(1, item.length)}`).join(" ").replaceAll(' ', "-")
         localStorage.setItem("industryRoutes", routeCal)
-        // setIndustryRoute({ route: routeCal })
+        setIndustryRoute({ route: routeCal })
         // console.log('hkdshkdfhnkdnknf',setIndustryRoute());
-        // navigate(`/${routeCal}`)
+        navigate(`/${routeCal}`)
         console.log('dfndkndndk',item)
        
       } 
