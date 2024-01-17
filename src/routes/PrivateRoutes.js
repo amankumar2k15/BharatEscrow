@@ -1,6 +1,5 @@
 import React, { Suspense, lazy, useEffect, useState } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
-import Box from '../components/Box';
 import IndustryDetail from '../pages/IndustryDetail';
 
 const BuySell = lazy(() => import('../pages/BuySell'));

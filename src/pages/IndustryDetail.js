@@ -4,7 +4,9 @@ import { useLocation } from 'react-router'
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import Ecommerce from '../assets/Home/Ecommerce.jpeg'
 import MMSE from '../assets/Home/MSME.jpeg'
+import FREELANCER from '../assets/Home/Freelance.jpeg'
 import Footer from '../components/Footer';
+
 const industryDEtail = [
     {
         id: 0,
@@ -201,9 +203,6 @@ const industryDEtail = [
                 value: "Upon successful completion, funds are released, and the acquiring company gains control or a significant stake in the target company.",
 
             },
-
-
-
             ]
         },
         {
@@ -241,9 +240,6 @@ const industryDEtail = [
                 value: "Upon successful completion, funds are released, and the company acquires the repurchased shares.",
 
             },
-
-
-
             ]
         },
         {
@@ -288,44 +284,162 @@ const industryDEtail = [
         faqs: [{
             id: 1,
             doubt: "1.How does BharatEscrow.com ensure the security of funds during financial transactions?",
-            solution: "",
+            solution: "BharatEscrow.com employs advanced encryption and security protocols, providing a secure environment for financial transactions. Our platform acts as an impartial intermediary, ensuring that funds are held safely until all specified conditions are met.",
         },
         {
             id: 2,
-            doubt: "",
-            solution: "",
+            doubt: "2. What sets BharatEscrow.com apart in terms of compliance assistance for MSMEs?",
+            solution: "BharatEscrow.com offers a comprehensive compliance module tailored for MSMEs, guiding them through the intricacies of regulatory requirements. Our platform simplifies the compliance process, minimizing the risk of legal complications and ensuring a smooth transaction experience.",
         },
         {
             id: 3,
-            doubt: "",
-            solution: "",
+            doubt: "3. Can MSMEs customize the escrow process based on their specific needs?",
+            solution: "Yes, BharatEscrow.com understands the diverse needs of MSMEs. Our platform is highly flexible, allowing MSMEs to customize the escrow process based on their unique requirements, ensuring a personalized and efficient experience.",
         },
         {
             id: 4,
-            doubt: "",
-            solution: "",
+            doubt: "4. How does BharatEscrow.com contribute to the efficiency of financial transactions for MSMEs?",
+            solution: "BharatEscrow.com streamlines financial transactions for MSMEs by providing a user-friendly platform that simplifies engagement, agreement drafting, fund transfers, and compliance checks. Our efficient process accelerates the pace of transactions, saving time and resources for MSMEs.",
         },
         {
             id: 5,
-            doubt: "",
-            solution: "",
+            doubt: "5. Is BharatEscrow.com equipped to handle the complexities of various financial processes, such as IPOs and buybacks?",
+            solution: "Absolutely, BharatEscrow.com is designed to handle a spectrum of financial processes, including IPOs, rights issues, open offers, takeovers, and buybacks. Our platform's versatility ensures that MSMEs can rely on a single solution for their diverse financial needs.",
         },
         {
             id: 6,
-            doubt: "",
-            solution: "",
+            doubt: "6. How does BharatEscrow.com contribute to the transparency of financial transactions?",
+            solution: "BharatEscrow.com prioritizes transparency throughout the entire transaction lifecycle. Our platform provides real-time updates, documentation transparency, and secure communication channels, enabling all stakeholders to stay informed and confident in their financial dealings.",
         },
         {
             id: 7,
-            doubt: "",
-            solution: "",
+            doubt: "7. What support does BharatEscrow.com offer in case of complications during a financial transaction?",
+            solution: "BharatEscrow.com has a dedicated support team ready to address any issues promptly. Our support extends beyond technical assistance to providing guidance and solutions, ensuring a smooth resolution in case of unforeseen complications.",
         },
         {
             id: 8,
-            doubt: "",
-            solution: "",
+            doubt: "8. How does BharatEscrow.com stay competitive in the evolving market of financial services?",
+            solution: "BharatEscrow.com remains competitive by continually investing in technology, ensuring our platform is up-to-date with the latest security features and regulatory compliance standards. Our commitment to innovation and customer-centric solutions positions us as a reliable and forward-thinking partner for MSMEs in the financial landscape.",
         },
         ],
+        conclusion:"In conclusion, BharatEscrow stands as a reliable ally for MSMEs in India, streamlining their financial transactions and providing a secure, transparent, and efficient platform for various processes. Through our in-house digital escrow solution, we empower MSMEs to navigate the complexities of IPOs, public issues, rights issues, follow-on public offerings, open offers, takeovers, and buybacks, while ensuring a seamless onboarding experience.",
+    },
+    {
+        id:3,
+        route:"FREELANCER",
+        image:FREELANCER,
+        title:"Empowering Freelancers: Ensuring Fair and Secure Transactions with BharatEscrow",
+        shortDesc:"In the constantly shifting environment of independent employment, freelancers play an important role in providing a wide range of talents and services to clients worldwide. However, despite plenty of opportunities, the difficulty of safe and timely fund settlements frequently interferes with the seamless collaboration of freelancers and project providers. At BharatEscrow, we seek to close this gap by ensuring that all parties receive appropriate compensation in accordance with their agreed-upon agreements.",
+        key1:"The Role of Freelancers:",
+        key1desc:"Freelancers are highly skilled experts that offer project-based services in fields such as writing, graphic design, programming, marketing, and even more. Freelancers are an essential component of today's workforce due to their adaptability and specific talents. While the freelancing environment is full of opportunity, it also presents a number of problems. Regardless of their specialization or skill sets, freelancers frequently face a number of challenges that can have an influence on their entire experience and financial well-being.",
+        point:[{
+            id:1,
+            key:"Onboarding Process for Freelancers:",
+            process:[{
+                id:1,
+                key:"Engagement:",
+                value:"Freelancers initiate the onboarding process by expressing interest in our services, leading to collaborative engagement with the BharatEscrow team."
+            },
+            {
+                id:2,
+                key:"Agreement: ",
+                value:"Clear terms are established through agreements, defining the scope of services, deliverables, and the payment structure."
+            },
+            {
+                id:3,
+                key:"Fund Transfer: ",
+                value:"Once the agreement is in place, project providers transfer funds to BharatEscrow's secure escrow account, indicating their commitment to the freelancer's work."
+            },
+            {
+                id:4,
+                key:"Verification and Compliance:",
+                value:"Each transaction undergoes thorough verification and compliance checks, ensuring that all agreed-upon terms are met before proceeding."
+            },
+            {
+                id:5,
+                key:"Release of Funds or Assets:",
+                value:"Upon successful completion of the project, funds are released to the freelancer, providing fair compensation for their services."
+            },
+        
+        
+        ]
+
+        },
+    {
+        id:2,
+        key:"Onboarding Process for Project Providers:",
+        process:[{
+            id:1,
+            key:"Engagement:",
+            value:"Project providers initiate the onboarding process by expressing interest in utilizing BharatEscrow's services, leading to collaborative engagement with our team."
+        },
+        {
+            id:2,
+            key:"Agreement:",
+            value:"Clear terms are established through agreements, defining project requirements, timelines, and the payment structure."
+        },
+        {
+            id:3,
+            key:"Fund Transfer:",
+            value:"Project providers transfer funds to BharatEscrow's secure escrow account, indicating their commitment to the freelancer's work."
+        },
+        {
+            id:4,
+            key:"Verification and Compliance: ",
+            value:"Each transaction undergoes thorough verification and compliance checks, ensuring that all agreed-upon terms are met before proceeding."
+        },
+        {
+            id:5,
+            key:"Release of Funds or Assets: ",
+            value:"Upon successful completion of the project, funds are released to the freelancer, providing fair compensation for their services."
+        },
+    
+    ],
+    }
+    ],
+    faqs:[
+        {
+        id:1,
+        doubt:"1. How does BharatEscrow ensure that freelancers receive timely payments for their work?",
+        solution:"BharatEscrow acts as a neutral third party, holding funds securely in escrow until the freelancer successfully completes the agreed-upon work, ensuring timely payments."
+    },
+        {
+        id:2,
+        doubt:"2. Can freelancers customize their escrow accounts based on the complexity of their projects?",
+        solution:"Yes, BharatEscrow's platform is flexible, allowing freelancers to tailor their escrow accounts based on the unique requirements of each project."
+    },
+        {
+        id:3,
+        doubt:"3. What measures does BharatEscrow take to protect the interests of project providers?",
+        solution:"BharatEscrow employs robust verification and compliance checks to ensure that project providers receive the deliverables as per the agreed-upon terms before funds are released."
+    },
+        {
+        id:4,
+        doubt:"4. How does BharatEscrow handle disputes between freelancers and project providers?",
+        solution:"BharatEscrow provides a dispute resolution mechanism, facilitating fair and unbiased resolutions in case of disagreements between parties."
+    },
+        {
+        id:5,
+        doubt:"5. Can freelancers and project providers track the progress of transactions in real-time?",
+        solution:"Yes, BharatEscrow's platform offers a transparent dashboard, allowing both freelancers and project providers to monitor the progress of transactions in real-time."
+    },
+        {
+        id:6,
+        doubt:"6. How does BharatEscrow ensure the security of funds during transactions?",
+        solution:"BharatEscrow employs advanced encryption and security protocols, ensuring the safe and secure handling of funds throughout the entire transaction process."
+    },
+        {
+        id:7,
+        doubt:"7. Is BharatEscrow's service limited to specific types of freelancing jobs?",
+        solution:"No, BharatEscrow caters to freelancers across various industries, supporting a wide range of freelance jobs and services."
+    },
+        {
+        id:8,
+        doubt:"8. Can project providers request modifications to the initial agreement during the project's progress?",
+        solution:"Yes, BharatEscrow allows for flexibility in agreements, enabling project providers and freelancers to request modifications as needed, with proper documentation and consensus."
+    },
+],
+conclusion:"In conclusion, BharatEscrow stands as a reliable partner for freelancers and project providers alike, facilitating fair and secure transactions through our digital escrow platform. The streamlined onboarding process and comprehensive FAQ provide clarity and assurance to both parties, fostering a collaborative and trustworthy freelance ecosystem."
     }
 ]
 
@@ -344,7 +458,7 @@ const IndustryDetail = ({ data }) => {
 
     return (
         <>
-            <div className='mb-10 pb-12 flex flex-col justify-center items-center mt-3 bord'>
+            <div className=' pb-5 flex flex-col justify-center items-center mt-14 bord'>
                 <div className='shadingEffect mt-28 font-bold text-3xl sm:text-4xl md:text-5xl w-full sm:text-center text-blue-900'>
                     {displayData?.route}
                 </div>
@@ -358,7 +472,7 @@ const IndustryDetail = ({ data }) => {
                             <h2 className='text-lg text-center font-medium sm:text-xl md:text-2xl text-blue-900'>
                                 {displayData?.title}
                             </h2>
-                            <p className='mt-5 text-md text-slate-800'>
+                            <p className='mt-5 mb-10 text-md text-slate-800'>
                                 {displayData?.shortDesc}
                             </p>
                         </div>
@@ -448,7 +562,7 @@ const IndustryDetail = ({ data }) => {
 
                     {
                         displayData?.faqs?.map((item, index) => {
-                            { console.log("amanData==>", displayData.faqs) }
+                            // { console.log("amanData==>", displayData.faqs) }
                             return (
                                 <div id="accordion-collapse" key={index} data-accordion="collapse"
                                     onClick={() => setFaqRow({ index, isOpen: !faqRow.isOpen })}
