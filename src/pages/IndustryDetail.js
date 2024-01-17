@@ -3,6 +3,7 @@ import { useLocation } from 'react-router'
 // import Box from '../components/Box'
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import Ecommerce from '../assets/Home/Ecommerce.jpeg'
+import MMSE from '../assets/Home/MSME.jpeg'
 const industryDEtail = [
     {
         id: 0,
@@ -16,10 +17,10 @@ const industryDEtail = [
         key2desc: "BharatEscrow.com's intuitive dashboard revolutionizes the payment security landscape for eCommerce merchants. By offering a centralized platform for all transactions, the dashboard provides real-time insights, ensuring transparency and control over financial dealings.",
         key3: "The Need for a Digital Escrow Account in eCommerce:",
         key3desc: "One of the pivotal questions that arise is why an eCommerce business needs a digital escrow account. BharatEscrow.com addresses this by developing a system that allows merchants to break the barriers of Cash on Delivery. By utilizing our digital platform, eCommerce merchants can request payments securely, significantly enhancing their monthly revenue streams.",
-        point:[{
-            id:1,
-            key:"Onboarding Process for eCommerce Merchants: ", 
-            process:[{
+        point: [{
+            id: 1,
+            key: "Onboarding Process for eCommerce Merchants: ",
+            process: [{
                 id: 1,
                 key: "Engagement:",
                 value: "eCommerce merchants initiate the onboarding process by expressing interest, leading to collaborative engagement with the Bharat Escrow team."
@@ -44,11 +45,11 @@ const industryDEtail = [
                 key: "Release of Funds or Assets:",
                 value: "Upon successful completion, funds or assets are released, marking the conclusion of the transaction."
             },
-            ] 
+            ]
         }
-    
-    ],
-       
+
+        ],
+
         faqs: [{
             id: 1,
             doubt: "Why is payment security a critical concern for eCommerce businesses in India?",
@@ -98,43 +99,236 @@ const industryDEtail = [
     {
         id: 1,
         route: "MSME",
+        image: MMSE,
         title: "Empowering MSMEs in India: Streamlining Financial Transactions with BharatEscrow's Digital Solutions",
         key1: "In the dynamic landscape of the Indian MSME sector, efficient financial transactions are the lifeblood of growth and sustainability. At BharatEscrow, we recognize the unique challenges faced by Micro, Small, and Medium Enterprises (MSMEs) and have tailored our in-house digital escrow solution to cater specifically to their needs. In this article, we delve into how BharatEscrow's platform facilitates key financial processes for MSMEs, including IPO and public issues, rights issues and follow-on public offerings, open offers and takeovers, and buybacks.",
-        key1desc: "Let's delve deeper into the concepts of IPO, public issue, rights issue, follow-on public offering, open offer, takeover, and buybacks. ",
-        key2: "IPO (Initial Public Offering) and Public Issues:",
-        
-        process: [{
+        key2: "Let's delve deeper into the concepts of IPO, public issue, rights issue, follow-on public offering, open offer, takeover, and buybacks. ",
+        point: [{
             id: 1,
-            key: "Engagement:",
-            value: "An IPO marks the transition of a privately held company to a public one. It involves engaging with financial institutions, underwriters, and regulatory bodies to prepare for the issuance of shares to the public.",
+            key: " 1. IPO (Initial Public Offering) and Public Issues: ",
+            process: [{
+                id: 1,
+                key: "Engagement:",
+                value: "An IPO marks the transition of a privately held company to a public one. It involves engaging with financial institutions, underwriters, and regulatory bodies to prepare for the issuance of shares to the public.",
+            },
+            {
+                id: 2,
+                key: "Agreement: ",
+                value: "During the IPO, agreements are made between the company and underwriters, detailing the terms of the offering, including the number of shares, pricing, and other essential conditions.",
+            },
+            {
+                id: 3,
+                key: "Fund Transfer:",
+                value: "Investors transfer funds to the company in exchange for newly issued shares, contributing to the capital raised through the public offering.",
+            },
+            {
+                id: 4,
+                key: "Verification and Compliance:",
+                value: "Rigorous verification and compliance processes are undertaken to ensure adherence to regulatory requirements and to build investor confidence.",
+            },
+            {
+                id: 5,
+                key: "Release of Funds and Assets:",
+                value: "Upon successful completion of the IPO, funds are released to the company, and shares are distributed to investors."
+            },
+
+            ],
         },
         {
             id: 2,
-            key: "Agreement: ",
-            value: "During the IPO, agreements are made between the company and underwriters, detailing the terms of the offering, including the number of shares, pricing, and other essential conditions.",
+            key: "2. Rights Issue and Follow-On Public Offering:",
+            process: [{
+                id: 1,
+                key: "Engagement: ",
+                value: "Rights issues involve engaging with existing shareholders to offer them the opportunity to purchase additional shares. Follow-on public offerings extend the opportunity to new and existing investors.",
+            },
+            {
+                id: 2,
+                key: "Agreement:",
+                value: "Agreements are established to outline the terms and conditions of the rights issue or follow-on public offering, including the pricing and allocation of shares."
+            },
+
+            {
+                id: 3,
+                key: "Fund Transfer: ",
+                value: "Funds are transferred by shareholders or new investors to participate in the rights issue or follow-on public offering."
+            },
+
+            {
+                id: 4,
+                key: "Verification and Compliance:",
+                value: "Robust verification and compliance processes are in place to ensure adherence to regulatory standards and to maintain the integrity of the offering."
+            },
+
+            {
+                id: 5,
+                key: "Release of Funds and Assets:",
+                value: "Upon successful completion, funds are released as per the agreed terms, and additional shares are allocated to the participating investors."
+            },
+
+
+            ]
         },
         {
             id: 3,
-            key: "Fund Transfer:",
-            value: "Investors transfer funds to the company in exchange for newly issued shares, contributing to the capital raised through the public offering.",
+            key: "3. Open Offers and Takeovers:",
+            process: [{
+                id: 1,
+                key: "Engagement:",
+                value: "Open offers and takeovers involve engaging with the target company's shareholders to acquire a significant stake or gain control of the company.",
+
+            },
+            {
+                id: 2,
+                key: "Agreement:",
+                value: "Agreements are made between the acquiring company and the target company's shareholders, outlining the terms of the offer and the conditions for acquisition.",
+
+            },
+            {
+                id: 3,
+                key: "Fund Transfer:",
+                value: "Funds are transferred to the target company's shareholders as per the acquisition agreement.",
+
+            },
+
+            {
+                id: 4,
+                key: "Verification and Compliance:",
+                value: "Comprehensive verification and compliance processes are conducted to ensure adherence to legal and regulatory requirements.",
+
+            },
+
+            {
+                id: 5,
+                key: "Release of Funds and Assets:",
+                value: "Upon successful completion, funds are released, and the acquiring company gains control or a significant stake in the target company.",
+
+            },
+
+
+
+            ]
         },
         {
             id: 4,
-            key: "Verification and Compliance:",
-            value: "Rigorous verification and compliance processes are undertaken to ensure adherence to regulatory requirements and to build investor confidence.",
+            key: "4. Buybacks:",
+            process: [{
+                id: 1,
+                key: "Engagement:",
+                value: "Buybacks involve a company repurchasing its own shares from existing shareholders.",
+
+            },
+            {
+                id: 2,
+                key: "Agreement:",
+                value: "Agreements are established between the company and shareholders, detailing the terms of the buyback, including the price and quantity of shares to be repurchased.",
+
+            },
+            {
+                id: 3,
+                key: "Fund Transfer:",
+                value: "Shareholders receive funds in exchange for selling their shares back to the company.",
+
+            },
+
+            {
+                id: 4,
+                key: "Verification and Compliance:",
+                value: "Stringent verification and compliance processes are in place to ensure the legality and adherence to regulatory standards.",
+
+            },
+
+            {
+                id: 5,
+                key: "Release of Funds and Assets:",
+                value: "Upon successful completion, funds are released, and the company acquires the repurchased shares.",
+
+            },
+
+
+
+            ]
         },
         {
             id: 5,
-            key: "Release of Funds and Assets:",
-            value: "Upon successful completion of the IPO, funds are released to the company, and shares are distributed to investors."
-        },
+            key: "Process for Onboarding MSMEs:",
+            process: [{
+                id: 1,
+                key: "Engagement:",
+                value: "MSMEs can initiate the onboarding process by expressing interest through our platform, kickstarting a collaborative engagement with our team.",
 
+            },
+            {
+                id: 2,
+                key: "Agreement:",
+                value: "Draft and finalize agreements outlining the scope of services and terms of engagement, establishing a clear framework for the partnership.",
+
+            },
+            {
+                id: 3,
+                key: "Fund Transfer:",
+                value: "Securely transfer the onboarding fee, leveraging BharatEscrow's escrow services to ensure that funds are held securely until the onboarding process is initiated.",
+
+            },
+
+            {
+                id: 4,
+                key: "Verification and Compliance:",
+                value: "MSMEs undergo a thorough verification and compliance process to ensure adherence to legal and regulatory requirements.",
+
+            },
+
+            {
+                id: 5,
+                key: "Release of Funds and Assets:",
+                value: "Upon successful onboarding, funds are released to BharatEscrow, marking the official commencement of the partnership.",
+
+            },
+            ]
+        },
         ],
+
         faq: [{
             id: 1,
+            doubt: "1. How does BharatEscrow.com ensure the security of funds during financial transactions?",
+            solution: "",
+        },
+        {
+            id: 2,
             doubt: "",
             solution: "",
-        }],
+        },
+        {
+            id: 3,
+            doubt: "",
+            solution: "",
+        },
+        {
+            id: 4,
+            doubt: "",
+            solution: "",
+        },
+        {
+            id: 5,
+            doubt: "",
+            solution: "",
+        },
+        {
+            id: 6,
+            doubt: "",
+            solution: "",
+        },
+        {
+            id: 7,
+            doubt: "",
+            solution: "",
+        },
+        {
+            id: 8,
+            doubt: "",
+            solution: "",
+        },
+    ],
     }
 ]
 
@@ -154,11 +348,13 @@ const IndustryDetail = ({ data }) => {
     return (
         <>
             <div className='mb-10 pb-12 flex flex-col justify-center items-center mt-3 bord'>
-
                 <div className='shadingEffect mt-28 font-bold text-3xl sm:text-4xl md:text-5xl w-full sm:text-center text-blue-900'>
                     {displayData?.route}
                 </div>
+            </div>
 
+
+            <div className='container mx-auto items-center flex justify-center flex-col px-4' >
                 <div className='flex flex-col sm:flex-wrap '>
                     <div className='mt-8 sm:mt-16 flex flex-col gap-10 justify-center items-center'>
                         <div className='sm:w-10/12'>
@@ -182,7 +378,7 @@ const IndustryDetail = ({ data }) => {
                                 {displayData?.key1}
                             </h2>
                             <p className='mt-5 text-md  text-slate-800'>
-                        *        {displayData?.key1desc}
+                                {displayData?.key1desc}
                             </p>
                         </div>
                     </div>
@@ -208,43 +404,46 @@ const IndustryDetail = ({ data }) => {
                             <p className='mt-5 text-md  text-slate-800'>
                                 {displayData?.key3desc}
                             </p>
-                            
+
                         </div>
                     </div>
                 </div>
-                <div className='mt-8 flex flex-col  gap-0'>
-                {displayData?.point?.map((item)=>{return(
-               
-                <div key={item.id}>
-                      <p className='text-blue-900 underline text-lgfont-roboto mt-2'>{item?.key}</p>
-                      +-
-                    </div>
-                    
-                 
-                    )})}
-                    <div className='mt-5 flex flex-col gap-8'>
-                    {console.log('204', displayData)}
-                    {/* {displayData?.process?.map((item) => {
+
+                <div className='mt-8  flex flex-col  gap-0 '>
+                    {displayData?.point?.map((item) => {
                         return (
-                            <div key={item.id} className='flex flex-col sm:flex-wrap '>
-                                <div className='mt-10 flex flex-col gap-10 justify-center items-center'>
-                                    <div className=' sm:w-10/12 '>
-                                        <h2 className='text-xl sm:text-2xl text-blue-900'>
-                                            {`${item?.id}. ${item?.key}`}
-                                        </h2>
-                                        <p className='mt-5 text-md  text-slate-800'>
-                                            {item?.value}
-                                        </p>
-                                    </div>
+
+                            <div className='mr-60' key={item.id}>
+                                <p className='text-blue-900 font-bold text-2xl font-roboto underline'>{item?.key}</p>
+                                <div className='mt-5 flex flex-col gap-2'>
+                                    {console.log('204', displayData)}
+                                    {item.process?.map((processItem) => {
+                                        return (
+                                            <div key={processItem.id} className='flex flex-col sm:flex-wrap '>
+                                                <div className='mt-10 flex flex-col gap-10 justify-center items-center'>
+                                                    <div className=' sm:w-10/12 '>
+                                                        <h2 className='text-xl sm:text-2xl text-blue-900'>
+                                                            {`${processItem?.id}. ${processItem?.key}`}
+                                                        </h2>
+                                                        <p className='mt-5 text-md  text-slate-800'>
+                                                            {processItem?.value}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        )
+                                    })}
                                 </div>
                             </div>
+
+
                         )
-                    })} */}
+                    })}
+
+
                 </div>
 
-              </div>
-             
-               
+
                 <div className='mt-8'>
                     <p className='text-blue-900 mb-6 font-bold text-2xl font-roboto'>FAQ's</p>
 
@@ -299,8 +498,6 @@ const IndustryDetail = ({ data }) => {
                     </div>
                 </div>
             </div>
-
-
 
         </>
     )

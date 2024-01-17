@@ -108,7 +108,7 @@ const Home = ({ sethomeRoutes, setIndustryRoute }) => {
                 <div className='shadingEffect font-bold uppercase mb-10 text-3xl sm:text-4xl md:text-5xl mt-8 sm:mt-0 w-full text-center text-blue-900'>
                     Industries we serve
                 </div>
-                <div className=' homeShadingEffect flex flex-wrap flex-shrink justify-between space-y-2 gap-4 px-2  '>
+                <div className=' homeShadingEffect flex flex-wrap flex-shrink justify-between space-y-2 gap-4 px-2  cursor-pointer'>
 
                     {INDUSTRIESData.map((item) => <Box text={item.title} key={item.id} src={item.image} item={item} handleSetIndustryRoutes={handleSetIndustryRoutes} />)}
                 </div>
