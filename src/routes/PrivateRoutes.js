@@ -72,7 +72,7 @@ const PrivateRoutes = () => {
                         element={<DetailBlog data={blogRoutes} />}>
                     </Route>
                 </Routes>
-            </Suspense >
+            </Suspense>
         </>
     )
 }
