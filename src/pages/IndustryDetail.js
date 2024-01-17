@@ -18,11 +18,8 @@ const industryDEtail = [
         key3desc: "One of the pivotal questions that arise is why an eCommerce business needs a digital escrow account. BharatEscrow.com addresses this by developing a system that allows merchants to break the barriers of Cash on Delivery. By utilizing our digital platform, eCommerce merchants can request payments securely, significantly enhancing their monthly revenue streams.",
         point:[{
             id:1,
-            key:"Onboarding Process for eCommerce Merchants: ",  
-        },
-        {
-            id:2,
-            process: [{
+            key:"Onboarding Process for eCommerce Merchants: ", 
+            process:[{
                 id: 1,
                 key: "Engagement:",
                 value: "eCommerce merchants initiate the onboarding process by expressing interest, leading to collaborative engagement with the Bharat Escrow team."
@@ -47,7 +44,7 @@ const industryDEtail = [
                 key: "Release of Funds or Assets:",
                 value: "Upon successful completion, funds or assets are released, marking the conclusion of the transaction."
             },
-            ]
+            ] 
         }
     
     ],
@@ -185,7 +182,7 @@ const IndustryDetail = ({ data }) => {
                                 {displayData?.key1}
                             </h2>
                             <p className='mt-5 text-md  text-slate-800'>
-                                {displayData?.key1desc}
+                        *        {displayData?.key1desc}
                             </p>
                         </div>
                     </div>
@@ -216,12 +213,18 @@ const IndustryDetail = ({ data }) => {
                     </div>
                 </div>
                 <div className='mt-8 flex flex-col  gap-0'>
-                {displayData?.point?.map((item)=>{return(<div key={item.id}>
+                {displayData?.point?.map((item)=>{return(
+               
+                <div key={item.id}>
                       <p className='text-blue-900 underline text-lgfont-roboto mt-2'>{item?.key}</p>
-                    </div>)})}
+                      +-
+                    </div>
+                    
+                 
+                    )})}
                     <div className='mt-5 flex flex-col gap-8'>
                     {console.log('204', displayData)}
-                    {displayData?.point?.process?.map((item) => {
+                    {/* {displayData?.process?.map((item) => {
                         return (
                             <div key={item.id} className='flex flex-col sm:flex-wrap '>
                                 <div className='mt-10 flex flex-col gap-10 justify-center items-center'>
@@ -236,7 +239,7 @@ const IndustryDetail = ({ data }) => {
                                 </div>
                             </div>
                         )
-                    })}
+                    })} */}
                 </div>
 
               </div>
