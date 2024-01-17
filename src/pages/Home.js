@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from '../components/Footer'
 import Box from '../components/Box'
-import MSME from "../assets/Home/MSME.jpg"
+import MSME from "../assets/Home/MSME.jpeg"
 import APPIMG from "../assets/Home/appDevelopment.jpeg"
 import Banner from "../assets/Home/banner.jpg"
 import Ecommerce from "../assets/Home/Ecommerce.jpeg"
@@ -9,7 +9,7 @@ import Digital from "../assets/Home/Digital.jpeg"
 import Freelance1 from "../assets/Home/Freelance.jpeg"
 import PropertyDealing from "../assets/Home/PropertyDealing.jpeg"
 import websiteDevelopment from "../assets/Home/websiteDevelopment.jpeg"
-import Car1 from '../assets/buyorsell/Car1.jpg'
+import FIRA from '../assets/Home/FIRA.jpeg'
 import "../input.css"
 import { useNavigate } from 'react-router-dom'
 
@@ -38,7 +38,7 @@ const Home = ({ sethomeRoutes, setIndustryRoute }) => {
         { id: 3, title: "FREELANCER", image: Freelance1 },
         { id: 4, title: "PROPERTY DEALING", image: PropertyDealing },
         { id: 6, title: "APP DEVELOPMENT", image: APPIMG },
-        { id: 7, title: "FIRA", image: Car1 },
+        { id: 7, title: "FIRA", image: FIRA },
         { id: 8, title: "WEBSITE DEVELOPMENT", image: websiteDevelopment }
     ]
 
