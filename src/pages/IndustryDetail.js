@@ -288,7 +288,7 @@ const industryDEtail = [
         },
         ],
 
-        faq: [{
+        faqs: [{
             id: 1,
             doubt: "1. How does BharatEscrow.com ensure the security of funds during financial transactions?",
             solution: "",
