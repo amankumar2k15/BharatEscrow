@@ -4,6 +4,7 @@ import { useLocation } from 'react-router'
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import Ecommerce from '../assets/Home/Ecommerce.jpeg'
 import MMSE from '../assets/Home/MSME.jpeg'
+import Footer from '../components/Footer';
 const industryDEtail = [
     {
         id: 0,
@@ -46,21 +47,17 @@ const industryDEtail = [
                 value: "Upon successful completion, funds or assets are released, marking the conclusion of the transaction."
             },
             ]
-        }
-
-        ],
+        }],
 
         faqs: [{
             id: 1,
             doubt: "Why is payment security a critical concern for eCommerce businesses in India?",
             solution: "Payment security is crucial to mitigate risks associated with COD transactions, ensuring a safe and transparent payment environment."
-
         },
         {
             id: 2,
             doubt: "How does BharatEscrow.com's dashboard enhance transaction transparency for eCommerce merchants?",
             solution: "The intuitive dashboard provides real-time insights, offering transparency and control over financial transactions."
-
         },
         {
             id: 3,
@@ -288,9 +285,9 @@ const industryDEtail = [
         },
         ],
 
-        faq: [{
+        faqs: [{
             id: 1,
-            doubt: "1. How does BharatEscrow.com ensure the security of funds during financial transactions?",
+            doubt: "1.How does BharatEscrow.com ensure the security of funds during financial transactions?",
             solution: "",
         },
         {
@@ -328,7 +325,7 @@ const industryDEtail = [
             doubt: "",
             solution: "",
         },
-    ],
+        ],
     }
 ]
 
@@ -409,38 +406,40 @@ const IndustryDetail = ({ data }) => {
                     </div>
                 </div>
 
-                <div className='mt-8  flex flex-col  gap-0 '>
-                    {displayData?.point?.map((item) => {
-                        return (
+                <div className='flex flex-col sm:flex-wrap '>
+                    <div className='mt-8 sm:mt-16 flex flex-col gap-10 justify-center items-center '>
+                        {displayData?.point?.map((item) => {
+                            return (
 
-                            <div className='mr-60' key={item.id}>
-                                <p className='text-blue-900 font-bold text-2xl font-roboto underline'>{item?.key}</p>
-                                <div className='mt-5 flex flex-col gap-2'>
-                                    {console.log('204', displayData)}
-                                    {item.process?.map((processItem) => {
-                                        return (
-                                            <div key={processItem.id} className='flex flex-col sm:flex-wrap '>
-                                                <div className='mt-10 flex flex-col gap-10 justify-center items-center'>
-                                                    <div className=' sm:w-10/12 '>
-                                                        <h2 className='text-xl sm:text-2xl text-blue-900'>
-                                                            {`${processItem?.id}. ${processItem?.key}`}
-                                                        </h2>
-                                                        <p className='mt-5 text-md  text-slate-800'>
-                                                            {processItem?.value}
-                                                        </p>
+                                <div className='sm:w-10/12 ' key={item.id}>
+                                    <p className='text-blue-900 font-bold text-2xl font-roboto underline'>{item?.key}</p>
+                                    <div className='mt-5 flex flex-col gap-2'>
+                                        {console.log('204', displayData)}
+                                        {item.process?.map((processItem) => {
+                                            return (
+                                                <div key={processItem.id} className='flex flex-col sm:flex-wrap '>
+                                                    <div className='mt-10 flex flex-col gap-10'>
+                                                        <div className=' sm:w-12/12 '>
+                                                            <h2 className='text-xl sm:text-2xl text-blue-900'>
+                                                                {`${processItem?.id}. ${processItem?.key}`}
+                                                            </h2>
+                                                            <p className='mt-5 text-md  text-slate-800'>
+                                                                {processItem?.value}
+                                                            </p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        )
-                                    })}
+                                            )
+                                        })}
+                                    </div>
                                 </div>
-                            </div>
 
 
-                        )
-                    })}
+                            )
+                        })}
 
 
+                    </div>
                 </div>
 
 
@@ -449,6 +448,7 @@ const IndustryDetail = ({ data }) => {
 
                     {
                         displayData?.faqs?.map((item, index) => {
+                            { console.log("amanData==>", displayData.faqs) }
                             return (
                                 <div id="accordion-collapse" key={index} data-accordion="collapse"
                                     onClick={() => setFaqRow({ index, isOpen: !faqRow.isOpen })}
@@ -485,10 +485,10 @@ const IndustryDetail = ({ data }) => {
                     }
 
                 </div>
-                <div className='flex flex-col sm:flex-wrap '>
+                <div className='flex flex-col sm:flex-wrap mb-10'>
                     <div className='mt-8 sm:mt-16 flex flex-col gap-10 justify-center items-center'>
                         <div className=' sm:w-10/12 '>
-                            <h2 className='text-xl sm:text-2xl text-blue-900'>
+                            <h2 className='text-xl sm:text-2xl  text-blue-900'>
                                 Conclusion
                             </h2>
                             <p className='mt-5 text-md  text-slate-800'>
@@ -498,7 +498,7 @@ const IndustryDetail = ({ data }) => {
                     </div>
                 </div>
             </div>
-
+            <Footer />
         </>
     )
 }
