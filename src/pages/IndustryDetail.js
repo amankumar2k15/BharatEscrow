@@ -16,32 +16,42 @@ const industryDEtail = [
         key2desc: "BharatEscrow.com's intuitive dashboard revolutionizes the payment security landscape for eCommerce merchants. By offering a centralized platform for all transactions, the dashboard provides real-time insights, ensuring transparency and control over financial dealings.",
         key3: "The Need for a Digital Escrow Account in eCommerce:",
         key3desc: "One of the pivotal questions that arise is why an eCommerce business needs a digital escrow account. BharatEscrow.com addresses this by developing a system that allows merchants to break the barriers of Cash on Delivery. By utilizing our digital platform, eCommerce merchants can request payments securely, significantly enhancing their monthly revenue streams.",
-        process: [{
-            id: 1,
-            key: "Engagement:",
-            value: "eCommerce merchants initiate the onboarding process by expressing interest, leading to collaborative engagement with the Bharat Escrow team."
+        point:[{
+            id:1,
+            key:"Onboarding Process for eCommerce Merchants: ",  
         },
         {
-            id: 2,
-            key: "Agreement:",
-            value: "Clear terms are established through agreements, defining the scope of services and the terms of engagement."
-        },
-        {
-            id: 3,
-            key: "Fund Transfer:",
-            value: "Secure fund transfers are facilitated through BharatEscrow.com's escrow services."
-        },
-        {
-            id: 4,
-            key: "Verification and Compliance: ",
-            value: "Each transaction undergoes a thorough verification and compliance process to ensure adherence to legal and regulatory standards."
-        },
-        {
-            id: 5,
-            key: "Release of Funds or Assets:",
-            value: "Upon successful completion, funds or assets are released, marking the conclusion of the transaction."
-        },
-        ],
+            id:2,
+            process: [{
+                id: 1,
+                key: "Engagement:",
+                value: "eCommerce merchants initiate the onboarding process by expressing interest, leading to collaborative engagement with the Bharat Escrow team."
+            },
+            {
+                id: 2,
+                key: "Agreement:",
+                value: "Clear terms are established through agreements, defining the scope of services and the terms of engagement."
+            },
+            {
+                id: 3,
+                key: "Fund Transfer:",
+                value: "Secure fund transfers are facilitated through BharatEscrow.com's escrow services."
+            },
+            {
+                id: 4,
+                key: "Verification and Compliance: ",
+                value: "Each transaction undergoes a thorough verification and compliance process to ensure adherence to legal and regulatory standards."
+            },
+            {
+                id: 5,
+                key: "Release of Funds or Assets:",
+                value: "Upon successful completion, funds or assets are released, marking the conclusion of the transaction."
+            },
+            ]
+        }
+    
+    ],
+       
         faqs: [{
             id: 1,
             doubt: "Why is payment security a critical concern for eCommerce businesses in India?",
@@ -95,6 +105,7 @@ const industryDEtail = [
         key1: "In the dynamic landscape of the Indian MSME sector, efficient financial transactions are the lifeblood of growth and sustainability. At BharatEscrow, we recognize the unique challenges faced by Micro, Small, and Medium Enterprises (MSMEs) and have tailored our in-house digital escrow solution to cater specifically to their needs. In this article, we delve into how BharatEscrow's platform facilitates key financial processes for MSMEs, including IPO and public issues, rights issues and follow-on public offerings, open offers and takeovers, and buybacks.",
         key1desc: "Let's delve deeper into the concepts of IPO, public issue, rights issue, follow-on public offering, open offer, takeover, and buybacks. ",
         key2: "IPO (Initial Public Offering) and Public Issues:",
+        
         process: [{
             id: 1,
             key: "Engagement:",
@@ -200,13 +211,17 @@ const IndustryDetail = ({ data }) => {
                             <p className='mt-5 text-md  text-slate-800'>
                                 {displayData?.key3desc}
                             </p>
-                            <p className='text-blue-900 font-bold text-xl mt-10 font-roboto underline'>Onboarding Process for eCommerce Merchants:-</p>
+                            
                         </div>
                     </div>
                 </div>
-                <div className='mt-5 flex flex-col gap-8'>
+                <div className='mt-8 flex flex-col  gap-0'>
+                {displayData?.point?.map((item)=>{return(<div key={item.id}>
+                      <p className='text-blue-900 underline text-lgfont-roboto mt-2'>{item?.key}</p>
+                    </div>)})}
+                    <div className='mt-5 flex flex-col gap-8'>
                     {console.log('204', displayData)}
-                    {displayData?.process?.map((item) => {
+                    {displayData?.point?.process?.map((item) => {
                         return (
                             <div key={item.id} className='flex flex-col sm:flex-wrap '>
                                 <div className='mt-10 flex flex-col gap-10 justify-center items-center'>
@@ -224,11 +239,14 @@ const IndustryDetail = ({ data }) => {
                     })}
                 </div>
 
+              </div>
+             
+               
                 <div className='mt-8'>
                     <p className='text-blue-900 mb-6 font-bold text-2xl font-roboto'>FAQ's</p>
 
                     {
-                        displayData?.faqs.map((item, index) => {
+                        displayData?.faqs?.map((item, index) => {
                             return (
                                 <div id="accordion-collapse" key={index} data-accordion="collapse"
                                     onClick={() => setFaqRow({ index, isOpen: !faqRow.isOpen })}
