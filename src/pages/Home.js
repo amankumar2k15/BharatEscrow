@@ -9,6 +9,7 @@ import Digital from "../assets/Home/Digital.jpeg"
 import Freelance1 from "../assets/Home/Freelance.jpeg"
 import PropertyDealing from "../assets/Home/PropertyDealing.jpeg"
 import websiteDevelopment from "../assets/Home/websiteDevelopment.jpeg"
+import gamingPayout from "../assets/Home/gamingPayout.png"
 import FIRA from '../assets/Home/FIRA.jpeg'
 import "../input.css"
 import { useNavigate } from 'react-router-dom'
@@ -40,7 +41,7 @@ const Home = ({ sethomeRoutes, setIndustryRoute }) => {
         { id: 6, title: "APP DEVELOPMENT", image: APPIMG },
         { id: 7, title: "FIRA", image: FIRA },
         { id: 8, title: "WEBSITE DEVELOPMENT", image: websiteDevelopment },
-        { id: 9, title: "Gaming Payout", image: PropertyDealing }
+        { id: 9, title: "Gaming Payout", image: gamingPayout }
     ]
 
 
