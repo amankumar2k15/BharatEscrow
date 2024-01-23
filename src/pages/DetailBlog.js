@@ -171,8 +171,8 @@ const DetailBlog = ({ data }) => {
       subtitle:[
         {
           id:0,
-          question1: "Elevate Your B2B Transactions with BharatEscrow ",
-          answer1: "In the intricate landscape of B2B transactions, establishing a foundation of trust is essential. With increasing complexities and risks, businesses need a reliable solution to protect their interests and ensure fair dealings. BharatEscrow emerges as a game-changer, offering a secure and neutral ground for B2B transactions.",
+          question: "Elevate Your B2B Transactions with BharatEscrow ",
+          answer: "In the intricate landscape of B2B transactions, establishing a foundation of trust is essential. With increasing complexities and risks, businesses need a reliable solution to protect their interests and ensure fair dealings. BharatEscrow emerges as a game-changer, offering a secure and neutral ground for B2B transactions.",
         }
       ],
       faqs: [
