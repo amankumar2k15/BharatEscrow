@@ -39,7 +39,8 @@ const Home = ({ sethomeRoutes, setIndustryRoute }) => {
         { id: 4, title: "PROPERTY DEALING", image: PropertyDealing },
         { id: 6, title: "APP DEVELOPMENT", image: APPIMG },
         { id: 7, title: "FIRA", image: FIRA },
-        { id: 8, title: "WEBSITE DEVELOPMENT", image: websiteDevelopment }
+        { id: 8, title: "WEBSITE DEVELOPMENT", image: websiteDevelopment },
+        { id: 9, title: "Gaming Payout", image: PropertyDealing }
     ]
 
 
