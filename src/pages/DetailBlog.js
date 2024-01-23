@@ -24,11 +24,7 @@ import {
 
 const DetailBlog = ({ data }) => {
   const [displayData, setData] = useState();
-<<<<<<< HEAD
-  console.log(displayData)
-=======
-  console.log("aman", displayData)
->>>>>>> 3a433852580b4e8817d33fde56a55958b883ae5a
+
   const [faqRow, setFaqRow] = useState({ index: null, isOpen: false })
   const location = useLocation()
 
