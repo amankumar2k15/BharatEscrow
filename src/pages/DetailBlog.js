@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import { CgProfile } from "react-icons/cg";
 import { IoShareSocialOutline } from "react-icons/io5";
 import detailblogImg from "../assets/blog/blog1.jpg"
+import detailblogImg1 from "../assets/blog/blog2.jpg"
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 
 
@@ -73,6 +74,7 @@ const DetailBlog = ({ data }) => {
   const dataMap = [
     {
       id: 0,
+      img:detailblogImg,
       title: "A Step-by-Step Guide to Escrow Accounts with BharatEscrow",
       question1: "What is an Escrow Account?",
       answer1: "It is an intermittent account that is only active till the transaction is completed. The account is closed once all of the criteria between the buyer and seller have been met. Escrows often involve the deposit of a monetary-valued document. These documents could be deeds, written instruments, payment pledges, licenses, patents, cheques, bonds, or mortgages.",
@@ -154,6 +156,14 @@ const DetailBlog = ({ data }) => {
       conclusion: "In a world where financial transparency is non-negotiable, BharatEscrow stands as a reliable partner, offering a secure and efficient platform for escrow services. By following this step-by-step guide, users can navigate the escrow process seamlessly, fostering trust and confidence in their financial transactions.",
       timeStamp: "19-9-2023"
 
+    },
+    {
+      id:1,
+      img:detailblogImg1,
+      title: "hello",
+      question1: "",
+      answer1:""
+
     }
   ]
 
@@ -189,7 +199,8 @@ const DetailBlog = ({ data }) => {
 
 
           <div className='md:max-w-[700px] max-h-[400px] relative flex items-center justify-center'>
-            <img src={detailblogImg} alt='imggDetailBlog' className='md:max-w-[700px] max-h-[400px]' />
+            {console.log('var',displayData?.img)}
+            <img src={displayData?.img} alt='images' className='md:max-w-[700px] max-h-[400px]' />
           </div>
 
           <div className='max-w-5xl mt-4 '>

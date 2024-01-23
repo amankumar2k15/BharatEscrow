@@ -1,6 +1,8 @@
 import React from 'react'
 import Footer from '../components/Footer'
 import blogImg from "../assets/blog/blog1.jpg"
+import blogImg1 from "../assets/blog/blog2.jpg"
+
 import { useNavigate } from 'react-router-dom'
 
 const Blog = ({ setBlogRoutes }) => {
@@ -13,6 +15,13 @@ const Blog = ({ setBlogRoutes }) => {
       question1: "What is an escrow account?",
       answer1: "It is an intermittent account that is only active till the transaction is completed. The account is closed once all of the criteria between the buyer and seller have been met. Escrows often involve the deposit of a monetary-valued document. These documents could be deeds, written instruments, payment pledges, licenses, patents, cheques, bonds, or mortgages.",
       img: blogImg,
+    },
+    {
+      id:1,
+      title:"Your Business in B2B Transactions safeguarded by BHARATESCROW",
+      question1: "Elevate Your B2B Transactions with BharatEscrow",
+      answer1:"In the intricate landscape of B2B transactions, establishing a foundation of trust is essential. With increasing complexities and risks, businesses need a reliable solution to protect their interests and ensure fair dealings. BharatEscrow emerges as a game-changer, offering a secure and neutral ground for B2B transactions.                                     ",
+      img:blogImg1
     }
   ]
 
@@ -50,7 +59,7 @@ const Blog = ({ setBlogRoutes }) => {
                     </div>
                     <h5 className='text-md mt-5 text-blue-900 font-bold'>{item.question1}</h5>
 
-                    <p className='text-sm'>{item.answer1?.slice(0, 100)}</p>
+                    <p className='text-sm'>{item.answer1?.slice(0, 82)}</p>
                     <button className='text-right text-blue-900 hover:text-black absolute right-4 bottom-4  hover:underline '
                       onClick={() => handleSetRoutes(item)}
                     >
