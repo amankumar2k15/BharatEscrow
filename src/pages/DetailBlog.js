@@ -24,7 +24,6 @@ import {
 
 const DetailBlog = ({ data }) => {
   const [displayData, setData] = useState();
-  console.log(displayData)
   const [faqRow, setFaqRow] = useState({ index: null, isOpen: false })
   const location = useLocation()
 
@@ -75,7 +74,7 @@ const DetailBlog = ({ data }) => {
   const dataMap = [
     {
       id: 0,
-      img:detailblogImg,
+      img: detailblogImg,
       title: "A Step-by-Step Guide to Escrow Accounts with BharatEscrow",
       question1: "What is an Escrow Account?",
       answer1: "It is an intermittent account that is only active till the transaction is completed. The account is closed once all of the criteria between the buyer and seller have been met. Escrows often involve the deposit of a monetary-valued document. These documents could be deeds, written instruments, payment pledges, licenses, patents, cheques, bonds, or mortgages.",
@@ -161,45 +160,10 @@ const DetailBlog = ({ data }) => {
     {
       id:1,
       img:detailblogImg1,
-      title: "Your Business in B2B Transactions safeguarded by BHARATESCROW",
-      question1: "Elevate Your B2B Transactions with BharatEscrow ",
-      answer1:"In the intricate landscape of B2B transactions, establishing a foundation of trust is essential. With increasing complexities and risks, businesses need a reliable solution to protect their interests and ensure fair dealings. BharatEscrow emerges as a game-changer, offering a secure and neutral ground for B2B transactions.",
-      faqs:[
-         { id:1,
-          doubt:"Is BharatEscrow only suitable for large transactions?",
-          solution:"BharatEscrow caters to businesses of all sizes, offering scalable solutions tailored to the transactional needs of each business.",
-        },
-         { id:2,
-          doubt:"How does BharatEscrow handle international transactions?",
-          solution:"BharatEscrow complies with global regulatory standards, facilitating secure and compliant cross-border transactions.",
-        },
-         { id:3,
-          doubt:"What happens in case of a dispute between the transacting parties?",
-          solution:"BharatEscrow employs a robust dispute resolution mechanism to ensure fair and impartial resolutions in case of disagreements.",
-        },
-         { id:4,
-          doubt:"Is BharatEscrow compliant with industry-specific regulations?",
-          solution:"Yes, BharatEscrow adheres to industry-specific regulations, providing businesses with a secure and legally compliant escrow service.",
-        },
-         { id:5,
-          doubt:"How quickly can businesses onboard with BharatEscrow?",
-          solution:"The onboarding process with BharatEscrow is efficient, allowing businesses to quickly integrate escrow services into their transactions.          ",
-        },
-         { id:6,
-          doubt:"Can BharatEscrow be used for recurring transactions?",
-          solution:"Yes, BharatEscrow supports both one-time and recurring transactions, providing flexibility for businesses with varying transaction needs.",
-        },
-         { id:7,
-          doubt:"What security measures does BharatEscrow employ to protect sensitive information?",
-          solution:"BharatEscrow utilizes advanced encryption and security protocols to safeguard sensitive information, ensuring a secure transaction environment.",
-        },
-         { id:8,
-          doubt:"Does BharatEscrow charge fees for its services?",
-          solution:"BharatEscrow's fee structure is transparent, with businesses only paying for the escrow services they utilize. The platform aims to provide cost-effective solutions for all. ",
-        },
-      
-      ],
-      conclusion:"Elevate your B2B transactions to new heights with BharatEscrow. As the fintech industry evolves, trust and security remain at the forefront of successful business dealings. BharatEscrow empowers businesses to engage in secure and transparent transactions, fostering trust, and paving the way for mutually beneficial partnerships. Explore the future of B2B transactions with BharatEscrow — where security meets seamless transactions."
+      title: "hello",
+      question1: "",
+      answer1:""
+
     }
   ]
 
@@ -215,7 +179,7 @@ const DetailBlog = ({ data }) => {
 
         <div className='shadingEffect font-bold text-3xl mb-12 sm:text-4xl md:text-5xl mt-4 w-full text-center text-blue-900'>
           {displayData?.title}
-       
+
         </div>
 
         <div className='container mx-auto items-center flex justify-center flex-col px-4' >
@@ -235,7 +199,7 @@ const DetailBlog = ({ data }) => {
 
 
           <div className='md:max-w-[700px] max-h-[400px] relative flex items-center justify-center'>
-            
+            {console.log('var',displayData?.img)}
             <img src={displayData?.img} alt='images' className='md:max-w-[700px] max-h-[400px]' />
           </div>
 
