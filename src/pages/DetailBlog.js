@@ -200,8 +200,8 @@ const DetailBlog = ({ data }) => {
         },
       
       ],
-      conclusion:"Elevate your B2B transactions to new heights with BharatEscrow. As the fintech industry evolves, trust and security remain at the forefront of successful business dealings. BharatEscrow empowers businesses to engage in secure and transparent transactions, fostering trust, and paving the way for mutually beneficial partnerships. Explore the future of B2B transactions with BharatEscrow — where security meets seamless transactions."
-
+      conclusion:"Elevate your B2B transactions to new heights with BharatEscrow. As the fintech industry evolves, trust and security remain at the forefront of successful business dealings. BharatEscrow empowers businesses to engage in secure and transparent transactions, fostering trust, and paving the way for mutually beneficial partnerships. Explore the future of B2B transactions with BharatEscrow — where security meets seamless transactions.",
+      timeStamp: "19-9-2023"
     }
   ]
 
