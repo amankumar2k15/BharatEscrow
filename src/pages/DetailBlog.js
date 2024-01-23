@@ -77,14 +77,22 @@ const DetailBlog = ({ data }) => {
       id: 0,
       img: detailblogImg,
       title: "A Step-by-Step Guide to Escrow Accounts with BharatEscrow",
-      subtitle:[
+      mainTitle: [
         {
-          id:0,
-          question: "What is an Escrow Account?",
-          answer: "It is an intermittent account that is only active till the transaction is completed. The account is closed once all of the criteria between the buyer and seller have been met. Escrows often involve the deposit of a monetary-valued document. These documents could be deeds, written instruments, payment pledges, licenses, patents, cheques, bonds, or mortgages.",
-        }
+          id: 0,
+          title: "A Step-by-Step Guide to Escrow Accounts with BharatEscrow",
+          subtitle: [
+            {
+              id:0,
+              question: "What is an Escrow Account?",
+              answer: "It is an intermittent account that is only active till the transaction is completed. The account is closed once all of the criteria between the buyer and seller have been met. Escrows often involve the deposit of a monetary-valued document. These documents could be deeds, written instruments, payment pledges, licenses, patents, cheques, bonds, or mortgages.",
+            },
+          ]
+        },
+    
       ],
       detail: { key: "Details about Escrow Account", value: "In an era where financial transparency is paramount, the use of escrow accounts has become a cornerstone for secure transactions. BharatEscrow, in collaboration with multiple RBI-regulated banking partners, is at the forefront of delivering unparalleled financial transparency between buyers and sellers. This comprehensive guide outlines the step-by-step process of utilizing an escrow account with BharatEscrow, aligning with the vision of providing financial transparency to everyone." },
+      question:"How to operate :-",
       steps: [
         {
           id: 0,
@@ -168,12 +176,103 @@ const DetailBlog = ({ data }) => {
       id: 1,
       img: detailblogImg1,
       title: "Your Business in B2B Transactions safeguarded by BHARATESCROW",
-      subtitle:[
+      mainTitle: [
         {
-          id:0,
-          question: "Elevate Your B2B Transactions with BharatEscrow ",
-          answer: "In the intricate landscape of B2B transactions, establishing a foundation of trust is essential. With increasing complexities and risks, businesses need a reliable solution to protect their interests and ensure fair dealings. BharatEscrow emerges as a game-changer, offering a secure and neutral ground for B2B transactions.",
+          id: 0,
+          title: "Elevate Your B2B Transactions with BharatEscrow",
+          subtitle: [
+            {
+              id:0,
+              question: "Introduction",
+              answer: "In the intricate landscape of B2B transactions, establishing a foundation of trust is essential. With increasing complexities and risks, businesses need a reliable solution to protect their interests and ensure fair dealings. BharatEscrow emerges as a game-changer, offering a secure and neutral ground for B2B transactions.",
+            },
+          ]
+        },
+        {
+          id:1,
+          title:"The Role of BharatEscrow",
+          subtitle:[{
+           id:0,
+            question:"How Escrow Services Work in B2B Settings",
+            answer:"BharatEscrow acts as a trusted intermediary, holding funds in escrow until predefined conditions are met. This ensures that both parties fulfill their obligations before the transaction is concluded."
+          },
+        {
+          id:1,
+          question:"The Security Layer: Escrow as a Neutral Third Party",
+          answer:"By introducing a neutral third party into the transaction process, BharatEscrow mitigates the risks associated with default, fraud, or disputes. This security layer fosters confidence among business partners, facilitating smoother transactions."
         }
+
+        ]
+        },
+        {
+          id:2,
+          title:"Key Features of BharatEscrow",
+          subtitle:[
+            {
+              id:0,
+              question:"Transparency in Fund Management",
+              answer:"BharatEscrow provides a transparent platform, allowing businesses to track and verify the status of funds throughout the transaction lifecycle. This transparency builds accountability and trust.",
+            },
+            {
+              id:1,
+              question:"Dispute Resolution Mechanism",
+              answer:"In the event of a dispute, BharatEscrow employs a robust resolution mechanism, ensuring fair and impartial resolutions. This minimizes the potential for protracted disputes and legal complications.",
+            },
+            {
+              id:2,
+              question:"Compliance with Regulatory Standards",
+              answer:"BharatEscrow adheres to stringent regulatory standards, providing businesses with peace of mind regarding the legality and legitimacy of their transactions. This commitment to compliance sets BharatEscrow apart in the fintech landscape.",
+            }
+          ]
+        },
+         {
+           id:3,
+           title:"Benefits of Using BharatEscrow in B2B Transactions",
+           subtitle:[
+            {
+              id:0,
+              question:"Minimizing Transaction Risks",
+              answer:"Businesses can significantly reduce the risks associated with payment defaults and fraud by leveraging BharatEscrow. The escrow service acts as a safeguard, ensuring that funds are released only when both parties fulfill their contractual obligations.",
+            },
+            {
+              id:1,
+              question:"Building Trust among Business Partners",
+              answer:"Trust is the cornerstone of successful B2B relationships. BharatEscrow instills confidence by offering a secure and transparent platform, fostering trust between transacting parties and laying the foundation for long-term partnerships."
+            },
+            {
+              id:2,
+              question:"Facilitating Cross-Border Transactions",
+              answer:"For businesses engaged in cross-border transactions, BharatEscrow simplifies the complexities associated with international payments. The platform's compliance with global regulatory standards ensures a smooth and secure cross-border experience."
+            },
+           ]
+         },
+         {
+           id:4,
+           title:"Real-World Success Stories",
+           subtitle:[
+            {
+              id:0,
+              question:"Case Studies: Businesses Securing Transactions with BharatEscrow",
+              answer:"Explore real-world examples of businesses that have successfully utilized BharatEscrow to secure their B2B transactions. These case studies demonstrate the versatility and effectiveness of BharatEscrow across diverse industries.",
+            }
+           ]
+         },
+         {
+          id:5,
+          title:"How to Get Started with BharatEscrow",
+          subtitle:[
+            {
+              id:0,
+              question:"Step-by-Step Guide to Onboarding",
+              answer:"Embarking on a secure B2B transaction journey with BharatEscrow is seamless. Our step-by-step onboarding process ensures that businesses can quickly integrate escrow services into their transactions, enhancing security and trust."
+            },
+            {
+              id:0,
+              question:"Tailoring Escrow Solutions to Your Business Needs",
+              answer:"BharatEscrow understands that every business is unique. Our platform offers customizable escrow solutions, allowing businesses to tailor their transaction security to meet specific industry and partnership requirements."
+            },
+          ]
+         }
       ],
       faqs: [
         {
@@ -280,14 +379,24 @@ const DetailBlog = ({ data }) => {
 
 
           <div className='max-w-5xl mt-[104px] flex flex-col text-black md:px-3 '>
-            
-              {displayData?.subtitle?.map((item , index)=>{return(
-                <div key={index}  className='-mt-4'>
-                <p className=' text-blue-900 font-bold text-2xl font-roboto'>{item?.question}</p>
-                <p className='text-gray-600 text-lg font-roboto mt-2'>{item?.answer}</p>
+            {console.log(displayData)}
+            {displayData?.mainTitle?.map((item, index) => {
+              return (
+                <div key={index} className='-mt-4'>
+                  <p className=' text-blue-900 font-bold text-2xl font-roboto mt-12'>{item?.title}</p>
+                  {item?.subtitle?.map((subtitle) => {
+                    return (
+                      <div key={subtitle.id} className='-mt-4' >
+                        <p className='text-blue-900 text-lg font-bold font-roboto mt-12'>{subtitle?.question}</p>
+                        <p className='text-gray-600 text-lg font-roboto mt-2'>{subtitle?.answer}</p>
+
+                      </div>
+                    )
+                  })}
                 </div>
-              )})}
-           
+              )
+            })}
+
 
             <div className='mt-8'>
               <p className='text-blue-900 font-bold text-2xl font-roboto'>{displayData?.detail?.key}</p>
@@ -295,7 +404,7 @@ const DetailBlog = ({ data }) => {
             </div>
 
             <div className='mt-8 flex flex-col gap-0'>
-              <p className='text-blue-900 font-bold text-2xl font-roboto underline'>How to operate :-</p>
+              <p className='text-blue-900 font-bold text-2xl font-roboto underline'>{displayData?.question}</p>
               <div className='mt-5 flex flex-col gap-8'>
                 {displayData?.steps?.map((item) => {
                   return (
@@ -309,7 +418,7 @@ const DetailBlog = ({ data }) => {
               </div>
 
               <div className='mt-8'>
-                <p className='text-blue-900 mb-6 font-bold text-2xl font-roboto'>FAQ's</p>
+                <p className='text-blue-900 mb-6 font-bold text-2xl font-roboto '>FAQ's</p>
 
                 {
                   displayData?.faqs?.map((item, index) => {
