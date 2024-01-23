@@ -77,17 +77,12 @@ const DetailBlog = ({ data }) => {
       id: 0,
       img: detailblogImg,
       title: "A Step-by-Step Guide to Escrow Accounts with BharatEscrow",
-      mainTitle: [
+      subtitle:[
         {
-          id: 0,
-          title: "A Step-by-Step Guide to Escrow Accounts with BharatEscrow",
-          subtitle: [
-            {
-              question1: "What is an Escrow Account?",
-              answer1: "It is an intermittent account that is only active till the transaction is completed. The account is closed once all of the criteria between the buyer and seller have been met. Escrows often involve the deposit of a monetary-valued document. These documents could be deeds, written instruments, payment pledges, licenses, patents, cheques, bonds, or mortgages.",
-            },
-          ]
-        },
+          id:0,
+          question: "What is an Escrow Account?",
+          answer: "It is an intermittent account that is only active till the transaction is completed. The account is closed once all of the criteria between the buyer and seller have been met. Escrows often involve the deposit of a monetary-valued document. These documents could be deeds, written instruments, payment pledges, licenses, patents, cheques, bonds, or mortgages.",
+        }
       ],
       detail: { key: "Details about Escrow Account", value: "In an era where financial transparency is paramount, the use of escrow accounts has become a cornerstone for secure transactions. BharatEscrow, in collaboration with multiple RBI-regulated banking partners, is at the forefront of delivering unparalleled financial transparency between buyers and sellers. This comprehensive guide outlines the step-by-step process of utilizing an escrow account with BharatEscrow, aligning with the vision of providing financial transparency to everyone." },
       steps: [
@@ -173,8 +168,13 @@ const DetailBlog = ({ data }) => {
       id: 1,
       img: detailblogImg1,
       title: "Your Business in B2B Transactions safeguarded by BHARATESCROW",
-      question1: "Elevate Your B2B Transactions with BharatEscrow ",
-      answer1: "In the intricate landscape of B2B transactions, establishing a foundation of trust is essential. With increasing complexities and risks, businesses need a reliable solution to protect their interests and ensure fair dealings. BharatEscrow emerges as a game-changer, offering a secure and neutral ground for B2B transactions.",
+      subtitle:[
+        {
+          id:0,
+          question1: "Elevate Your B2B Transactions with BharatEscrow ",
+          answer1: "In the intricate landscape of B2B transactions, establishing a foundation of trust is essential. With increasing complexities and risks, businesses need a reliable solution to protect their interests and ensure fair dealings. BharatEscrow emerges as a game-changer, offering a secure and neutral ground for B2B transactions.",
+        }
+      ],
       faqs: [
         {
           id: 1,
@@ -280,11 +280,14 @@ const DetailBlog = ({ data }) => {
 
 
           <div className='max-w-5xl mt-[104px] flex flex-col text-black md:px-3 '>
-            <div className='-mt-4'>
-
-              <p className=' text-blue-900 font-bold text-2xl font-roboto'>{displayData?.question1}</p>
-              <p className='text-gray-600 text-lg font-roboto mt-2'>{displayData?.answer1}</p>
-            </div>
+            
+              {displayData?.subtitle?.map((item , index)=>{return(
+                <div key={index}  className='-mt-4'>
+                <p className=' text-blue-900 font-bold text-2xl font-roboto'>{item?.question}</p>
+                <p className='text-gray-600 text-lg font-roboto mt-2'>{item?.answer}</p>
+                </div>
+              )})}
+           
 
             <div className='mt-8'>
               <p className='text-blue-900 font-bold text-2xl font-roboto'>{displayData?.detail?.key}</p>
