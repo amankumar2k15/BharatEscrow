@@ -237,11 +237,10 @@ const DetailBlog = ({ data }) => {
 
 
           <div className='md:max-w-[700px] max-h-[400px] relative flex items-center justify-center'>
-<<<<<<< HEAD
-            
-=======
 
->>>>>>> 3a433852580b4e8817d33fde56a55958b883ae5a
+
+
+
             <img src={displayData?.img} alt='images' className='md:max-w-[700px] max-h-[400px]' />
           </div>
 
