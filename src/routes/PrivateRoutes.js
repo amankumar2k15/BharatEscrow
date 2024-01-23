@@ -35,7 +35,7 @@ const PrivateRoutes = () => {
         });
     }, [location.pathname]);
 
-
+    
     return (
         <>
             <Suspense fallback={

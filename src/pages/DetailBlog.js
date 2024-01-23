@@ -24,6 +24,7 @@ import {
 
 const DetailBlog = ({ data }) => {
   const [displayData, setData] = useState();
+  console.log("aman", displayData)
   const [faqRow, setFaqRow] = useState({ index: null, isOpen: false })
   const location = useLocation()
 
@@ -74,7 +75,7 @@ const DetailBlog = ({ data }) => {
   const dataMap = [
     {
       id: 0,
-      img:detailblogImg,
+      img: detailblogImg,
       title: "A Step-by-Step Guide to Escrow Accounts with BharatEscrow",
       question1: "What is an Escrow Account?",
       answer1: "It is an intermittent account that is only active till the transaction is completed. The account is closed once all of the criteria between the buyer and seller have been met. Escrows often involve the deposit of a monetary-valued document. These documents could be deeds, written instruments, payment pledges, licenses, patents, cheques, bonds, or mortgages.",
@@ -158,11 +159,11 @@ const DetailBlog = ({ data }) => {
 
     },
     {
-      id:1,
-      img:detailblogImg1,
-      title: "hello",
+      id: 1,
+      img: detailblogImg1,
+      title: "Your Business in B2B Transactions safeguarded by BHARATESCROW",
       question1: "",
-      answer1:""
+      answer1: ""
 
     }
   ]
@@ -179,7 +180,7 @@ const DetailBlog = ({ data }) => {
 
         <div className='shadingEffect font-bold text-3xl mb-12 sm:text-4xl md:text-5xl mt-4 w-full text-center text-blue-900'>
           {displayData?.title}
-       
+
         </div>
 
         <div className='container mx-auto items-center flex justify-center flex-col px-4' >
@@ -199,7 +200,7 @@ const DetailBlog = ({ data }) => {
 
 
           <div className='md:max-w-[700px] max-h-[400px] relative flex items-center justify-center'>
-            {console.log('var',displayData?.img)}
+
             <img src={displayData?.img} alt='images' className='md:max-w-[700px] max-h-[400px]' />
           </div>
 
